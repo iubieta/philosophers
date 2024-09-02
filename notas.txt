@@ -1,0 +1,51 @@
+DESCRICION GENERAL:
+
+	- Uno o mas filosofos se sientan en una mesa redonda a comer.
+	- Solo pueden comer, pensar o dormir. Una accion cada vez.
+	- En la mesa hay tantos tenedores como filosofos pero para comer un filosofo necesita
+	dos tenedores (el de su derecha y el de su izquierda).
+	- Despues de comer los filosofos empezaran a dormir y al despertar empezara a pensar.
+	- La simulacion se acaba si un filosofo muere de hambre.
+	- Los filosofos no pueden hablar entre ellos y no saben si otro filosofo va a morir.
+	
+NORMAS:
+
+	- No se pueden usar variables globales
+	- No se permite usar libft
+	- ARGUMETOS: numero de filosofos , tiempo para morir de hambre , tiempo para comer , tiempo 
+	para dormir , numero de veces a comer . (El tiempo se mide en milisegundos).
+	- Cada filosofo tiene asignado un numero y los adyacentes los correspondientes.
+	- LOGS:
+		- "timestamp en ms" "X" has taken a fork
+		- "timestamp en ms" "X" is eating
+		- "timestamp en ms" "X" is sleeping
+		- "timestamp en ms" "X" is thinking
+		- "timestamp en ms" "X" has died
+		* X es el numero del filosofo *
+	- Los logs no deben interrumpirse entre si
+	- No pueden pasar mas de 10ms ente la muerte de un filosofo y su impresion en el log
+	- No debe haber "Data Races", dos hilos distintos (filosofos) no deben acceder a una misma
+	variable a la vez.
+
+PROBLEMAS Y SOLUCIONES:
+
+	- Gestion de argumentos / Parseo
+	
+	- Separacion de procesos / filosofos : cada filosofo debe ser un hilo.
+
+	- Impresion de los logs
+
+	- Data Races / gestion de variables comunes (tenedores) : protegerlos con MUTEX
+
+ENTREGA:
+
+	- Nombre de programa: 	philo
+	- Archivos a entregar: 	Makefile, *.h, *.c, en el directorio philo/
+	- Makefile: 			NAME, all, clean, fclean, re
+	- Argumentos:			number_of_philosophers, time_to_die, time_to_eat, time_to_sleep,
+		number_of_times_each_philosopher_must_eat
+	- Funciones autorizadas: 
+		memset, printf, malloc, free, write, usleep, gettimeofday, pthread_create, pthread_detach,
+		pthread_join, pthread_mutex_init, pthread_mutex_destroy, pthread_mutex_lock, 
+		pthread_mutex_unlock
+	- No se permite usar libft
