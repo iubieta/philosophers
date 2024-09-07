@@ -1,6 +1,7 @@
 # Archivos objeto
 *.o
 *.obj
+*.ghc
 
 # Archivos de depuración y enlaces
 *.so
