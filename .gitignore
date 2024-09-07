@@ -1,0 +1,22 @@
+# Archivos objeto
+*.o
+*.obj
+
+# Archivos de depuración y enlaces
+*.so
+*.a
+*.exe
+*.dll
+
+# Archivos de configuración de editores y entornos de desarrollo
+.vscode/
+.idea/
+*.swp
+
+# Archivos de configuración y backup
+*.log
+*.bak
+*.tmp
+*.out
+*.config
+*.cache
