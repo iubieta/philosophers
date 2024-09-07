@@ -44,22 +44,52 @@ ENTREGA:
 	- Makefile: 			NAME, all, clean, fclean, re
 	- Argumentos:			number_of_philosophers, time_to_die, time_to_eat, time_to_sleep,
 							(number_of_times_each_philosopher_must_eat)
-	- Funciones autorizadas: 
-		memset, printf, malloc, free, write, usleep, gettimeofday, pthread_create, pthread_detach,
-		pthread_join, pthread_mutex_init, pthread_mutex_destroy, pthread_mutex_lock, 
-		pthread_mutex_unlock
-	- No se permite usar libft
 
-TAREAS:
-
-	- Parseo y comprobacion de errores: Argumentos = 4 o 5 ints mayores que 0
+FUNCIONES AUTORIZADAS:
 	
-	- Variables / Structuras : 
+	- No se permite usar libft!!
+	
+	- memset(void *s, int c, size_t n);  
+	Inicializa una porción de memoria con un valor específico.
 
-		Filosofo : 	[ numero , estado(durmiendo, pensando, comiendo, muerto) , numero de comidas ,
-					n_filosofos , comidas max , t_ultima comida , t_comer, t_dormir , t_pensar , 
-					tenedor_izq , tenedor_dcha , impresion , muerte , comida]
+	- printf(const char *format, ...);  
+	Imprime datos formateados a la salida estándar.
 
-		Monitor : [ muerte , comida , impresion , s_filosofos]
+	- malloc(void *malloc(size_t size);  
+	Reserva memoria dinámica.
 
-	- Diseñar funciones / rutinas de filosofos y del Monitor
+	- free(void free(void *ptr);  
+	Libera la memoria asignada por malloc o calloc.
+
+	- write(ssize_t write(int fd, const void *buf, size_t count);  
+	Escribe datos en un descriptor de archivo.
+
+	- usleep(int usleep(useconds_t usec);  
+	Suspende la ejecución del programa por una cantidad de microsegundos.
+
+	- gettimeofday(int gettimeofday(struct timeval *tv, struct timezone *tz);  
+	Obtiene el tiempo actual.
+
+	- pthread_create(int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);  
+	Crea un nuevo hilo.
+
+	- pthread_detach(int pthread_detach(pthread_t thread);  
+	Desvincula un hilo, permitiendo que sus recursos sean liberados automáticamente al finalizar.
+
+	- pthread_join(int pthread_join(pthread_t thread, void **retval);  
+	Espera a que un hilo termine.
+
+	- pthread_mutex_init(int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);  
+	Inicializa un mutex.
+
+	- pthread_mutex_destroy(int pthread_mutex_destroy(pthread_mutex_t *mutex);  
+	Destruye un mutex.
+
+	- pthread_mutex_lock(int pthread_mutex_lock(pthread_mutex_t *mutex);  
+	Bloquea un mutex.
+
+	- pthread_mutex_unlock(int pthread_mutex_unlock(pthread_mutex_t *mutex);  
+	Desbloquea un mutex.
+	
+
+NOTAS:
