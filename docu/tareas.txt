@@ -1,8 +1,8 @@
 TAREAS:
 
-	[ ] gitignore
+	[x] gitignore
 
-	[ ] Parseo y comprobacion de errores: Argumentos = 4 o 5 ints mayores que 0
+	[x] Parseo y comprobacion de errores: Argumentos = 4 o 5 ints mayores que 0
 	
 	[ ] Variables / Structuras : 
 
@@ -29,5 +29,6 @@ FUNCIONES a DISEÑAR:
 	- timestamp: impresion de ms en pantalla
 
 	- asignacion y liberacion de memoria?
+		!-Comprobar correcta asignacion
 
 

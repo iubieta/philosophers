@@ -1,0 +1,5 @@
+Sabado 07/09:
+
+	- Planteado parseo, structuras y asignacion de memoria.
+
+SEGUIR CON: comprobacion de correcta asignacion y liberacion de memoria.

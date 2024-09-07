@@ -27,3 +27,19 @@ int	ft_atoi(const char *s)
 	i++;
 	return (number * sign);
 }
+
+void* ft_malloc(size_t size) {
+    void* ptr = malloc(size);
+    if (ptr == NULL) {
+        perror("Error al asignar memoria con malloc");
+        exit(EXIT_FAILURE);
+    }
+    return ptr;
+}
+
+void ft_mutex_init(pthread_mutex_t* mutex) {
+    if (pthread_mutex_init(mutex, NULL) != 0) {
+        perror("Error al inicializar el mutex");
+        exit(EXIT_FAILURE);
+    }
+}
