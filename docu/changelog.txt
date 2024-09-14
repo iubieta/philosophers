@@ -2,4 +2,9 @@ Sabado 07/09:
 
 	- Planteado parseo, structuras y asignacion de memoria.
 
-SEGUIR CON: comprobacion de correcta asignacion y liberacion de memoria.
+Sabado 14/09:
+
+	- Asignacion de memoria y comprobacion hecha y probada.
+
+SEGUIR CON: atoi de tipo size_t, rutinas.
+
