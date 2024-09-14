@@ -12,6 +12,8 @@ TAREAS:
 
 		Monitor : [ muerte , comida , impresion , s_filosofos]
 
+	[ ] Atoi de tipo size_t y cmabiar tiempos a size_t
+
 	[ ] Diseñar funciones / rutinas de filosofos y del Monitor
 
 	[ ] Diseñar estructura de Archivos

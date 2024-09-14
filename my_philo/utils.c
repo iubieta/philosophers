@@ -28,18 +28,12 @@ int	ft_atoi(const char *s)
 	return (number * sign);
 }
 
-void* ft_malloc(size_t size) {
-    void* ptr = malloc(size);
-    if (ptr == NULL) {
-        perror("Error al asignar memoria con malloc");
-        exit(EXIT_FAILURE);
-    }
-    return ptr;
+int printe(char *str)
+{
+	printf("\u2717 ERROR: %s", str);
 }
 
-void ft_mutex_init(pthread_mutex_t* mutex) {
-    if (pthread_mutex_init(mutex, NULL) != 0) {
-        perror("Error al inicializar el mutex");
-        exit(EXIT_FAILURE);
-    }
+int prints(char *str)
+{
+	printf("\u2713 %s", str);
 }

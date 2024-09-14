@@ -27,7 +27,16 @@ typedef struct s_mutex_group
 	pthread_mutex_t death_lock;
 	pthread_mutex_t write_lock;
 	pthread_mutex_t *forks;
-}	t_mutex_group
+}	t_mutex_group;
+
+//MEMORY
+t_philo	**init_philos(t_philo **philo, int argc, char **argv);
+t_mutex_group	*init_mutex(t_mutex_group *mutex_group, char **argv);
+
+
+//UTILS
 int	ft_atoi(const char *s);
+int printe(char *str);
+int prints(char *str);
 
 #endif
