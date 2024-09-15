@@ -6,5 +6,9 @@ Sabado 14/09:
 
 	- Asignacion de memoria y comprobacion hecha y probada.
 
-SEGUIR CON: atoi de tipo size_t, rutinas.
+Domingo 15/09:
+
+	- Checkeo de argumentos añadido, atoi cambiado a tipo size_t, creada variable args para no repetir atois.
+
+SEGUIR CON: inicializacion de hilos y rutinas.
 
