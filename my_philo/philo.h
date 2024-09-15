@@ -10,12 +10,12 @@
 
 typedef struct s_philo
 {
-	int	id;
+	size_t	id;
 	int status;
-	int	t_die;
-	int t_eat;
-	int t_sleep;
-	int	n_meals;
+	size_t	t_die;
+	size_t t_eat;
+	size_t t_sleep;
+	size_t	n_meals;
 	pthread_mutex_t *left_fork;
 	pthread_mutex_t *right_fork;
 	pthread_mutex_t *death_lock;
@@ -30,13 +30,14 @@ typedef struct s_mutex_group
 }	t_mutex_group;
 
 //MEMORY
-t_philo	**init_philos(t_philo **philo, int argc, char **argv);
-t_mutex_group	*init_mutex(t_mutex_group *mutex_group, char **argv);
+t_philo			**init_philos(t_philo **philo, size_t *args);
+t_mutex_group	*init_mutex(t_mutex_group *mutex_group, size_t *args);
 
 
 //UTILS
-int	ft_atoi(const char *s);
-int printe(char *str);
-int prints(char *str);
+int		ft_atoi(const char *s);
+size_t	ft_atosizet(const char *s);
+int		printe(char *str);
+int		prints(char *str);
 
 #endif

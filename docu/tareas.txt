@@ -4,7 +4,7 @@ TAREAS:
 
 	[x] Parseo y comprobacion de errores: Argumentos = 4 o 5 ints mayores que 0
 	
-	[ ] Variables / Structuras : 
+	[x] Variables / Structuras : 
 
 		Filosofo : 	[ numero , estado(durmiendo, pensando, comiendo, muerto) , numero de comidas ,
 					n_filosofos , comidas max , t_ultima comida , t_comer, t_dormir , t_pensar , 
@@ -12,7 +12,7 @@ TAREAS:
 
 		Monitor : [ muerte , comida , impresion , s_filosofos]
 
-	[ ] Atoi de tipo size_t y cmabiar tiempos a size_t
+	[x] Atoi de tipo size_t y cmabiar tiempos a size_t
 
 	[ ] Diseñar funciones / rutinas de filosofos y del Monitor
 

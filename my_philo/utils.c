@@ -28,12 +28,35 @@ int	ft_atoi(const char *s)
 	return (number * sign);
 }
 
+size_t	ft_atosizet(const char *s)
+{
+	size_t	i;
+	size_t	number;
+
+	i = 0;
+	number = 0;
+	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'
+		|| s[i] == '\r' || s[i] == '\v' || s[i] == '\f' )
+		i++;
+	if (s[i] == '-')
+		i++;
+	else if (s[i] == '+')
+		i++;
+	while (s[i] >= '0' && s[i] <= '9')
+	{
+		number = number * 10 + s[i] - 48;
+		i++;
+	}
+	i++;
+	return (number);
+}
+
 int printe(char *str)
 {
-	printf("\u2717 ERROR: %s", str);
+	return (printf("\u2717 ERROR: %s", str));
 }
 
 int prints(char *str)
 {
-	printf("\u2713 %s", str);
+	return (printf("\u2713 %s", str));
 }

@@ -1,21 +1,49 @@
 #include "philo.h"
 
-void *main(int argc, char **argv)
+size_t *check_args(int argc, char **argv);
+
+int main(int argc, char **argv)
 {
+	size_t	*args;
 	t_philo **table;
 	t_mutex_group *mutex_gr;
 
+	args = check_args(argc, argv);
+	if (!args)
+		return (printf("PROGRAM TERMINATED"), 0);
 	mutex_gr = malloc(sizeof(t_mutex_group));
 	if (!mutex_gr)
-		return (printf("PROGRAM TERMINATED"), mutex_gr = NULL, NULL);
-	mutex_gr = init_mutex(mutex_gr, argv);
+		return (printf("PROGRAM TERMINATED"), mutex_gr = NULL, 0);
+	mutex_gr = init_mutex(mutex_gr, args);
 	if (!mutex_gr)
-		return (printf("PROGRAM TERMINATED"), mutex_gr = NULL, NULL);
+		return (printf("PROGRAM TERMINATED"), mutex_gr = NULL, 0);
+	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", args[0], args[1], args[2], args[3], args[4], args[5]);
 	prints("Mutex initialized successfully\n");
 	printf("\n--TABLE INFO--\n");
-	printf("\nNumber of philosophers: %d\n",ft_atoi(argv[1]));
-	table = malloc(sizeof(t_philo *) * ft_atoi(argv[1]));
-	init_philos(table, argc, argv);
+	printf("\nNumber of philosophers: %lu\n", args[1]);
+	table = malloc(sizeof(t_philo *) * args[1]);
+	init_philos(table, args);
+	printf("\n");
+	prints("PROGRAM FINISHED");
+	return (0);
+}
 
+size_t *check_args(int argc, char **argv)
+{
+	int		i;
+	size_t	*args;
 
+	args = malloc(sizeof(size_t) * 6);
+	if (argc < 5 || argc > 6)
+		return (printe("Check your arguments\n"), NULL);
+	if (!args)
+		return (printe("Failed to initialize 'args'\n"), NULL);
+	args[0] = (size_t)argc;
+	i = 1;
+	while (i < argc)
+	{
+		args[i] = ft_atosizet(argv[i]);
+		i++;
+	}
+	return (args);
 }
