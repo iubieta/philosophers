@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/18 21:15:44 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/09/18 22:57:52 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	philo_routine(t_philo *philo)
 {
 	philo->status = 1;
 	notify_status(philo);
-	while (status == 1)
+	while (philo->status == 1)
 	{
 		pthread_mutex_lock(philo->left_fork);
 		if (pthread_mutex_lock(philo->right_fork))
