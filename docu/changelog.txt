@@ -10,5 +10,12 @@ Domingo 15/09:
 
 	- Checkeo de argumentos añadido, atoi cambiado a tipo size_t, creada variable args para no repetir atois.
 
-SEGUIR CON: inicializacion de hilos y rutinas.
+Miercoles 18/09:
+
+	- Asignacion de mutex al inicializar filosofos.
+	- Rutina de filosofo
+	- Impresion de stado
+	- Empezado incializacion de hilos.
+
+SEGUIR CON: inicializacion de hilos, checkeo y liberacion de hilos.
 

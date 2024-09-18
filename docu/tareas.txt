@@ -33,4 +33,6 @@ FUNCIONES a DISEÑAR:
 	- asignacion y liberacion de memoria?
 		!-Comprobar correcta asignacion
 
+	- Monitor : hilo que comprueba el estado de los distintos filosofos y si han muerto.
+
 

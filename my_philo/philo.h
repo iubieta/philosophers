@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   philo.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
+/*   Updated: 2024/09/18 20:25:12 by iubieta-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef PHILO_H
 # define PHILO_H
 
@@ -11,7 +23,7 @@
 typedef struct s_philo
 {
 	size_t	id;
-	int status;
+	int status; // 1:Despierto, 2:Comiendo, 3:Durmiendo, 0:muerto
 	size_t	t_die;
 	size_t t_eat;
 	size_t t_sleep;
@@ -30,7 +42,7 @@ typedef struct s_mutex_group
 }	t_mutex_group;
 
 //MEMORY
-t_philo			**init_philos(t_philo **philo, size_t *args);
+t_philo			**init_philos(t_philo **philo, t_mutex_group mutex_group, size_t *args);
 t_mutex_group	*init_mutex(t_mutex_group *mutex_group, size_t *args);
 
 
