@@ -6,13 +6,13 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/18 22:57:52 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/09/25 19:18:39 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-void	philo_routine(t_philo *philo);
+void	*philo_routine(void *arg);
 void	notify_status(t_philo *philo);
 
 
@@ -27,20 +27,21 @@ pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_gr
 		return (NULL);
 	while (i < args[0])
 	{
-		pthread_create(routines[i], NULL, philo_routine, philo[i]);
-		//SEGUIR AQUI
+		pthread_create(&routines[i], NULL, philo_routine, &philo[i]);
 	}
 	
 }
 
-void	philo_routine(t_philo *philo)
+void	*philo_routine(void *arg)
 {
+	t_philo *philo;
+	philo = (t_philo *)arg;
 	philo->status = 1;
 	notify_status(philo);
 	while (philo->status == 1)
 	{
 		pthread_mutex_lock(philo->left_fork);
-		if (pthread_mutex_lock(philo->right_fork))
+		if (!pthread_mutex_lock(philo->right_fork))
 			philo->status = 2;
 		else
 			pthread_mutex_unlock(philo->left_fork);
@@ -67,4 +68,5 @@ void	notify_status(t_philo *philo)
 	if (philo->status == 3)
 		status_str = "sleeping";
 	printf(" : Philo %lu is %s", philo->id, status_str);
+	pthread_mutex_unlock(philo->write_lock);
 }

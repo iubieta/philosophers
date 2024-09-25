@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/18 20:25:12 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/09/25 18:37:33 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,8 @@ int		ft_atoi(const char *s);
 size_t	ft_atosizet(const char *s);
 int		printe(char *str);
 int		prints(char *str);
+
+//MAIN FUNCTIONS
+pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_group);
 
 #endif
