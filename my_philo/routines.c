@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/25 19:18:39 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/09/25 19:22:05 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void	notify_status(t_philo *philo)
 	struct timeval tv;
 	char *status_str;
 	
+	//SEGUIR AQUI!!!!!
 	pthread_mutex_lock(philo->write_lock);
 	gettimeofday(&tv, NULL);
     printf("%ld",tv.tv_sec);
