@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/25 19:22:05 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/10 21:20:13 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,22 @@ pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_gr
 	routines = malloc(sizeof(pthread_t) * args[0]);
 	if (!routines)
 		return (NULL);
-	while (i < args[0])
+	while (i < args[1])
 	{
-		pthread_create(&routines[i], NULL, philo_routine, &philo[i]);
+		printf("Creando hilo %i\n", i);
+		pthread_create(&routines[i], NULL, philo_routine, philo[i]);
+		printf("Hilo %i creado.\n", i);
+		fflush(stdout);
+		i++;
 	}
-	
+	return (routines);
 }
 
 void	*philo_routine(void *arg)
 {
 	t_philo *philo;
 	philo = (t_philo *)arg;
+
 	philo->status = 1;
 	notify_status(philo);
 	while (philo->status == 1)
@@ -58,7 +63,6 @@ void	notify_status(t_philo *philo)
 	struct timeval tv;
 	char *status_str;
 	
-	//SEGUIR AQUI!!!!!
 	pthread_mutex_lock(philo->write_lock);
 	gettimeofday(&tv, NULL);
     printf("%ld",tv.tv_sec);
@@ -68,6 +72,7 @@ void	notify_status(t_philo *philo)
 		status_str = "eating";
 	if (philo->status == 3)
 		status_str = "sleeping";
-	printf(" : Philo %lu is %s", philo->id, status_str);
+	printf(" : Philo %lu is %s\n", philo->id, status_str);
+	fflush(stdout);
 	pthread_mutex_unlock(philo->write_lock);
 }

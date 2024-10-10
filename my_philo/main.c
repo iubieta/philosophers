@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/18 21:01:05 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/10 21:09:10 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,10 @@ size_t *check_args(int argc, char **argv);
 
 int main(int argc, char **argv)
 {
-	size_t	*args;
-	t_philo **table;
-	t_mutex_group *mutex_gr;
+	size_t			*args;
+	t_philo 		**table;
+	t_mutex_group 	*mutex_gr;
+	pthread_t		*routines;
 
 	args = check_args(argc, argv);
 	if (!args)
@@ -38,8 +39,11 @@ int main(int argc, char **argv)
 	init_philos(table, *mutex_gr, args);
 	printf("\n");
 	
-	printf("--STARTING PROGRAM--");
-	start_routines(args, table, mutex_gr);
+	printf("--STARTING PROGRAM--\n");
+	routines = start_routines(args, table, mutex_gr);
+	for (int i = 0; i < args[1]; i++) {
+        pthread_join(routines[i], NULL);
+    }
 	prints("PROGRAM FINISHED");
 	return (0);
 }
