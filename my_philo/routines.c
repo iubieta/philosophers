@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/10 21:20:13 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:56:24 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	*philo_routine(void *arg);
 void	notify_status(t_philo *philo);
+void	*monitor_routine(void *arg);
 
 
 pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_group)
@@ -22,7 +23,7 @@ pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_gr
 	pthread_t	*routines;
 
 	i = 0;
-	routines = malloc(sizeof(pthread_t) * args[0]);
+	routines = malloc(sizeof(pthread_t) * args[1]);
 	if (!routines)
 		return (NULL);
 	while (i < args[1])
@@ -33,7 +34,23 @@ pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_gr
 		fflush(stdout);
 		i++;
 	}
+	// printf("Crando hilo de monitorizacion\n");
+	// pthread_create(&routines[i], NULL, monitor_routine, mutex_group);
+	// printf("Hilo de monitorizacion creado\n");
 	return (routines);
+}
+
+void	*monitor_routine(void *arg)
+{
+	struct timeval tv;
+	
+	t_mutex_group	*mutex;
+	mutex = (t_mutex_group *)arg;
+	pthread_mutex_lock(&(mutex->write_lock));
+	gettimeofday(&tv, NULL);
+    printf("%ld\n",tv.tv_sec);
+	fflush(stdout);
+	pthread_mutex_unlock(&(mutex->write_lock));
 }
 
 void	*philo_routine(void *arg)
@@ -46,13 +63,17 @@ void	*philo_routine(void *arg)
 	while (philo->status == 1)
 	{
 		pthread_mutex_lock(philo->left_fork);
-		if (!pthread_mutex_lock(philo->right_fork))
+		if (pthread_mutex_lock(philo->right_fork) == 0)
+		{
 			philo->status = 2;
+			notify_status(philo);
+			usleep(philo->t_eat);
+			pthread_mutex_unlock(philo->left_fork);
+			pthread_mutex_unlock(philo->right_fork);			
+		}
 		else
 			pthread_mutex_unlock(philo->left_fork);
 	}
-	notify_status(philo);
-	usleep(philo->t_eat);
 	philo->status = 3;
 	notify_status(philo);
 	usleep(philo->t_sleep);
@@ -62,7 +83,8 @@ void	notify_status(t_philo *philo)
 {
 	struct timeval tv;
 	char *status_str;
-	
+
+	status_str = "UNDEFINED";
 	pthread_mutex_lock(philo->write_lock);
 	gettimeofday(&tv, NULL);
     printf("%ld",tv.tv_sec);

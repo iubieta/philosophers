@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/10 21:09:10 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:01:06 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int main(int argc, char **argv)
 	
 	printf("--STARTING PROGRAM--\n");
 	routines = start_routines(args, table, mutex_gr);
+	printf("Routines started\n");
 	for (int i = 0; i < args[1]; i++) {
         pthread_join(routines[i], NULL);
     }

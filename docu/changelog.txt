@@ -20,7 +20,12 @@ Miercoles 18/09:
 Jueves 10/10:
 
 	- Hilos iniciados correctamente.
-	- Fallo con el mutex de impresion. Espera infinita sin impresion.
+	- Fallo con el mutex de impresion.
 
-SEGUIR CON: impresion de estado correcto funcionamiento y liberacion de hilos.
+
+Sabado 19/10:
+
+	- Corregida comprobacion de pthread_mutex_lock(right_fork)
+
+SEGUIR CON: impresion de estado, correcto funcionamiento y liberacion de hilos.
 
