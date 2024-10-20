@@ -27,5 +27,10 @@ Sabado 19/10:
 
 	- Corregida comprobacion de pthread_mutex_lock(right_fork)
 
+Domingo 20/10:
+
+	- Cambiada funcion notify_status por send_message.
+	- Sigue dando error.
+
 SEGUIR CON: impresion de estado, correcto funcionamiento y liberacion de hilos.
 

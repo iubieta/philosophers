@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/19 17:01:06 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/20 18:51:58 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int main(int argc, char **argv)
 	init_philos(table, *mutex_gr, args);
 	printf("\n");
 	
-	printf("--STARTING PROGRAM--\n");
+	printf("--STARTING PROGRAM--\n\n");
 	routines = start_routines(args, table, mutex_gr);
 	printf("Routines started\n");
 	for (int i = 0; i < args[1]; i++) {
