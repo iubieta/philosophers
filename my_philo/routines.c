@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/19 18:56:24 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/20 18:40:51 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*philo_routine(void *arg);
 void	notify_status(t_philo *philo);
 void	*monitor_routine(void *arg);
-
+void	send_message(char *str, t_philo *philo);
 
 pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_group)
 {
@@ -28,9 +28,9 @@ pthread_t	*start_routines(size_t *args, t_philo **philo, t_mutex_group *mutex_gr
 		return (NULL);
 	while (i < args[1])
 	{
-		printf("Creando hilo %i\n", i);
+		//printf("Creando hilo %i\n", i);
 		pthread_create(&routines[i], NULL, philo_routine, philo[i]);
-		printf("Hilo %i creado.\n", i);
+		//printf("Hilo %i creado.\n", i);
 		fflush(stdout);
 		i++;
 	}
@@ -58,15 +58,18 @@ void	*philo_routine(void *arg)
 	t_philo *philo;
 	philo = (t_philo *)arg;
 
+	send_message("Routine STARTED", philo);
 	philo->status = 1;
-	notify_status(philo);
+	send_message("Thinking", philo);
+	//notify_status(philo);
 	while (philo->status == 1)
 	{
 		pthread_mutex_lock(philo->left_fork);
 		if (pthread_mutex_lock(philo->right_fork) == 0)
 		{
 			philo->status = 2;
-			notify_status(philo);
+			//notify_status(philo);
+			send_message("Eating", philo);
 			usleep(philo->t_eat);
 			pthread_mutex_unlock(philo->left_fork);
 			pthread_mutex_unlock(philo->right_fork);			
@@ -75,8 +78,29 @@ void	*philo_routine(void *arg)
 			pthread_mutex_unlock(philo->left_fork);
 	}
 	philo->status = 3;
-	notify_status(philo);
+	//notify_status(philo);
+	send_message("Sleeping", philo);
 	usleep(philo->t_sleep);
+	send_message("Routine FINISHED", philo);
+}
+
+void	send_message(char *str, t_philo *philo)
+{
+	struct timeval tv;
+	char *status_str;
+
+	if (0 != pthread_mutex_lock(philo->write_lock))
+	{
+		printf("Error al bloquear el mutex");
+	}
+	printf("ML\n");
+	gettimeofday(&tv, NULL);
+    printf("\t%ld | %lu : %s\n",tv.tv_sec, philo->id, str);
+	if(0!=pthread_mutex_unlock(philo->write_lock))
+	{
+		printf("Error al desbloquear el mutex\n");
+	}
+	printf("MU\n");
 }
 
 void	notify_status(t_philo *philo)
@@ -85,16 +109,24 @@ void	notify_status(t_philo *philo)
 	char *status_str;
 
 	status_str = "UNDEFINED";
-	pthread_mutex_lock(philo->write_lock);
-	gettimeofday(&tv, NULL);
-    printf("%ld",tv.tv_sec);
+	if (0 != pthread_mutex_lock(philo->write_lock))
+	{
+		printf("Error al bloquear el mutex");
+	}
 	if (philo->status == 1)
 		status_str = "thinking";
 	if (philo->status == 2)
 		status_str = "eating";
 	if (philo->status == 3)
 		status_str = "sleeping";
-	printf(" : Philo %lu is %s\n", philo->id, status_str);
+	printf("ML\n");
+	gettimeofday(&tv, NULL);
+    printf("\t%ld",tv.tv_sec);
+	printf(": Philo %lu is %s\n", philo->id, status_str);
 	fflush(stdout);
-	pthread_mutex_unlock(philo->write_lock);
+	if(0!=pthread_mutex_unlock(philo->write_lock))
+	{
+		printf("Error al desbloquear el mutex\n");
+	}
+	printf("MU\n");
 }
