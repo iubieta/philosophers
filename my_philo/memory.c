@@ -6,13 +6,13 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:23 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/09/18 20:19:40 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/24 23:06:58 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-pthread_mutex_t *init_forks(size_t n);
+pthread_mutex_t **init_forks(size_t n);
 
 t_philo	**init_philos(t_philo **philo, t_mutex_group mutex_group, size_t *args)
 {
@@ -33,11 +33,11 @@ t_philo	**init_philos(t_philo **philo, t_mutex_group mutex_group, size_t *args)
 		philo[i]->t_sleep = args[4];
 		if (args[0] == 6)
 			philo[i]->n_meals = args[5];
-		philo[i]->left_fork = &mutex_group.forks[i];
+		philo[i]->left_fork = mutex_group.forks[i];
 		if (i == n-1)
-			philo[i]->right_fork = &mutex_group.forks[0];
+			philo[i]->right_fork = mutex_group.forks[0];
 		else
-			philo[i]->right_fork = &mutex_group.forks[i+1];
+			philo[i]->right_fork = mutex_group.forks[i+1];
 		philo[i]->death_lock = &mutex_group.death_lock;
 		philo[i]->write_lock = &mutex_group.write_lock;
 		
@@ -58,14 +58,12 @@ t_philo	**init_philos(t_philo **philo, t_mutex_group mutex_group, size_t *args)
 	return (philo);
 }
 
-t_mutex_group	*init_mutex(t_mutex_group *mutex_group, size_t *args)
+t_mutex_group	*init_all_mutex(t_mutex_group *mutex_group, size_t *args)
 {
 	size_t n;
 
-	if (pthread_mutex_init(&mutex_group->death_lock, NULL) != 0)
-		return (printe("Fail to initiate 'death_lock'"), NULL);
-	if (pthread_mutex_init(&mutex_group->write_lock, NULL) != 0)
-		return (printe("Fail to initiate 'write_lock'"), NULL);
+	init_mutex(&mutex_group->death_lock);
+	init_mutex(&mutex_group->write_lock);
 	n = args[1];
 	mutex_group->forks = init_forks(n);
 	if (!mutex_group->forks)
@@ -73,11 +71,10 @@ t_mutex_group	*init_mutex(t_mutex_group *mutex_group, size_t *args)
 	return(mutex_group);
 }
 
-pthread_mutex_t *init_forks(size_t n)
+pthread_mutex_t **init_forks(size_t n)
 {
 	size_t	i;
-	size_t	j;
-	pthread_mutex_t *forks;
+	pthread_mutex_t **forks;
 
 	i = 0;
 	forks = malloc(sizeof(pthread_mutex_t) * n);
@@ -85,13 +82,8 @@ pthread_mutex_t *init_forks(size_t n)
 		return (free(forks), forks = NULL, NULL);
 	while (i < n)
 	{
-		if (pthread_mutex_init(&(forks[i]), NULL) != 0)
-		{
-			j = 0;
-			while (j < i)
-				pthread_mutex_destroy(&(forks[j++]));
-			return (free(forks), forks = NULL, NULL);
-		}
+		
+		init_mutex(forks[i]);
 		i++;
 	}
 	return(forks);

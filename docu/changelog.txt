@@ -32,5 +32,10 @@ Domingo 20/10:
 	- Cambiada funcion notify_status por send_message.
 	- Sigue dando error.
 
-SEGUIR CON: impresion de estado, correcto funcionamiento y liberacion de hilos.
+Jueves 24/10:
+
+	- Debugeado con valgrind --tool=helgrind. ERROR en el bloque de mutex.
+	- Revisado a medias funciones de incializacion. CONTINUAR:
+
+SEGUIR CON: revisar inicializaciones de mutex, impresion de estado, correcto funcionamiento y liberacion de hilos.
 

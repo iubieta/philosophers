@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/20 18:51:58 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/24 23:02:15 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	mutex_gr = malloc(sizeof(t_mutex_group));
 	if (!mutex_gr)
 		return (printf("PROGRAM TERMINATED"), mutex_gr = NULL, 0);
-	mutex_gr = init_mutex(mutex_gr, args);
+	mutex_gr = init_all_mutex(mutex_gr, args);
 	if (!mutex_gr)
 		return (printf("PROGRAM TERMINATED"), mutex_gr = NULL, 0);
 	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", args[0], args[1], args[2], args[3], args[4], args[5]);
@@ -40,9 +40,9 @@ int main(int argc, char **argv)
 	printf("\n");
 	
 	printf("--STARTING PROGRAM--\n\n");
-	routines = start_routines(args, table, mutex_gr);
+	routines = start_routines(args, table/*, mutex_gr*/);
 	printf("Routines started\n");
-	for (int i = 0; i < args[1]; i++) {
+	for (size_t i = 0; i < args[1]; i++) {
         pthread_join(routines[i], NULL);
     }
 	prints("PROGRAM FINISHED");
