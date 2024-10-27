@@ -37,5 +37,10 @@ Jueves 24/10:
 	- Debugeado con valgrind --tool=helgrind. ERROR en el bloque de mutex.
 	- Revisado a medias funciones de incializacion. CONTINUAR:
 
+Domingo 27/10:
+
+	- Funciones de inicializacion reescritas.
+	- Estructuras ajustadas.
+
 SEGUIR CON: revisar inicializaciones de mutex, impresion de estado, correcto funcionamiento y liberacion de hilos.
 

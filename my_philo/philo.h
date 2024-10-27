@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/24 23:03:01 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/27 20:14:12 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,21 +38,19 @@ typedef struct s_mutex_group
 {
 	pthread_mutex_t death_lock;
 	pthread_mutex_t write_lock;
-	pthread_mutex_t **forks;
+	pthread_mutex_t *forks;
 }	t_mutex_group;
 
 //MEMORY
-t_philo			**init_philos(t_philo **philo, t_mutex_group mutex_group, size_t *args);
-t_mutex_group	*init_all_mutex(t_mutex_group *mutex_group, size_t *args);
-
+int		init_all_mutex(t_mutex_group *mutex_group, size_t *args);
+int		init_philos(t_philo **table, t_mutex_group mutex_group, size_t *args);
+void	*lock_mutex(pthread_mutex_t *mutex);
 
 //UTILS
 int		ft_atoi(const char *s);
 size_t	ft_atosizet(const char *s);
 int		printe(char *str);
 int		prints(char *str);
-void 	init_mutex(void *mutex);
-void	lock_mutex(void	*mutex);
 
 
 

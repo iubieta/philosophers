@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:38 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/24 23:00:02 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/26 15:00:21 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,17 +71,4 @@ int printe(char *str)
 int prints(char *str)
 {
 	return (printf("\u2713 %s", str));
-}
-void init_mutex(void *mutex) {
-   	mutex = malloc(sizeof(pthread_mutex_t));  // Reservar memoria para el mutex
-    if (mutex != NULL) {
-        pthread_mutex_init(mutex, NULL);  // Inicializar el mutex
-    }
-}
-void lock_mutex(void *mutex) {
-    if (mutex != NULL) {  // Comprobar si el puntero no es NULL
-        pthread_mutex_lock(mutex);  // Bloquear el mutex
-    } else {
-        printe("Mutex no inicializado\n");
-    }
 }

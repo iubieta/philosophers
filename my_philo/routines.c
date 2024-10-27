@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/24 23:09:54 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/26 17:02:57 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,21 +101,11 @@ void	send_message(char *str, t_philo *philo)
 	struct timeval tv;
 	// char *status_str;
 
-	lock_mutex(philo->write_lock);
-	if (0 != pthread_mutex_lock(philo->write_lock))
-	{
-		printf("Error al bloquear el mutex");
-		return;
-	}
+	lock_mutex((philo->write_lock));
 	printf("%p locked\n", philo->write_lock);
 	gettimeofday(&tv, NULL);
     printf("\t%ld | %lu : %s\n",tv.tv_sec, philo->id, str);
 	printf("%p unlocked\n", philo->write_lock);
-	if(0!=pthread_mutex_unlock(philo->write_lock))
-	{
-		printf("Error al desbloquear el mutex\n");
-	}
-	
 }
 
 // void	notify_status(t_philo *philo)
