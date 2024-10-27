@@ -42,5 +42,5 @@ Domingo 27/10:
 	- Funciones de inicializacion reescritas.
 	- Estructuras ajustadas.
 
-SEGUIR CON: revisar inicializaciones de mutex, impresion de estado, correcto funcionamiento y liberacion de hilos.
+SEGUIR CON: revisar rutinas e impresion de estado, funcionamiento general, liberacion de hilos.
 
