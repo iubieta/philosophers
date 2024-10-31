@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/26 17:02:57 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/28 17:07:29by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@ void	*philo_routine(void *arg);
 void	notify_status(t_philo *philo);
 void	*monitor_routine(void *arg);
 void	send_message(char *str, t_philo *philo);
+
+void	*unlock_mutex(pthread_mutex_t *mutex);
+void	*lock_mutex(pthread_mutex_t *mutex);
 
 pthread_t	*start_routines(size_t *args, t_philo **philo/*, t_mutex_group *mutex_group*/)
 {
@@ -28,7 +31,7 @@ pthread_t	*start_routines(size_t *args, t_philo **philo/*, t_mutex_group *mutex_
 		return (NULL);
 	while (i < args[1])
 	{
-		pthread_create(&routines[i], NULL, philo_routine, philo[i]);
+		pthread_create(&routines[i], NULL, philo_routine, (void *)philo[i]);
 		fflush(stdout);
 		i++;
 	}
@@ -55,43 +58,51 @@ void	*monitor_routine(void *arg)
 void	*philo_routine(void *arg)
 {
 	t_philo *philo;
-	philo = (t_philo *)arg;
+	philo = arg;
 
 	send_message("Routine STARTED", philo);
 	philo->status = 1;
 	send_message("Thinking", philo);
-	//notify_status(philo);
-	while (philo->status == 1)
-	{
-		//if (pthread_mutex_lock(philo->left_fork) == 0)
-		{
-			send_message("Took left fork", philo);
-		}
-		//if (pthread_mutex_lock(philo->right_fork) == 0)
-		{
-			send_message("Took right fork", philo);
-			philo->status = 2;
-			//notify_status(philo);
-			send_message("Eating", philo);
-			usleep(philo->t_eat);
-			pthread_mutex_unlock(philo->left_fork);
-			pthread_mutex_unlock(philo->right_fork);			
-			send_message("Left left fork", philo);
-			send_message("Left right fork", philo);
-		}
-		/*
-		else
-		{
-			send_message("Left left fork", philo);
-			pthread_mutex_unlock(philo->left_fork);
-			usleep(100);
-		}
-		*/
-	}
+	usleep(1000);
+	philo->status = 2;
+	send_message("Eating", philo);
+	usleep(philo->t_eat);
 	philo->status = 3;
-	//notify_status(philo);
 	send_message("Sleeping", philo);
-	usleep(philo->t_sleep);
+	usleep(philo->t_eat);
+	
+	//notify_status(philo);
+	// while (philo->status == 1)
+	// {
+	// 	//if (pthread_mutex_lock(philo->left_fork) == 0)
+	// 	{
+	// 		send_message("Took left fork", philo);
+	// 	}
+	// 	//if (pthread_mutex_lock(philo->right_fork) == 0)
+	// 	{
+	// 		send_message("Took right fork", philo);
+	// 		philo->status = 2;
+	// 		//notify_status(philo);
+	// 		send_message("Eating", philo);
+	// 		usleep(philo->t_eat);
+	// 		pthread_mutex_unlock(philo->left_fork);
+	// 		pthread_mutex_unlock(philo->right_fork);			
+	// 		send_message("Left left fork", philo);
+	// 		send_message("Left right fork", philo);
+	// 	}
+	// 	/*
+	// 	else
+	// 	{
+	// 		send_message("Left left fork", philo);
+	// 		pthread_mutex_unlock(philo->left_fork);
+	// 		usleep(100);
+	// 	}
+	// 	*/
+	// }
+	// philo->status = 3;
+	// //notify_status(philo);
+	// send_message("Sleeping", philo);
+	// usleep(philo->t_sleep);
 	send_message("Routine FINISHED", philo);
 	return (NULL);
 }
@@ -99,13 +110,13 @@ void	*philo_routine(void *arg)
 void	send_message(char *str, t_philo *philo)
 {
 	struct timeval tv;
-	// char *status_str;
 
-	lock_mutex((philo->write_lock));
-	printf("%p locked\n", philo->write_lock);
+	lock_mutex(philo->write_lock);
+	// printf("%p locked\n", philo->write_lock);
 	gettimeofday(&tv, NULL);
     printf("\t%ld | %lu : %s\n",tv.tv_sec, philo->id, str);
-	printf("%p unlocked\n", philo->write_lock);
+	unlock_mutex(philo->write_lock);
+	// printf("%p unlocked\n", philo->write_lock);
 }
 
 // void	notify_status(t_philo *philo)
@@ -135,3 +146,33 @@ void	send_message(char *str, t_philo *philo)
 // 	}
 // 	printf("MU\n");
 // }
+
+void *lock_mutex(pthread_mutex_t *mutex)
+{
+    if (mutex == NULL)	// Comprobar si el puntero no es NULL
+	{
+        printe("Mutex no inicializado\n");
+		return (NULL);
+    }
+	if (0 != pthread_mutex_lock(mutex))  // Bloquear el mutex
+	{
+		printf("Imposible bloquear el mutex %p\n", (void *)mutex);
+		return (NULL);
+	}
+	return (mutex);
+}
+
+void *unlock_mutex(pthread_mutex_t *mutex)
+{
+    if (mutex == NULL)	
+	{
+        printe("Mutex no inicializado\n");
+		return (NULL);
+    }
+	if (0 != pthread_mutex_unlock(mutex))
+	{
+		printf("Imposible desbloquear el mutex %p\n", (void *)mutex);
+		return (NULL);
+	}
+	return (mutex);
+}

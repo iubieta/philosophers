@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:23 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/27 20:15:22 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/31 17:28:16 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,10 @@ int	init_all_mutex(t_mutex_group *mutex_group, size_t *args)
 	n = args[1];
 	if (0 != init_mutex(&(mutex_group->death_lock)))
 		return (1);
+	printf("Death lock : %p\n", &(mutex_group->death_lock));
 	if (0 != init_mutex(&(mutex_group->write_lock)))
 		return (2);
+	printf("Write lock: %p\n", &(mutex_group->write_lock));
 	if (0 != init_forks(&(mutex_group->forks), n))
 		return (3);
 	return (0);
@@ -61,13 +63,14 @@ int	init_forks(pthread_mutex_t **forks, size_t n)
 			mutex_array = NULL;
 			return (2);
 		}
+		printf("Fork %lu : %p\n", i, &mutex_array[i]);
 		i++;
 	}
 	*forks = mutex_array;
 	return(0);
 }
 
-int init_philos(t_philo **table, t_mutex_group mutex_group, size_t *args)
+int init_philos(t_philo **table, t_mutex_group *mutex_group, size_t *args)
 {
 	size_t i;
 	size_t n;
@@ -87,13 +90,13 @@ int init_philos(t_philo **table, t_mutex_group mutex_group, size_t *args)
 		philo[i].t_sleep = args[4];
 		if (args[0] == 6)
 			philo[i].n_meals = args[5];
-		philo[i].left_fork = &mutex_group.forks[i];
+		philo[i].left_fork = &mutex_group->forks[i];
 		if (i == n-1)
-			philo[i].right_fork = &mutex_group.forks[0];
+			philo[i].right_fork = &mutex_group->forks[0];
 		else
-			philo[i].right_fork = &mutex_group.forks[i+1];
-		philo[i].death_lock = &mutex_group.death_lock;
-		philo[i].write_lock = &mutex_group.write_lock;
+			philo[i].right_fork = &mutex_group->forks[i+1];
+		philo[i].death_lock = &(mutex_group->death_lock);
+		philo[i].write_lock = &(mutex_group->write_lock);
 
 		printf("\nPhilo %lu : %p", philo[i].id, &philo[i]);
 		printf("\n\tStatus : %i", philo[i].status);
@@ -111,17 +114,4 @@ int init_philos(t_philo **table, t_mutex_group mutex_group, size_t *args)
 	}
 	*table = philo;
 	return (0);	
-}
-
-void *lock_mutex(pthread_mutex_t *mutex) {
-    if (mutex == NULL)	// Comprobar si el puntero no es NULL
-	{
-        printe("Mutex no inicializado\n");
-    }
-	if (0 != pthread_mutex_lock(mutex))  // Bloquear el mutex
-	{
-		printf("Imposible bloquear el mutex %p\n", (void *)mutex);
-		return (NULL);
-	}
-	return (mutex);
 }

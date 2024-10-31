@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/27 20:14:12 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/10/31 17:21:09 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ typedef struct s_mutex_group
 
 //MEMORY
 int		init_all_mutex(t_mutex_group *mutex_group, size_t *args);
-int		init_philos(t_philo **table, t_mutex_group mutex_group, size_t *args);
+int		init_philos(t_philo **table, t_mutex_group *mutex_group, size_t *args);
 void	*lock_mutex(pthread_mutex_t *mutex);
 
 //UTILS
