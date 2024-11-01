@@ -42,5 +42,12 @@ Domingo 27/10:
 	- Funciones de inicializacion reescritas.
 	- Estructuras ajustadas.
 
-SEGUIR CON: revisar rutinas e impresion de estado, funcionamiento general, liberacion de hilos.
+Viernes 1/11:
+
+	- Problema con los mutex e hilos solucionado.
+	- Rutina de los filosofos funcionando sin contemplar la muerte.
+	- Impresion de logs corregida. No da errores y el timestamp esta en ms.
+
+SEGUIR CON: rutina de monitorizacion y funcionamiento de death mutex, gestion de muerte de un filosofo,
+	liberacion de hilos y memoria.
 

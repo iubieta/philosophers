@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:23 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/31 17:28:16 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/01 17:07:49 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,10 +84,10 @@ int init_philos(t_philo **table, t_mutex_group *mutex_group, size_t *args)
 	while (i < n)
 	{
 		philo[i].id = i;
-		philo[i].status = 0;
-		philo[i].t_die = args[2];
-		philo[i].t_eat= args[3];
-		philo[i].t_sleep = args[4];
+		philo[i].status = 1;
+		philo[i].t_die = args[2] * 1000;
+		philo[i].t_eat= args[3] * 1000;
+		philo[i].t_sleep = args[4] * 1000;
 		if (args[0] == 6)
 			philo[i].n_meals = args[5];
 		philo[i].left_fork = &mutex_group->forks[i];

@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/31 17:21:09 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/01 16:18:01 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,6 @@ int		prints(char *str);
 
 
 //MAIN FUNCTIONS
-pthread_t	*start_routines(size_t *args, t_philo **philo/*, t_mutex_group *mutex_group*/);
+pthread_t	*start_routines(size_t *args, t_philo *philo);
 
 #endif
