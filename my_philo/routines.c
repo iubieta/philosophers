@@ -12,13 +12,6 @@
 
 #include "philo.h"
 
-void	*monitor_routine(void *arg);
-void	*philo_routine(void *arg);
-void	eat(t_philo *philo);
-void	send_message(char *str, t_philo *philo);
-
-void	*lock_mutex(pthread_mutex_t *mutex);
-void	*unlock_mutex(pthread_mutex_t *mutex);
 
 pthread_t	*start_routines(size_t *args, t_philo *philo)
 {
@@ -58,7 +51,6 @@ void	*philo_routine(void *arg)
 	size_t i; 
 
 	philo = (t_philo *)arg;
-	send_message("Routine STARTED", philo);
 	i = 0;
 	while (i < philo->n_meals && philo->status != 0)
 	{
@@ -83,6 +75,7 @@ void	eat(t_philo *philo)
 		lock_mutex(philo->right_fork);
 		send_message("Took right fork", philo);
 		philo->status = 2;
+		update_last_meal(philo);
 		send_message("Eating", philo);
 		usleep(philo->t_eat);
 	}
@@ -93,6 +86,7 @@ void	eat(t_philo *philo)
 		lock_mutex(philo->left_fork);
 		send_message("Took left fork", philo);
 		philo->status = 2;
+		update_last_meal(philo);
 		send_message("Eating", philo);
 		usleep(philo->t_eat);
 	}
@@ -100,44 +94,14 @@ void	eat(t_philo *philo)
 	unlock_mutex(philo->right_fork);
 }
 
-void	send_message(char *str, t_philo *philo)
+void	update_last_meal(t_philo *philo)
 {
 	struct timeval	tv;
 	long			millis;
 
-	lock_mutex(philo->write_lock);
+	lock_mutex(philo->death_lock);
 	gettimeofday(&tv, NULL);
 	millis = tv.tv_sec * 1000 + tv.tv_usec / 1000;
-    printf("\t%ld | %lu : %s\n", millis, philo->id, str);
-	unlock_mutex(philo->write_lock);
-}
-
-void *lock_mutex(pthread_mutex_t *mutex)
-{
-    if (mutex == NULL)	// Comprobar si el puntero no es NULL
-	{
-        printe("Mutex no inicializado\n");
-		return (NULL);
-    }
-	if (0 != pthread_mutex_lock(mutex))  // Bloquear el mutex
-	{
-		printf("Imposible bloquear el mutex %p\n", (void *)mutex);
-		return (NULL);
-	}
-	return (mutex);
-}
-
-void *unlock_mutex(pthread_mutex_t *mutex)
-{
-    if (mutex == NULL)	
-	{
-        printe("Mutex no inicializado\n");
-		return (NULL);
-    }
-	if (0 != pthread_mutex_unlock(mutex))
-	{
-		printf("Imposible desbloquear el mutex %p\n", (void *)mutex);
-		return (NULL);
-	}
-	return (mutex);
+	philo->last_meal = millis;
+	unlock_mutex(philo->death_lock);
 }

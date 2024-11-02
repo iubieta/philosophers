@@ -48,6 +48,12 @@ Viernes 1/11:
 	- Rutina de los filosofos funcionando sin contemplar la muerte.
 	- Impresion de logs corregida. No da errores y el timestamp esta en ms.
 
+Sabado 2/11:
+
+	- Archivos y funciones reordenados.
+	- Pequeños cambios en la impresion en pantalla.
+	- Añadida propiedad last meal y funcion para actualizarla.
+
 SEGUIR CON: rutina de monitorizacion y funcionamiento de death mutex, gestion de muerte de un filosofo,
 	liberacion de hilos y memoria.
 
