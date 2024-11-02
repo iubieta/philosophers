@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 14:24:39 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/02 19:20:14 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,8 @@
 typedef struct s_philo
 {
 	size_t	id;
-	int		status; // 1:Thinking, 2:Eating, 3:Sleeping, 0:Dead.
+	int		status; // 1:Thinking, 2:Eating, 3:Sleeping, 4:Finished, 0:Dead.
+	size_t	n_philos;
 	size_t	t_die;
 	size_t	t_eat;
 	size_t	t_sleep;
@@ -57,14 +58,20 @@ void	send_message(char *str, t_philo *philo);
 
 // ROUTINES
 pthread_t	*start_routines(size_t *args, t_philo *philo);
-void		*monitor_routine(void *arg);
 void		*philo_routine(void *arg);
 void		eat(t_philo *philo);
 void		send_message(char *str, t_philo *philo);
+void		update_last_meal(t_philo *philo);
+
+// MONITOR
+void	*monitor_routine(void *arg);
+int		dead_philo(t_philo *philo);
+int		all_philos_finished(t_philo *philo);
 
 // UTILS
 int		ft_atoi(const char *s);
 size_t	ft_atosizet(const char *s);
+long	millis();
 int		printe(char *str);
 int		prints(char *str);
 

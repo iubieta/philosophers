@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:38 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 14:24:04 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/02 18:41:53 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,15 @@ size_t	ft_atosizet(const char *s)
 	}
 	i++;
 	return (number);
+}
+long	millis()
+{
+	struct timeval	tv;
+	long			millis;
+
+	gettimeofday(&tv, NULL);
+	millis = tv.tv_sec * 1000 + tv.tv_usec / 1000;
+	return (millis);
 }
 
 int printe(char *str)

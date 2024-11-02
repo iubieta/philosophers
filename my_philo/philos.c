@@ -37,11 +37,15 @@ void	fill_philo_data(t_philo *philo, size_t i, size_t *args, t_mutex_group *mute
 {
 	philo->id = i;
 	philo->status = 1;
-	philo->t_die = args[2] * 1000;
-	philo->t_eat= args[3] * 1000;
-	philo->t_sleep = args[4] * 1000;
+	philo->n_philos = args[1];
+	philo->t_die = args[2];
+	philo->t_eat= args[3];
+	philo->t_sleep = args[4];
+	philo->last_meal = millis();
 	if (args[0] == 6)
 		philo->n_meals = args[5];
+	else
+		philo->n_meals = 0;
 	philo->left_fork = &mutex_group->forks[i];
 	if (i == args[1]-1)
 		philo->right_fork = &mutex_group->forks[0];
@@ -54,9 +58,9 @@ void	fill_philo_data(t_philo *philo, size_t i, size_t *args, t_mutex_group *mute
 void	print_philo_data(t_philo philo)
 {
 	printf("\n\tStatus : %i", philo.status);
-	printf("\n\tTime to die : %lu ms", philo.t_die/1000);
-	printf("\n\tTime to eat : %lu ms", philo.t_eat/1000);
-	printf("\n\tTime to sleep : %lu ms", philo.t_sleep/1000);
+	printf("\n\tTime to die : %lu ms", philo.t_die);
+	printf("\n\tTime to eat : %lu ms", philo.t_eat);
+	printf("\n\tTime to sleep : %lu ms", philo.t_sleep);
 	printf("\n\tNumber of meals : %lu", philo.n_meals);
 	printf("\n\tLeft fork : %p", philo.left_fork);
 	printf("\n\tRight fork : %p", philo.right_fork);
@@ -67,12 +71,7 @@ void	print_philo_data(t_philo philo)
 
 void	send_message(char *str, t_philo *philo)
 {
-	struct timeval	tv;
-	long			millis;
-
-	gettimeofday(&tv, NULL);
-	millis = tv.tv_sec * 1000 + tv.tv_usec / 1000;
 	lock_mutex(philo->write_lock);
-    printf("  %ld  |  Philo %lu  :  %s\n", millis, philo->id, str);
+    printf("  %ld  |  Philo %lu  :  %s\n", millis(), philo->id, str);
 	unlock_mutex(philo->write_lock);
 }

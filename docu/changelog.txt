@@ -53,7 +53,11 @@ Sabado 2/11:
 	- Archivos y funciones reordenados.
 	- Pequeños cambios en la impresion en pantalla.
 	- Añadida propiedad last meal y funcion para actualizarla.
+	- Creada rutina de monitorizacion.
+	- Cambiadas las propiedades del bucle de la rutina de los filosofos.
+		Ahora contempla que no haya un limite de comidas.
+	- Creada funcion millis()
+	- Programa "funcionando". Comprobar casos de Error.
 
-SEGUIR CON: rutina de monitorizacion y funcionamiento de death mutex, gestion de muerte de un filosofo,
-	liberacion de hilos y memoria.
+SEGUIR CON: liberacion de hilos y memoria, y comprobar correcto funcionamiento.
 
