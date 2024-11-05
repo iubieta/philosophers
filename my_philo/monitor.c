@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:56:50 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 20:06:02 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/02 19:29:35ieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	dead_philo(t_philo *philo)
 	while(i < philo->n_philos)
 	{
 		lock_mutex(philo[i].death_lock);
-		if (philo[i].status != 4 && millis() - philo[i].last_meal > philo->t_die)
+		if (philo[i].status != 4 && millis() - philo[i].last_meal > philo->t_die + 2)
 		{
 			philo[i].status = 0;
 			send_message("DIED", &philo[i]);
@@ -37,7 +37,7 @@ int	dead_philo(t_philo *philo)
 		}
 		unlock_mutex(philo[i].death_lock);
 		i++;
-		usleep(100);
+		usleep(1000);
 	}
 	return (0);
 }

@@ -80,4 +80,6 @@ void	eat(t_philo *philo)
 	usleep(philo->t_eat * 1000);
 	unlock_mutex(philo->left_fork);
 	unlock_mutex(philo->right_fork);
+	send_message("Left left fork", philo);
+	send_message("Left right fork", philo);
 }

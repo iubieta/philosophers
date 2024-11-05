@@ -59,5 +59,10 @@ Sabado 2/11:
 	- Creada funcion millis()
 	- Programa "funcionando". Comprobar casos de Error.
 
+Martes 5/11:
+
+	- Añadido margen de 2ms a la comprobacion de muerte para compensar el fallo de
+		sincronizacion o de calculo de la funcion millis().
+
 SEGUIR CON: liberacion de hilos y memoria, y comprobar correcto funcionamiento.
 
