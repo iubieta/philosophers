@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 19:06:15 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:37:19 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 int	check_args(size_t **args, int argc, char **argv);
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	size_t			*args;
-	t_philo 		*table;
-	t_mutex_group 	mutex_gr;
+	t_philo			*table;
+	t_mutex_group	mutex_gr;
 	pthread_t		*routines;
 
 	printf("\n");
 	if (0 != check_args(&args, argc, argv))
 		return (printe("PROGRAM TERMINATED\n"), 0);
-	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", args[0], args[1], args[2], args[3], args[4], args[5]);
+	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", args[0], args[1],
+		args[2], args[3], args[4], args[5]);
 	printf("\n--TABLE INFO--\n\n");
 	printf("Number of philosophers: %lu\n", args[1]);
 	if (0 != init_all_mutex(&mutex_gr, args))
 		return (printe("PROGRAM TERMINATED\n"), 0);
 	init_philos(&table, &mutex_gr, args);
 	printf("\n");
-
 	printf("--STARTING PROGRAM--\n\n");
 	routines = start_routines(args, table);
 	pthread_join(routines[args[1]], NULL);
@@ -44,6 +44,7 @@ int	check_args(size_t **args, int argc, char **argv)
 {
 	int		i;
 	size_t	*array;
+
 	if (argc < 5 || argc > 6)
 		return (printe("Check your arguments\n"), 1);
 	array = malloc(sizeof(size_t) * 6);

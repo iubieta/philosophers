@@ -8,7 +8,8 @@ Sabado 14/09:
 
 Domingo 15/09:
 
-	- Checkeo de argumentos añadido, atoi cambiado a tipo size_t, creada variable args para no repetir atois.
+	- Checkeo de argumentos añadido, atoi cambiado a tipo size_t, 
+		creada variable args para no repetir atois.
 
 Miercoles 18/09:
 
@@ -21,7 +22,6 @@ Jueves 10/10:
 
 	- Hilos iniciados correctamente.
 	- Fallo con el mutex de impresion.
-
 
 Sabado 19/10:
 

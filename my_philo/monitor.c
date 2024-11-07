@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:56:50 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 19:29:35ieta-         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:20:05 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	*monitor_routine(void *arg)
 	t_philo	*philo;
 
 	philo = (t_philo *)arg;
-	while (!dead_philo(philo) && !all_philos_finished(philo));
+	while (!dead_philo(philo) && !all_philos_finished(philo))
+		;
 	return (NULL);
 }
 
@@ -26,14 +27,15 @@ int	dead_philo(t_philo *philo)
 	size_t	i;
 
 	i = 0;
-	while(i < philo->n_philos)
+	while (i < philo->n_philos)
 	{
 		lock_mutex(philo[i].death_lock);
-		if (philo[i].status != 4 && millis() - philo[i].last_meal > philo->t_die + 2)
+		if (philo[i].status != 4
+			&& millis() - philo[i].last_meal > philo->t_die + 2)
 		{
 			philo[i].status = 0;
 			send_message("DIED", &philo[i]);
-			return(1);
+			return (1);
 		}
 		unlock_mutex(philo[i].death_lock);
 		i++;
@@ -42,10 +44,10 @@ int	dead_philo(t_philo *philo)
 	return (0);
 }
 
-int all_philos_finished(t_philo *philo)
+int	all_philos_finished(t_philo *philo)
 {
-	size_t i;
-	size_t finished;
+	size_t	i;
+	size_t	finished;
 
 	i = 0;
 	finished = 0;

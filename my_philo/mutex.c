@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:23 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 14:13:27 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:03:37 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	init_all_mutex(t_mutex_group *mutex_group, size_t *args)
 {
-	size_t n;
+	size_t	n;
 
 	n = args[1];
 	if (0 != init_mutex(&(mutex_group->death_lock)))
@@ -30,11 +30,11 @@ int	init_all_mutex(t_mutex_group *mutex_group, size_t *args)
 
 int	init_forks(pthread_mutex_t **forks, size_t n)
 {
-	size_t	i;
-	pthread_mutex_t *mutex_array;
-	
+	size_t			i;
+	pthread_mutex_t	*mutex_array;
+
 	i = 0;
-	mutex_array  = malloc(sizeof(pthread_mutex_t) * n);
+	mutex_array = malloc(sizeof(pthread_mutex_t) * n);
 	if (!mutex_array)
 		return (printe("ERROR initializing forks mutex array\n"), 1);
 	while (i < n)
@@ -54,12 +54,12 @@ int	init_forks(pthread_mutex_t **forks, size_t n)
 		i++;
 	}
 	*forks = mutex_array;
-	return(0);
+	return (0);
 }
 
 int	init_mutex(pthread_mutex_t *mutex)
 {
-	if (0 != pthread_mutex_init(mutex, NULL))  // Inicializar el mutex
+	if (0 != pthread_mutex_init(mutex, NULL))
 	{
 		printe("ERROR initializing MUTEX\n");
 		return (-1);
@@ -67,13 +67,13 @@ int	init_mutex(pthread_mutex_t *mutex)
 	return (0);
 }
 
-void *lock_mutex(pthread_mutex_t *mutex)
+void	*lock_mutex(pthread_mutex_t *mutex)
 {
-    if (mutex == NULL)
+	if (mutex == NULL)
 	{
-        printe("Mutex no inicializado\n");
+		printe("Mutex no inicializado\n");
 		return (NULL);
-    }
+	}
 	if (0 != pthread_mutex_lock(mutex))
 	{
 		printf("Imposible bloquear el mutex %p\n", (void *)mutex);
@@ -82,13 +82,13 @@ void *lock_mutex(pthread_mutex_t *mutex)
 	return (mutex);
 }
 
-void *unlock_mutex(pthread_mutex_t *mutex)
+void	*unlock_mutex(pthread_mutex_t *mutex)
 {
-    if (mutex == NULL)	
+	if (mutex == NULL)
 	{
-        printe("Mutex no inicializado\n");
+		printe("Mutex no inicializado\n");
 		return (NULL);
-    }
+	}
 	if (0 != pthread_mutex_unlock(mutex))
 	{
 		printf("Imposible desbloquear el mutex %p\n", (void *)mutex);

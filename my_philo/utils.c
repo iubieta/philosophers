@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:38 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 18:41:53 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:35:24 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,8 @@ size_t	ft_atosizet(const char *s)
 	i++;
 	return (number);
 }
-long	millis()
+
+long	millis(void)
 {
 	struct timeval	tv;
 	long			millis;
@@ -72,12 +73,12 @@ long	millis()
 	return (millis);
 }
 
-int printe(char *str)
+int	printe(char *str)
 {
 	return (printf("\u2717 ERROR: %s", str));
 }
 
-int prints(char *str)
+int	prints(char *str)
 {
 	return (printf("\u2713 %s", str));
 }

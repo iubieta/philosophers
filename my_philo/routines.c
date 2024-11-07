@@ -6,16 +6,15 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/10/28 17:07:29by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:16:05 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-
 pthread_t	*start_routines(size_t *args, t_philo *philo)
 {
-	size_t i;
+	size_t		i;
 	pthread_t	*routines;
 
 	i = 0;
@@ -25,18 +24,17 @@ pthread_t	*start_routines(size_t *args, t_philo *philo)
 	while (i < args[1])
 	{
 		if (&philo[i] != NULL)
-			pthread_create(&routines[i], NULL, philo_routine, (void *)&philo[i]);
+			pthread_create(&routines[i], NULL, philo_routine, &philo[i]);
 		i++;
 	}
 	pthread_create(&routines[i], NULL, monitor_routine, philo);
 	return (routines);
 }
 
-
 void	*philo_routine(void *arg)
 {
-	t_philo *philo;
-	size_t i; 
+	size_t	i;
+	t_philo	*philo;
 
 	philo = (t_philo *)arg;
 	i = 0;

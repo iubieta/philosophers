@@ -6,53 +6,53 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:01:35 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/02 14:24:19by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:12:50 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-
-int init_philos(t_philo **table, t_mutex_group *mutex_group, size_t *args)
+int	init_philos(t_philo **table, t_mutex_group *mutex_group, size_t *args)
 {
-	size_t i;
-	t_philo *philo;
-	
+	size_t	i;
+	t_philo	*philo;
+
 	i = 0;
 	philo = malloc(sizeof(t_philo) * args[1]);
 	if (!philo)
 		return (printe("ERROR initializing philosopher array\n"), 1);
 	while (i < args[1])
 	{
-		fill_philo_data(&philo[i], i, args, mutex_group);
+		fill_philo(&philo[i], i, args, mutex_group);
 		printf("\nPhilo %lu : %p", philo[i].id, &philo[i]);
 		print_philo_data(philo[i]);
 		i++;
 	}
 	*table = philo;
-	return (0);	
+	return (0);
 }
 
-void	fill_philo_data(t_philo *philo, size_t i, size_t *args, t_mutex_group *mutex_group)
+void	fill_philo(t_philo *philo, size_t i, size_t *args,
+	t_mutex_group *mutex_gr)
 {
 	philo->id = i;
 	philo->status = 1;
 	philo->n_philos = args[1];
 	philo->t_die = args[2];
-	philo->t_eat= args[3];
+	philo->t_eat = args[3];
 	philo->t_sleep = args[4];
 	philo->last_meal = millis();
 	if (args[0] == 6)
 		philo->n_meals = args[5];
 	else
 		philo->n_meals = 0;
-	philo->left_fork = &mutex_group->forks[i];
-	if (i == args[1]-1)
-		philo->right_fork = &mutex_group->forks[0];
+	philo->left_fork = &mutex_gr->forks[i];
+	if (i == args[1] - 1)
+		philo->right_fork = &mutex_gr->forks[0];
 	else
-		philo->right_fork = &mutex_group->forks[i+1];
-	philo->death_lock = &(mutex_group->death_lock);
-	philo->write_lock = &(mutex_group->write_lock);
+		philo->right_fork = &mutex_gr->forks[i + 1];
+	philo->death_lock = &(mutex_gr->death_lock);
+	philo->write_lock = &(mutex_gr->write_lock);
 }
 
 void	print_philo_data(t_philo philo)
@@ -72,6 +72,6 @@ void	print_philo_data(t_philo philo)
 void	send_message(char *str, t_philo *philo)
 {
 	lock_mutex(philo->write_lock);
-    printf("  %ld  |  Philo %lu  :  %s\n", millis(), philo->id, str);
+	printf("  %ld  |  Philo %lu  :  %s\n", millis(), philo->id, str);
 	unlock_mutex(philo->write_lock);
 }
