@@ -64,5 +64,16 @@ Martes 5/11:
 	- Añadido margen de 2ms a la comprobacion de muerte para compensar el fallo de
 		sincronizacion o de calculo de la funcion millis().
 
-SEGUIR CON: liberacion de hilos y memoria, y comprobar correcto funcionamiento.
+Jueves 7/11:
+
+	- Errores de norminette corregidos.
+
+Sabado 16/11:
+
+	- Creada estructura program para almacenar el rest de estructuras.
+	- Cambiado ligeramente el main (algunos prints y join a todos los hilos)
+	- Forzada la finalizacion de los hilos.
+
+SEGUIR CON: liberacion de memoria, norminette, comprobar correcto funcionamiento
+	(la rutina que muere deberia dejar de imprimir instantaneamente??).
 

@@ -3,44 +3,44 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/07 20:37:19 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:28:47 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	check_args(size_t **args, int argc, char **argv);
+int	check_args(t_program *program, int argc, char **argv);
 
 int	main(int argc, char **argv)
 {
-	size_t			*args;
-	t_philo			*table;
-	t_mutex_group	mutex_gr;
-	pthread_t		*routines;
-
+	t_program	program;
+	
 	printf("\n");
-	if (0 != check_args(&args, argc, argv))
-		return (printe("PROGRAM TERMINATED\n"), 0);
-	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", args[0], args[1],
-		args[2], args[3], args[4], args[5]);
+	if (0 != check_args(&program, argc, argv))
+		return (printe("PROGRAM TERMINATED\n"), 1);
 	printf("\n--TABLE INFO--\n\n");
-	printf("Number of philosophers: %lu\n", args[1]);
-	if (0 != init_all_mutex(&mutex_gr, args))
+	printf("Number of philosophers: %lu\n", program.args[1]);
+	if (0 != init_all_mutex(&program.mutex_gr, program.args))
 		return (printe("PROGRAM TERMINATED\n"), 0);
-	init_philos(&table, &mutex_gr, args);
+	init_philos(&program.table, &program.mutex_gr, program.args);
 	printf("\n");
 	printf("--STARTING PROGRAM--\n\n");
-	routines = start_routines(args, table);
-	pthread_join(routines[args[1]], NULL);
+	program.routines = start_routines(program.args, program.table);
+	size_t i = 0;
+	while (i <= program.args[1])
+	{
+		pthread_join(program.routines[i], NULL);
+		i++;
+	}
 	printf("\n");
 	prints("PROGRAM FINISHED");
 	return (0);
 }
 
-int	check_args(size_t **args, int argc, char **argv)
+int	check_args(t_program *program, int argc, char **argv)
 {
 	int		i;
 	size_t	*array;
@@ -55,8 +55,13 @@ int	check_args(size_t **args, int argc, char **argv)
 	while (i < argc)
 	{
 		array[i] = ft_atosizet(argv[i]);
+		if (array[i] <= 0)
+			return (printe("Invalid argument\n"));
 		i++;
 	}
-	*args = array;
+	program->args= array;
+	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", program->args[0], 
+		program->args[1], program->args[2], program->args[3], program->args[4], 
+		program->args[5]);
 	return (0);
 }

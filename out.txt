@@ -1,0 +1,125 @@
+
+ARGS: 5 , 5 , 400 , 200 , 200 , 0
+
+--TABLE INFO--
+
+Number of philosophers: 5
+Death lock : 0x7ffe87063480
+Write lock: 0x7ffe870634a8
+Fork 0 : 0x55ddab3d02f0
+Fork 1 : 0x55ddab3d0318
+Fork 2 : 0x55ddab3d0340
+Fork 3 : 0x55ddab3d0368
+Fork 4 : 0x55ddab3d0390
+
+Philo 0 : 0x55ddab3d03c0
+	Status : 1
+	Time to die : 400 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x55ddab3d02f0
+	Right fork : 0x55ddab3d0318
+	Death lock : 0x7ffe87063480
+	Write lock : 0x7ffe870634a8
+
+Philo 1 : 0x55ddab3d0420
+	Status : 1
+	Time to die : 400 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x55ddab3d0318
+	Right fork : 0x55ddab3d0340
+	Death lock : 0x7ffe87063480
+	Write lock : 0x7ffe870634a8
+
+Philo 2 : 0x55ddab3d0480
+	Status : 1
+	Time to die : 400 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x55ddab3d0340
+	Right fork : 0x55ddab3d0368
+	Death lock : 0x7ffe87063480
+	Write lock : 0x7ffe870634a8
+
+Philo 3 : 0x55ddab3d04e0
+	Status : 1
+	Time to die : 400 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x55ddab3d0368
+	Right fork : 0x55ddab3d0390
+	Death lock : 0x7ffe87063480
+	Write lock : 0x7ffe870634a8
+
+Philo 4 : 0x55ddab3d0540
+	Status : 1
+	Time to die : 400 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x55ddab3d0390
+	Right fork : 0x55ddab3d02f0
+	Death lock : 0x7ffe87063480
+	Write lock : 0x7ffe870634a8
+
+--STARTING PROGRAM--
+
+  1731781568544  |  Philo 0  :  Thinking
+  1731781568544  |  Philo 0  :  Took left fork
+  1731781568544  |  Philo 0  :  Took right fork
+  1731781568544  |  Philo 0  :  Eating
+  1731781568544  |  Philo 1  :  Thinking
+  1731781568544  |  Philo 1  :  Took right fork
+  1731781568544  |  Philo 2  :  Thinking
+  1731781568544  |  Philo 3  :  Thinking
+  1731781568544  |  Philo 3  :  Took right fork
+  1731781568544  |  Philo 3  :  Took left fork
+  1731781568544  |  Philo 3  :  Eating
+  1731781568544  |  Philo 4  :  Thinking
+  1731781568744  |  Philo 3  :  Left left fork
+  1731781568744  |  Philo 3  :  Left right fork
+  1731781568744  |  Philo 3  :  Sleeping
+  1731781568744  |  Philo 4  :  Took left fork
+  1731781568746  |  Philo 0  :  Left left fork
+  1731781568746  |  Philo 0  :  Left right fork
+  1731781568746  |  Philo 0  :  Sleeping
+  1731781568746  |  Philo 4  :  Took right fork
+  1731781568746  |  Philo 4  :  Eating
+  1731781568746  |  Philo 1  :  Took left fork
+  1731781568746  |  Philo 1  :  Eating
+  1731781568945  |  Philo 3  :  Thinking
+  1731781568946  |  Philo 1  :  Left left fork
+  1731781568946  |  Philo 1  :  Left right fork
+  1731781568946  |  Philo 1  :  Sleeping
+  1731781568946  |  Philo 2  :  Took left fork
+  1731781568946  |  Philo 2  :  Took right fork
+  1731781568946  |  Philo 2  :  Eating
+  1731781568947  |  Philo 4  :  Left left fork
+  1731781568947  |  Philo 4  :  Left right fork
+  1731781568947  |  Philo 4  :  Sleeping
+  1731781568947  |  Philo 3  :  Took right fork
+  1731781568948  |  Philo 0  :  Thinking
+  1731781568948  |  Philo 0  :  Took left fork
+  1731781568948  |  Philo 0  :  Took right fork
+  1731781568948  |  Philo 0  :  Eating
+  1731781568952  |  Philo 3  :  DIED
+  1731781569146  |  Philo 2  :  Left left fork
+  1731781569146  |  Philo 2  :  Left right fork
+  1731781569146  |  Philo 2  :  Routine FINISHED
+  1731781569146  |  Philo 3  :  Took left fork
+  1731781569146  |  Philo 3  :  Eating
+  1731781569147  |  Philo 1  :  Routine FINISHED
+  1731781569147  |  Philo 4  :  Routine FINISHED
+  1731781569148  |  Philo 0  :  Left left fork
+  1731781569148  |  Philo 0  :  Left right fork
+  1731781569148  |  Philo 0  :  Routine FINISHED
+  1731781569348  |  Philo 3  :  Left left fork
+  1731781569348  |  Philo 3  :  Left right fork
+  1731781569348  |  Philo 3  :  Routine FINISHED
+
+✓ PROGRAM FINISHED

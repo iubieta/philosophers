@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   monitor.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:56:50 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/07 20:20:05 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:19:49 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@ void	*monitor_routine(void *arg)
 	t_philo	*philo;
 
 	philo = (t_philo *)arg;
-	while (!dead_philo(philo) && !all_philos_finished(philo))
-		;
+	while (!all_philos_finished(philo))
+	{
+		if (dead_philo(philo))
+			force_philos_end(philo);
+	}
 	return (NULL);
 }
 
@@ -27,7 +30,7 @@ int	dead_philo(t_philo *philo)
 	size_t	i;
 
 	i = 0;
-	while (i < philo->n_philos)
+	while (i < philo->n_philos && philo->death_flag == 0)
 	{
 		lock_mutex(philo[i].death_lock);
 		if (philo[i].status != 4
@@ -60,4 +63,17 @@ int	all_philos_finished(t_philo *philo)
 	if (finished == philo->n_philos)
 		return (1);
 	return (0);
+}
+
+void force_philos_end(t_philo *philo)
+{
+	size_t i;
+	
+	i = 0;
+	while (i < philo[0].n_philos)
+	{
+		philo[i].death_flag = 1;
+		i++;
+	}
+	unlock_mutex(philo[0].death_lock);
 }

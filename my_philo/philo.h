@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/07 20:33:40 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:16:46 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct s_philo
 {
 	size_t			id;
 	int				status;
+	int				death_flag;
 	size_t			n_philos;
 	size_t			t_die;
 	size_t			t_eat;
@@ -42,6 +43,14 @@ typedef struct s_mutex_group
 	pthread_mutex_t	write_lock;
 	pthread_mutex_t	*forks;
 }	t_mutex_group;
+
+typedef struct s_program
+{
+	size_t			*args;
+	t_philo			*table;
+	t_mutex_group	mutex_gr;
+	pthread_t		*routines;
+}	t_program;
 
 // MUTEX
 int			init_all_mutex(t_mutex_group *mutex_group, size_t *args);
@@ -68,6 +77,7 @@ void		send_message(char *str, t_philo *philo);
 void		*monitor_routine(void *arg);
 int			dead_philo(t_philo *philo);
 int			all_philos_finished(t_philo *philo);
+void 		force_philos_end(t_philo *philo);
 
 // UTILS
 int			ft_atoi(const char *s);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   routines.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/07 20:16:05 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:26:02 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ pthread_t	*start_routines(size_t *args, t_philo *philo)
 		return (NULL);
 	while (i < args[1])
 	{
-		if (&philo[i] != NULL)
-			pthread_create(&routines[i], NULL, philo_routine, &philo[i]);
+		pthread_create(&routines[i], NULL, philo_routine, &philo[i]);
 		i++;
 	}
 	pthread_create(&routines[i], NULL, monitor_routine, philo);
@@ -39,14 +38,20 @@ void	*philo_routine(void *arg)
 	philo = (t_philo *)arg;
 	i = 0;
 	philo->last_meal = millis();
-	while (philo->n_meals == 0 || i < philo->n_meals)
+	while (philo->death_flag == 0 && (philo->n_meals == 0 || i < philo->n_meals))
 	{
-		philo->status = 1;
-		send_message("Thinking", philo);
+		if (philo->death_flag != 1)
+		{
+			philo->status = 1;
+			send_message("Thinking", philo);
+		}
 		eat(philo);
-		philo->status = 3;
-		send_message("Sleeping", philo);
-		usleep(philo->t_sleep * 1000);
+		if (philo->death_flag != 1)
+		{
+			philo->status = 3;
+			send_message("Sleeping", philo);
+			usleep(philo->t_sleep * 1000);
+		}
 		i++;
 	}
 	send_message("Routine FINISHED", philo);
@@ -56,6 +61,8 @@ void	*philo_routine(void *arg)
 
 void	eat(t_philo *philo)
 {
+	if (philo->death_flag == 1)
+		return ;
 	if (philo->id % 2 == 0)
 	{
 		lock_mutex(philo->left_fork);

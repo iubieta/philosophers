@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mutex.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:23 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/07 20:03:37 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/16 18:13:54 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,12 +71,12 @@ void	*lock_mutex(pthread_mutex_t *mutex)
 {
 	if (mutex == NULL)
 	{
-		printe("Mutex no inicializado\n");
+		printe("Mutex not initiated\n");
 		return (NULL);
 	}
 	if (0 != pthread_mutex_lock(mutex))
 	{
-		printf("Imposible bloquear el mutex %p\n", (void *)mutex);
+		printf("Imposible to lock mutex %p\n", (void *)mutex);
 		return (NULL);
 	}
 	return (mutex);
@@ -86,12 +86,12 @@ void	*unlock_mutex(pthread_mutex_t *mutex)
 {
 	if (mutex == NULL)
 	{
-		printe("Mutex no inicializado\n");
+		printe("Mutex not initiated\n");
 		return (NULL);
 	}
 	if (0 != pthread_mutex_unlock(mutex))
 	{
-		printf("Imposible desbloquear el mutex %p\n", (void *)mutex);
+		printf("Imposible to unlock mutex %p\n", (void *)mutex);
 		return (NULL);
 	}
 	return (mutex);

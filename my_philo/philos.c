@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philos.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:01:35 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/07 20:12:50 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/11/16 19:17:14 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ void	fill_philo(t_philo *philo, size_t i, size_t *args,
 {
 	philo->id = i;
 	philo->status = 1;
+	philo->death_flag = 0;
 	philo->n_philos = args[1];
 	philo->t_die = args[2];
 	philo->t_eat = args[3];
