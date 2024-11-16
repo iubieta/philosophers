@@ -76,4 +76,3 @@ Sabado 16/11:
 
 SEGUIR CON: liberacion de memoria, norminette, comprobar correcto funcionamiento
 	(la rutina que muere deberia dejar de imprimir instantaneamente??).
-
