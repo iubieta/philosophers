@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 17:56:50 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/16 19:19:49 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/22 13:16:12 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,12 +56,15 @@ int	all_philos_finished(t_philo *philo)
 	finished = 0;
 	while (i < philo->n_philos)
 	{
+		lock_mutex(philo->death_lock);
 		if (philo[i].status == 4)
 			finished++;
+		unlock_mutex(philo->death_lock);
 		i++;
 	}
 	if (finished == philo->n_philos)
 		return (1);
+	usleep(1000);
 	return (0);
 }
 

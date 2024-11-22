@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/16 19:26:02 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/22 13:23:04y iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,20 +42,20 @@ void	*philo_routine(void *arg)
 	{
 		if (philo->death_flag != 1)
 		{
-			philo->status = 1;
+			change_status(philo, 1);
 			send_message("Thinking", philo);
 		}
 		eat(philo);
 		if (philo->death_flag != 1)
 		{
-			philo->status = 3;
+			change_status(philo, 3);
 			send_message("Sleeping", philo);
 			usleep(philo->t_sleep * 1000);
 		}
 		i++;
 	}
 	send_message("Routine FINISHED", philo);
-	philo->status = 4;
+	change_status(philo, 4);
 	return (NULL);
 }
 
@@ -87,4 +87,11 @@ void	eat(t_philo *philo)
 	unlock_mutex(philo->right_fork);
 	send_message("Left left fork", philo);
 	send_message("Left right fork", philo);
+}
+
+void change_status(t_philo *philo, int status)
+{
+	lock_mutex(philo->death_lock);
+	philo->status = status;
+	unlock_mutex(philo->death_lock);
 }
