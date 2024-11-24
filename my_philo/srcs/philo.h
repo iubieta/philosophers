@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/24 13:05:49 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/24 20:12:15 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,8 @@ void		change_status(t_philo *philo, int status);
 // ROUTINES
 pthread_t	*start_routines(size_t *args, t_philo *philo);
 void		*philo_routine(void *arg);
-void		eat(t_philo *philo);
+int			eat(t_philo *philo);
+int			one_philo_exception(t_philo *philo);
 void		send_message(char *str, t_philo *philo);
 
 // MONITOR

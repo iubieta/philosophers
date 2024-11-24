@@ -90,10 +90,6 @@ Domingo 24/11:
 	- Norminette pasada.
 	- PROGRAMA FUNCIONANDO. Sin leaks y sin data_races.
 
-SEGUIR CON: makefile, norminette, comprobar correcto funcionamiento
+	- Añadida excepcion de un solo filosofo. Comprobar funcionamiento en linux.
 
-A RESOLVER:
-	
-	- la rutina que muere deberia dejar de imprimir instantaneamente??
-	- cuando solo hay un filosofo con que el programa muestre que ha muerto 
-	es suficiente o deberia finalizar el programa al completo?
+SEGUIR CON: comprobar correcto funcionamiento.

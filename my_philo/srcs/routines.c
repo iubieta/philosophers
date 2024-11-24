@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/24 13:27:36 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/24 20:23:14 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,11 @@ void	*philo_routine(void *arg)
 	return (NULL);
 }
 
-void	eat(t_philo *philo)
+int	eat(t_philo *philo)
 {
 	lock_mutex(philo->death_lock);
-	if (philo->death_flag == 1)
-		return ;
+	if (philo->death_flag == 1 || one_philo_exception(philo) == 1)
+		return (unlock_mutex(philo->death_lock), 0);
 	unlock_mutex(philo->death_lock);
 	if (philo->id % 2 == 0)
 	{
@@ -85,6 +85,22 @@ void	eat(t_philo *philo)
 	unlock_mutex(philo->right_fork);
 	send_message("Left left fork", philo);
 	send_message("Left right fork", philo);
+	return (1);
+}
+
+int	one_philo_exception(t_philo *philo)
+{
+	if (philo->n_philos == 1)
+	{
+		lock_mutex(philo->left_fork);
+		send_message("Took left fork", philo);
+		usleep(philo->t_die * 1000);
+		unlock_mutex(philo->left_fork);
+		send_message("DIED", philo);
+		philo->death_flag = 1;
+		return (1);
+	}
+	return (0);
 }
 
 void	change_status(t_philo *philo, int status)
