@@ -80,6 +80,16 @@ Viernes 22/11:
 	- Resueltos data_races con el status de los filosofos.
 	- PROGRAMA FUNCIONANDO. Sin leaks y sin data_races.
 
+Domingo 24/11:
+
+	- Makefile hecho.
+	- Cambiada estructura de archivos: creada carpeta srcs.
+	- Añadida activacion de death flag en monitor y mutex en la comprobacion de 
+	la rutina.
+	- Cambiadas algunas lineas para cuadrar funciones en 25 lineas.
+	- Norminette pasada.
+	- PROGRAMA FUNCIONANDO. Sin leaks y sin data_races.
+
 SEGUIR CON: makefile, norminette, comprobar correcto funcionamiento
 
 A RESOLVER:

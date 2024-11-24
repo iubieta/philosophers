@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/22 14:23:04 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/24 13:05:49 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void		send_message(char *str, t_philo *philo);
 void		*monitor_routine(void *arg);
 int			dead_philo(t_philo *philo);
 int			all_philos_finished(t_philo *philo);
-void 		force_philos_end(t_philo *philo);
+void		force_philos_end(t_philo *philo);
 
 // UTILS
 int			ft_atoi(const char *s);

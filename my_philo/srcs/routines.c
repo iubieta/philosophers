@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/22 13:23:04y iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/24 13:27:36 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,8 @@ void	*philo_routine(void *arg)
 	philo = (t_philo *)arg;
 	i = 0;
 	philo->last_meal = millis();
-	while (philo->death_flag == 0 && (philo->n_meals == 0 || i < philo->n_meals))
+	while (philo->death_flag == 0
+		&& (philo->n_meals == 0 || i++ < philo->n_meals))
 	{
 		if (philo->death_flag != 1)
 		{
@@ -52,7 +53,6 @@ void	*philo_routine(void *arg)
 			send_message("Sleeping", philo);
 			usleep(philo->t_sleep * 1000);
 		}
-		i++;
 	}
 	send_message("Routine FINISHED", philo);
 	change_status(philo, 4);
@@ -61,8 +61,10 @@ void	*philo_routine(void *arg)
 
 void	eat(t_philo *philo)
 {
+	lock_mutex(philo->death_lock);
 	if (philo->death_flag == 1)
 		return ;
+	unlock_mutex(philo->death_lock);
 	if (philo->id % 2 == 0)
 	{
 		lock_mutex(philo->left_fork);
@@ -77,11 +79,7 @@ void	eat(t_philo *philo)
 		lock_mutex(philo->left_fork);
 		send_message("Took left fork", philo);
 	}
-	lock_mutex(philo->death_lock);
-	philo->status = 2;
-	philo->last_meal = millis();
-	send_message("Eating", philo);
-	unlock_mutex(philo->death_lock);
+	change_status(philo, 2);
 	usleep(philo->t_eat * 1000);
 	unlock_mutex(philo->left_fork);
 	unlock_mutex(philo->right_fork);
@@ -89,9 +87,14 @@ void	eat(t_philo *philo)
 	send_message("Left right fork", philo);
 }
 
-void change_status(t_philo *philo, int status)
+void	change_status(t_philo *philo, int status)
 {
 	lock_mutex(philo->death_lock);
 	philo->status = status;
+	if (status == 2)
+	{
+		philo->last_meal = millis();
+		send_message("Eating", philo);
+	}
 	unlock_mutex(philo->death_lock);
 }

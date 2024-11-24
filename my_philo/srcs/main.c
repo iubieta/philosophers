@@ -6,20 +6,21 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:15 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/22 12:44:41y iubieta          ###   ########.fr       */
+/*   Updated: 2024/11/24 13:09:49 by iubieta          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	check_args(t_program *program, int argc, char **argv);
+int		check_args(t_program *program, int argc, char **argv);
 void	destroy_all(t_program *program);
-int	destroy_mutex_gr(t_mutex_group *mutex_gr, size_t *args);
+int		destroy_mutex_gr(t_mutex_group *mutex_gr, size_t *args);
 
 int	main(int argc, char **argv)
 {
 	t_program	program;
-	
+	size_t		i;
+
 	printf("\n");
 	if (0 != check_args(&program, argc, argv))
 		return (printe("PROGRAM TERMINATED\n"), 1);
@@ -31,7 +32,7 @@ int	main(int argc, char **argv)
 	printf("\n");
 	printf("--STARTING PROGRAM--\n\n");
 	program.routines = start_routines(program.args, program.table);
-	size_t i = 0;
+	i = 0;
 	while (i <= program.args[1])
 	{
 		pthread_join(program.routines[i], NULL);
@@ -62,9 +63,9 @@ int	check_args(t_program *program, int argc, char **argv)
 			return (printe("Invalid argument\n"));
 		i++;
 	}
-	program->args= array;
-	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", program->args[0], 
-		program->args[1], program->args[2], program->args[3], program->args[4], 
+	program->args = array;
+	printf("ARGS: %lu , %lu , %lu , %lu , %lu , %lu\n", program->args[0],
+		program->args[1], program->args[2], program->args[3], program->args[4],
 		program->args[5]);
 	return (0);
 }
@@ -85,17 +86,17 @@ int	destroy_mutex_gr(t_mutex_group *mutex_gr, size_t *args)
 	size_t	i;
 
 	if (0 != pthread_mutex_destroy(&mutex_gr->death_lock))
-		return(printe("(1) Imposible to destroy mutex"), 1);
+		return (printe("(1) Imposible to destroy mutex"), 1);
 	if (0 != pthread_mutex_destroy(&mutex_gr->write_lock))
-		return(printe("(2) Imposible to destroy mutex"), 2);
+		return (printe("(2) Imposible to destroy mutex"), 2);
 	i = 0;
 	while (i < args[1])
 	{
 		if (0 != pthread_mutex_destroy(&mutex_gr->forks[i]))
-			return(printe("(3) Imposible to destroy mutex"), 3);
+			return (printe("(3) Imposible to destroy mutex"), 3);
 		i++;
 	}
 	free(mutex_gr->forks);
 	mutex_gr->forks = NULL;
-	return (0);	
+	return (0);
 }
