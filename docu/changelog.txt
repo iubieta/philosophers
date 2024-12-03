@@ -95,6 +95,9 @@ Domingo 24/11:
 Martes 03/12:
 
 	- Cambiado formato de impresion.
+	- Anulada impresion despues de la muerte.
+		- Comprobacion de muerte en funcion send_message().
+		- Envio mensaje de muerte antes de modificacion de
+		death_flag().
 	- Programa probado con 200 filosofos: delay maximo 9ms.
 
-SEGUIR CON: deberia dejar de imprimir con la muerte?.

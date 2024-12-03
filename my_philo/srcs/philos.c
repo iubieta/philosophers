@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:01:35 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/12/03 15:48:45 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/12/03 16:08:49 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,8 @@ void	print_philo_data(t_philo philo)
 
 void	send_message(char *str, t_philo *philo)
 {
+	if (philo->death_flag == 1)
+		return;
 	lock_mutex(philo->write_lock);
 	printf("%ld %lu %s\n", millis(), philo->id, str);
 	unlock_mutex(philo->write_lock);
