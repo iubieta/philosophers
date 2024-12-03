@@ -1,0 +1,4574 @@
+
+ARGS: 5 , 200 , 410 , 200 , 200 , 0
+
+--TABLE INFO--
+
+Number of philosophers: 200
+Death lock : 0x7ffc7c12b220
+Write lock: 0x7ffc7c12b248
+Fork 0 : 0x23df2f0
+Fork 1 : 0x23df318
+Fork 2 : 0x23df340
+Fork 3 : 0x23df368
+Fork 4 : 0x23df390
+Fork 5 : 0x23df3b8
+Fork 6 : 0x23df3e0
+Fork 7 : 0x23df408
+Fork 8 : 0x23df430
+Fork 9 : 0x23df458
+Fork 10 : 0x23df480
+Fork 11 : 0x23df4a8
+Fork 12 : 0x23df4d0
+Fork 13 : 0x23df4f8
+Fork 14 : 0x23df520
+Fork 15 : 0x23df548
+Fork 16 : 0x23df570
+Fork 17 : 0x23df598
+Fork 18 : 0x23df5c0
+Fork 19 : 0x23df5e8
+Fork 20 : 0x23df610
+Fork 21 : 0x23df638
+Fork 22 : 0x23df660
+Fork 23 : 0x23df688
+Fork 24 : 0x23df6b0
+Fork 25 : 0x23df6d8
+Fork 26 : 0x23df700
+Fork 27 : 0x23df728
+Fork 28 : 0x23df750
+Fork 29 : 0x23df778
+Fork 30 : 0x23df7a0
+Fork 31 : 0x23df7c8
+Fork 32 : 0x23df7f0
+Fork 33 : 0x23df818
+Fork 34 : 0x23df840
+Fork 35 : 0x23df868
+Fork 36 : 0x23df890
+Fork 37 : 0x23df8b8
+Fork 38 : 0x23df8e0
+Fork 39 : 0x23df908
+Fork 40 : 0x23df930
+Fork 41 : 0x23df958
+Fork 42 : 0x23df980
+Fork 43 : 0x23df9a8
+Fork 44 : 0x23df9d0
+Fork 45 : 0x23df9f8
+Fork 46 : 0x23dfa20
+Fork 47 : 0x23dfa48
+Fork 48 : 0x23dfa70
+Fork 49 : 0x23dfa98
+Fork 50 : 0x23dfac0
+Fork 51 : 0x23dfae8
+Fork 52 : 0x23dfb10
+Fork 53 : 0x23dfb38
+Fork 54 : 0x23dfb60
+Fork 55 : 0x23dfb88
+Fork 56 : 0x23dfbb0
+Fork 57 : 0x23dfbd8
+Fork 58 : 0x23dfc00
+Fork 59 : 0x23dfc28
+Fork 60 : 0x23dfc50
+Fork 61 : 0x23dfc78
+Fork 62 : 0x23dfca0
+Fork 63 : 0x23dfcc8
+Fork 64 : 0x23dfcf0
+Fork 65 : 0x23dfd18
+Fork 66 : 0x23dfd40
+Fork 67 : 0x23dfd68
+Fork 68 : 0x23dfd90
+Fork 69 : 0x23dfdb8
+Fork 70 : 0x23dfde0
+Fork 71 : 0x23dfe08
+Fork 72 : 0x23dfe30
+Fork 73 : 0x23dfe58
+Fork 74 : 0x23dfe80
+Fork 75 : 0x23dfea8
+Fork 76 : 0x23dfed0
+Fork 77 : 0x23dfef8
+Fork 78 : 0x23dff20
+Fork 79 : 0x23dff48
+Fork 80 : 0x23dff70
+Fork 81 : 0x23dff98
+Fork 82 : 0x23dffc0
+Fork 83 : 0x23dffe8
+Fork 84 : 0x23e0010
+Fork 85 : 0x23e0038
+Fork 86 : 0x23e0060
+Fork 87 : 0x23e0088
+Fork 88 : 0x23e00b0
+Fork 89 : 0x23e00d8
+Fork 90 : 0x23e0100
+Fork 91 : 0x23e0128
+Fork 92 : 0x23e0150
+Fork 93 : 0x23e0178
+Fork 94 : 0x23e01a0
+Fork 95 : 0x23e01c8
+Fork 96 : 0x23e01f0
+Fork 97 : 0x23e0218
+Fork 98 : 0x23e0240
+Fork 99 : 0x23e0268
+Fork 100 : 0x23e0290
+Fork 101 : 0x23e02b8
+Fork 102 : 0x23e02e0
+Fork 103 : 0x23e0308
+Fork 104 : 0x23e0330
+Fork 105 : 0x23e0358
+Fork 106 : 0x23e0380
+Fork 107 : 0x23e03a8
+Fork 108 : 0x23e03d0
+Fork 109 : 0x23e03f8
+Fork 110 : 0x23e0420
+Fork 111 : 0x23e0448
+Fork 112 : 0x23e0470
+Fork 113 : 0x23e0498
+Fork 114 : 0x23e04c0
+Fork 115 : 0x23e04e8
+Fork 116 : 0x23e0510
+Fork 117 : 0x23e0538
+Fork 118 : 0x23e0560
+Fork 119 : 0x23e0588
+Fork 120 : 0x23e05b0
+Fork 121 : 0x23e05d8
+Fork 122 : 0x23e0600
+Fork 123 : 0x23e0628
+Fork 124 : 0x23e0650
+Fork 125 : 0x23e0678
+Fork 126 : 0x23e06a0
+Fork 127 : 0x23e06c8
+Fork 128 : 0x23e06f0
+Fork 129 : 0x23e0718
+Fork 130 : 0x23e0740
+Fork 131 : 0x23e0768
+Fork 132 : 0x23e0790
+Fork 133 : 0x23e07b8
+Fork 134 : 0x23e07e0
+Fork 135 : 0x23e0808
+Fork 136 : 0x23e0830
+Fork 137 : 0x23e0858
+Fork 138 : 0x23e0880
+Fork 139 : 0x23e08a8
+Fork 140 : 0x23e08d0
+Fork 141 : 0x23e08f8
+Fork 142 : 0x23e0920
+Fork 143 : 0x23e0948
+Fork 144 : 0x23e0970
+Fork 145 : 0x23e0998
+Fork 146 : 0x23e09c0
+Fork 147 : 0x23e09e8
+Fork 148 : 0x23e0a10
+Fork 149 : 0x23e0a38
+Fork 150 : 0x23e0a60
+Fork 151 : 0x23e0a88
+Fork 152 : 0x23e0ab0
+Fork 153 : 0x23e0ad8
+Fork 154 : 0x23e0b00
+Fork 155 : 0x23e0b28
+Fork 156 : 0x23e0b50
+Fork 157 : 0x23e0b78
+Fork 158 : 0x23e0ba0
+Fork 159 : 0x23e0bc8
+Fork 160 : 0x23e0bf0
+Fork 161 : 0x23e0c18
+Fork 162 : 0x23e0c40
+Fork 163 : 0x23e0c68
+Fork 164 : 0x23e0c90
+Fork 165 : 0x23e0cb8
+Fork 166 : 0x23e0ce0
+Fork 167 : 0x23e0d08
+Fork 168 : 0x23e0d30
+Fork 169 : 0x23e0d58
+Fork 170 : 0x23e0d80
+Fork 171 : 0x23e0da8
+Fork 172 : 0x23e0dd0
+Fork 173 : 0x23e0df8
+Fork 174 : 0x23e0e20
+Fork 175 : 0x23e0e48
+Fork 176 : 0x23e0e70
+Fork 177 : 0x23e0e98
+Fork 178 : 0x23e0ec0
+Fork 179 : 0x23e0ee8
+Fork 180 : 0x23e0f10
+Fork 181 : 0x23e0f38
+Fork 182 : 0x23e0f60
+Fork 183 : 0x23e0f88
+Fork 184 : 0x23e0fb0
+Fork 185 : 0x23e0fd8
+Fork 186 : 0x23e1000
+Fork 187 : 0x23e1028
+Fork 188 : 0x23e1050
+Fork 189 : 0x23e1078
+Fork 190 : 0x23e10a0
+Fork 191 : 0x23e10c8
+Fork 192 : 0x23e10f0
+Fork 193 : 0x23e1118
+Fork 194 : 0x23e1140
+Fork 195 : 0x23e1168
+Fork 196 : 0x23e1190
+Fork 197 : 0x23e11b8
+Fork 198 : 0x23e11e0
+Fork 199 : 0x23e1208
+
+Philo 0 : 0x23e1240
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df2f0
+	Right fork : 0x23df318
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 1 : 0x23e12a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df318
+	Right fork : 0x23df340
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 2 : 0x23e1300
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df340
+	Right fork : 0x23df368
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 3 : 0x23e1360
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df368
+	Right fork : 0x23df390
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 4 : 0x23e13c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df390
+	Right fork : 0x23df3b8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 5 : 0x23e1420
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df3b8
+	Right fork : 0x23df3e0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 6 : 0x23e1480
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df3e0
+	Right fork : 0x23df408
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 7 : 0x23e14e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df408
+	Right fork : 0x23df430
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 8 : 0x23e1540
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df430
+	Right fork : 0x23df458
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 9 : 0x23e15a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df458
+	Right fork : 0x23df480
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 10 : 0x23e1600
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df480
+	Right fork : 0x23df4a8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 11 : 0x23e1660
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df4a8
+	Right fork : 0x23df4d0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 12 : 0x23e16c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df4d0
+	Right fork : 0x23df4f8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 13 : 0x23e1720
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df4f8
+	Right fork : 0x23df520
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 14 : 0x23e1780
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df520
+	Right fork : 0x23df548
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 15 : 0x23e17e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df548
+	Right fork : 0x23df570
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 16 : 0x23e1840
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df570
+	Right fork : 0x23df598
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 17 : 0x23e18a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df598
+	Right fork : 0x23df5c0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 18 : 0x23e1900
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df5c0
+	Right fork : 0x23df5e8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 19 : 0x23e1960
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df5e8
+	Right fork : 0x23df610
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 20 : 0x23e19c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df610
+	Right fork : 0x23df638
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 21 : 0x23e1a20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df638
+	Right fork : 0x23df660
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 22 : 0x23e1a80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df660
+	Right fork : 0x23df688
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 23 : 0x23e1ae0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df688
+	Right fork : 0x23df6b0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 24 : 0x23e1b40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df6b0
+	Right fork : 0x23df6d8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 25 : 0x23e1ba0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df6d8
+	Right fork : 0x23df700
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 26 : 0x23e1c00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df700
+	Right fork : 0x23df728
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 27 : 0x23e1c60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df728
+	Right fork : 0x23df750
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 28 : 0x23e1cc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df750
+	Right fork : 0x23df778
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 29 : 0x23e1d20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df778
+	Right fork : 0x23df7a0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 30 : 0x23e1d80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df7a0
+	Right fork : 0x23df7c8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 31 : 0x23e1de0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df7c8
+	Right fork : 0x23df7f0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 32 : 0x23e1e40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df7f0
+	Right fork : 0x23df818
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 33 : 0x23e1ea0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df818
+	Right fork : 0x23df840
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 34 : 0x23e1f00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df840
+	Right fork : 0x23df868
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 35 : 0x23e1f60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df868
+	Right fork : 0x23df890
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 36 : 0x23e1fc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df890
+	Right fork : 0x23df8b8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 37 : 0x23e2020
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df8b8
+	Right fork : 0x23df8e0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 38 : 0x23e2080
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df8e0
+	Right fork : 0x23df908
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 39 : 0x23e20e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df908
+	Right fork : 0x23df930
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 40 : 0x23e2140
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df930
+	Right fork : 0x23df958
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 41 : 0x23e21a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df958
+	Right fork : 0x23df980
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 42 : 0x23e2200
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df980
+	Right fork : 0x23df9a8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 43 : 0x23e2260
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df9a8
+	Right fork : 0x23df9d0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 44 : 0x23e22c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df9d0
+	Right fork : 0x23df9f8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 45 : 0x23e2320
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23df9f8
+	Right fork : 0x23dfa20
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 46 : 0x23e2380
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfa20
+	Right fork : 0x23dfa48
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 47 : 0x23e23e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfa48
+	Right fork : 0x23dfa70
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 48 : 0x23e2440
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfa70
+	Right fork : 0x23dfa98
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 49 : 0x23e24a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfa98
+	Right fork : 0x23dfac0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 50 : 0x23e2500
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfac0
+	Right fork : 0x23dfae8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 51 : 0x23e2560
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfae8
+	Right fork : 0x23dfb10
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 52 : 0x23e25c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfb10
+	Right fork : 0x23dfb38
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 53 : 0x23e2620
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfb38
+	Right fork : 0x23dfb60
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 54 : 0x23e2680
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfb60
+	Right fork : 0x23dfb88
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 55 : 0x23e26e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfb88
+	Right fork : 0x23dfbb0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 56 : 0x23e2740
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfbb0
+	Right fork : 0x23dfbd8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 57 : 0x23e27a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfbd8
+	Right fork : 0x23dfc00
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 58 : 0x23e2800
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfc00
+	Right fork : 0x23dfc28
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 59 : 0x23e2860
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfc28
+	Right fork : 0x23dfc50
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 60 : 0x23e28c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfc50
+	Right fork : 0x23dfc78
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 61 : 0x23e2920
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfc78
+	Right fork : 0x23dfca0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 62 : 0x23e2980
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfca0
+	Right fork : 0x23dfcc8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 63 : 0x23e29e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfcc8
+	Right fork : 0x23dfcf0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 64 : 0x23e2a40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfcf0
+	Right fork : 0x23dfd18
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 65 : 0x23e2aa0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfd18
+	Right fork : 0x23dfd40
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 66 : 0x23e2b00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfd40
+	Right fork : 0x23dfd68
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 67 : 0x23e2b60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfd68
+	Right fork : 0x23dfd90
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 68 : 0x23e2bc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfd90
+	Right fork : 0x23dfdb8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 69 : 0x23e2c20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfdb8
+	Right fork : 0x23dfde0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 70 : 0x23e2c80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfde0
+	Right fork : 0x23dfe08
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 71 : 0x23e2ce0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfe08
+	Right fork : 0x23dfe30
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 72 : 0x23e2d40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfe30
+	Right fork : 0x23dfe58
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 73 : 0x23e2da0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfe58
+	Right fork : 0x23dfe80
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 74 : 0x23e2e00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfe80
+	Right fork : 0x23dfea8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 75 : 0x23e2e60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfea8
+	Right fork : 0x23dfed0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 76 : 0x23e2ec0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfed0
+	Right fork : 0x23dfef8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 77 : 0x23e2f20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dfef8
+	Right fork : 0x23dff20
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 78 : 0x23e2f80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dff20
+	Right fork : 0x23dff48
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 79 : 0x23e2fe0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dff48
+	Right fork : 0x23dff70
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 80 : 0x23e3040
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dff70
+	Right fork : 0x23dff98
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 81 : 0x23e30a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dff98
+	Right fork : 0x23dffc0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 82 : 0x23e3100
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dffc0
+	Right fork : 0x23dffe8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 83 : 0x23e3160
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23dffe8
+	Right fork : 0x23e0010
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 84 : 0x23e31c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0010
+	Right fork : 0x23e0038
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 85 : 0x23e3220
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0038
+	Right fork : 0x23e0060
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 86 : 0x23e3280
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0060
+	Right fork : 0x23e0088
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 87 : 0x23e32e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0088
+	Right fork : 0x23e00b0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 88 : 0x23e3340
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e00b0
+	Right fork : 0x23e00d8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 89 : 0x23e33a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e00d8
+	Right fork : 0x23e0100
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 90 : 0x23e3400
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0100
+	Right fork : 0x23e0128
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 91 : 0x23e3460
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0128
+	Right fork : 0x23e0150
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 92 : 0x23e34c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0150
+	Right fork : 0x23e0178
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 93 : 0x23e3520
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0178
+	Right fork : 0x23e01a0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 94 : 0x23e3580
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e01a0
+	Right fork : 0x23e01c8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 95 : 0x23e35e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e01c8
+	Right fork : 0x23e01f0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 96 : 0x23e3640
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e01f0
+	Right fork : 0x23e0218
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 97 : 0x23e36a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0218
+	Right fork : 0x23e0240
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 98 : 0x23e3700
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0240
+	Right fork : 0x23e0268
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 99 : 0x23e3760
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0268
+	Right fork : 0x23e0290
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 100 : 0x23e37c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0290
+	Right fork : 0x23e02b8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 101 : 0x23e3820
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e02b8
+	Right fork : 0x23e02e0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 102 : 0x23e3880
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e02e0
+	Right fork : 0x23e0308
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 103 : 0x23e38e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0308
+	Right fork : 0x23e0330
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 104 : 0x23e3940
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0330
+	Right fork : 0x23e0358
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 105 : 0x23e39a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0358
+	Right fork : 0x23e0380
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 106 : 0x23e3a00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0380
+	Right fork : 0x23e03a8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 107 : 0x23e3a60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e03a8
+	Right fork : 0x23e03d0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 108 : 0x23e3ac0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e03d0
+	Right fork : 0x23e03f8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 109 : 0x23e3b20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e03f8
+	Right fork : 0x23e0420
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 110 : 0x23e3b80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0420
+	Right fork : 0x23e0448
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 111 : 0x23e3be0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0448
+	Right fork : 0x23e0470
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 112 : 0x23e3c40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0470
+	Right fork : 0x23e0498
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 113 : 0x23e3ca0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0498
+	Right fork : 0x23e04c0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 114 : 0x23e3d00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e04c0
+	Right fork : 0x23e04e8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 115 : 0x23e3d60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e04e8
+	Right fork : 0x23e0510
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 116 : 0x23e3dc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0510
+	Right fork : 0x23e0538
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 117 : 0x23e3e20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0538
+	Right fork : 0x23e0560
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 118 : 0x23e3e80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0560
+	Right fork : 0x23e0588
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 119 : 0x23e3ee0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0588
+	Right fork : 0x23e05b0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 120 : 0x23e3f40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e05b0
+	Right fork : 0x23e05d8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 121 : 0x23e3fa0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e05d8
+	Right fork : 0x23e0600
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 122 : 0x23e4000
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0600
+	Right fork : 0x23e0628
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 123 : 0x23e4060
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0628
+	Right fork : 0x23e0650
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 124 : 0x23e40c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0650
+	Right fork : 0x23e0678
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 125 : 0x23e4120
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0678
+	Right fork : 0x23e06a0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 126 : 0x23e4180
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e06a0
+	Right fork : 0x23e06c8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 127 : 0x23e41e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e06c8
+	Right fork : 0x23e06f0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 128 : 0x23e4240
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e06f0
+	Right fork : 0x23e0718
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 129 : 0x23e42a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0718
+	Right fork : 0x23e0740
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 130 : 0x23e4300
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0740
+	Right fork : 0x23e0768
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 131 : 0x23e4360
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0768
+	Right fork : 0x23e0790
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 132 : 0x23e43c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0790
+	Right fork : 0x23e07b8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 133 : 0x23e4420
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e07b8
+	Right fork : 0x23e07e0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 134 : 0x23e4480
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e07e0
+	Right fork : 0x23e0808
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 135 : 0x23e44e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0808
+	Right fork : 0x23e0830
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 136 : 0x23e4540
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0830
+	Right fork : 0x23e0858
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 137 : 0x23e45a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0858
+	Right fork : 0x23e0880
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 138 : 0x23e4600
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0880
+	Right fork : 0x23e08a8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 139 : 0x23e4660
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e08a8
+	Right fork : 0x23e08d0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 140 : 0x23e46c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e08d0
+	Right fork : 0x23e08f8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 141 : 0x23e4720
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e08f8
+	Right fork : 0x23e0920
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 142 : 0x23e4780
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0920
+	Right fork : 0x23e0948
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 143 : 0x23e47e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0948
+	Right fork : 0x23e0970
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 144 : 0x23e4840
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0970
+	Right fork : 0x23e0998
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 145 : 0x23e48a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0998
+	Right fork : 0x23e09c0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 146 : 0x23e4900
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e09c0
+	Right fork : 0x23e09e8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 147 : 0x23e4960
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e09e8
+	Right fork : 0x23e0a10
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 148 : 0x23e49c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0a10
+	Right fork : 0x23e0a38
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 149 : 0x23e4a20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0a38
+	Right fork : 0x23e0a60
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 150 : 0x23e4a80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0a60
+	Right fork : 0x23e0a88
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 151 : 0x23e4ae0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0a88
+	Right fork : 0x23e0ab0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 152 : 0x23e4b40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0ab0
+	Right fork : 0x23e0ad8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 153 : 0x23e4ba0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0ad8
+	Right fork : 0x23e0b00
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 154 : 0x23e4c00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0b00
+	Right fork : 0x23e0b28
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 155 : 0x23e4c60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0b28
+	Right fork : 0x23e0b50
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 156 : 0x23e4cc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0b50
+	Right fork : 0x23e0b78
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 157 : 0x23e4d20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0b78
+	Right fork : 0x23e0ba0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 158 : 0x23e4d80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0ba0
+	Right fork : 0x23e0bc8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 159 : 0x23e4de0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0bc8
+	Right fork : 0x23e0bf0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 160 : 0x23e4e40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0bf0
+	Right fork : 0x23e0c18
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 161 : 0x23e4ea0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0c18
+	Right fork : 0x23e0c40
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 162 : 0x23e4f00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0c40
+	Right fork : 0x23e0c68
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 163 : 0x23e4f60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0c68
+	Right fork : 0x23e0c90
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 164 : 0x23e4fc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0c90
+	Right fork : 0x23e0cb8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 165 : 0x23e5020
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0cb8
+	Right fork : 0x23e0ce0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 166 : 0x23e5080
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0ce0
+	Right fork : 0x23e0d08
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 167 : 0x23e50e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0d08
+	Right fork : 0x23e0d30
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 168 : 0x23e5140
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0d30
+	Right fork : 0x23e0d58
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 169 : 0x23e51a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0d58
+	Right fork : 0x23e0d80
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 170 : 0x23e5200
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0d80
+	Right fork : 0x23e0da8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 171 : 0x23e5260
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0da8
+	Right fork : 0x23e0dd0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 172 : 0x23e52c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0dd0
+	Right fork : 0x23e0df8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 173 : 0x23e5320
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0df8
+	Right fork : 0x23e0e20
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 174 : 0x23e5380
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0e20
+	Right fork : 0x23e0e48
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 175 : 0x23e53e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0e48
+	Right fork : 0x23e0e70
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 176 : 0x23e5440
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0e70
+	Right fork : 0x23e0e98
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 177 : 0x23e54a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0e98
+	Right fork : 0x23e0ec0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 178 : 0x23e5500
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0ec0
+	Right fork : 0x23e0ee8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 179 : 0x23e5560
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0ee8
+	Right fork : 0x23e0f10
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 180 : 0x23e55c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0f10
+	Right fork : 0x23e0f38
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 181 : 0x23e5620
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0f38
+	Right fork : 0x23e0f60
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 182 : 0x23e5680
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0f60
+	Right fork : 0x23e0f88
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 183 : 0x23e56e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0f88
+	Right fork : 0x23e0fb0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 184 : 0x23e5740
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0fb0
+	Right fork : 0x23e0fd8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 185 : 0x23e57a0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e0fd8
+	Right fork : 0x23e1000
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 186 : 0x23e5800
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1000
+	Right fork : 0x23e1028
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 187 : 0x23e5860
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1028
+	Right fork : 0x23e1050
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 188 : 0x23e58c0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1050
+	Right fork : 0x23e1078
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 189 : 0x23e5920
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1078
+	Right fork : 0x23e10a0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 190 : 0x23e5980
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e10a0
+	Right fork : 0x23e10c8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 191 : 0x23e59e0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e10c8
+	Right fork : 0x23e10f0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 192 : 0x23e5a40
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e10f0
+	Right fork : 0x23e1118
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 193 : 0x23e5aa0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1118
+	Right fork : 0x23e1140
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 194 : 0x23e5b00
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1140
+	Right fork : 0x23e1168
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 195 : 0x23e5b60
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1168
+	Right fork : 0x23e1190
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 196 : 0x23e5bc0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1190
+	Right fork : 0x23e11b8
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 197 : 0x23e5c20
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e11b8
+	Right fork : 0x23e11e0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 198 : 0x23e5c80
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e11e0
+	Right fork : 0x23e1208
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+Philo 199 : 0x23e5ce0
+	Status : 1
+	Time to die : 410 ms
+	Time to eat : 200 ms
+	Time to sleep : 200 ms
+	Number of meals : 0
+	Left fork : 0x23e1208
+	Right fork : 0x23df2f0
+	Death lock : 0x7ffc7c12b220
+	Write lock : 0x7ffc7c12b248
+
+--STARTING PROGRAM--
+
+  1733236354289  |  Philo 0  :  Thinking
+  1733236354289  |  Philo 0  :  Took left fork
+  1733236354289  |  Philo 0  :  Took right fork
+  1733236354289  |  Philo 0  :  Eating
+  1733236354289  |  Philo 1  :  Thinking
+  1733236354289  |  Philo 1  :  Took right fork
+  1733236354289  |  Philo 2  :  Thinking
+  1733236354289  |  Philo 3  :  Thinking
+  1733236354289  |  Philo 3  :  Took right fork
+  1733236354289  |  Philo 3  :  Took left fork
+  1733236354289  |  Philo 3  :  Eating
+  1733236354289  |  Philo 4  :  Thinking
+  1733236354289  |  Philo 5  :  Thinking
+  1733236354289  |  Philo 5  :  Took right fork
+  1733236354289  |  Philo 5  :  Took left fork
+  1733236354289  |  Philo 5  :  Eating
+  1733236354289  |  Philo 6  :  Thinking
+  1733236354289  |  Philo 7  :  Thinking
+  1733236354289  |  Philo 7  :  Took right fork
+  1733236354289  |  Philo 7  :  Took left fork
+  1733236354289  |  Philo 7  :  Eating
+  1733236354289  |  Philo 8  :  Thinking
+  1733236354289  |  Philo 9  :  Thinking
+  1733236354289  |  Philo 9  :  Took right fork
+  1733236354289  |  Philo 9  :  Took left fork
+  1733236354289  |  Philo 9  :  Eating
+  1733236354289  |  Philo 10  :  Thinking
+  1733236354289  |  Philo 11  :  Thinking
+  1733236354289  |  Philo 11  :  Took right fork
+  1733236354289  |  Philo 11  :  Took left fork
+  1733236354289  |  Philo 11  :  Eating
+  1733236354289  |  Philo 12  :  Thinking
+  1733236354289  |  Philo 13  :  Thinking
+  1733236354289  |  Philo 13  :  Took right fork
+  1733236354289  |  Philo 13  :  Took left fork
+  1733236354289  |  Philo 13  :  Eating
+  1733236354289  |  Philo 14  :  Thinking
+  1733236354289  |  Philo 15  :  Thinking
+  1733236354289  |  Philo 15  :  Took right fork
+  1733236354289  |  Philo 15  :  Took left fork
+  1733236354289  |  Philo 15  :  Eating
+  1733236354289  |  Philo 16  :  Thinking
+  1733236354289  |  Philo 17  :  Thinking
+  1733236354289  |  Philo 17  :  Took right fork
+  1733236354289  |  Philo 17  :  Took left fork
+  1733236354289  |  Philo 17  :  Eating
+  1733236354289  |  Philo 18  :  Thinking
+  1733236354289  |  Philo 19  :  Thinking
+  1733236354289  |  Philo 19  :  Took right fork
+  1733236354289  |  Philo 19  :  Took left fork
+  1733236354289  |  Philo 19  :  Eating
+  1733236354289  |  Philo 20  :  Thinking
+  1733236354289  |  Philo 21  :  Thinking
+  1733236354289  |  Philo 21  :  Took right fork
+  1733236354289  |  Philo 21  :  Took left fork
+  1733236354289  |  Philo 21  :  Eating
+  1733236354289  |  Philo 22  :  Thinking
+  1733236354289  |  Philo 23  :  Thinking
+  1733236354289  |  Philo 23  :  Took right fork
+  1733236354289  |  Philo 23  :  Took left fork
+  1733236354289  |  Philo 23  :  Eating
+  1733236354289  |  Philo 24  :  Thinking
+  1733236354289  |  Philo 25  :  Thinking
+  1733236354289  |  Philo 25  :  Took right fork
+  1733236354289  |  Philo 25  :  Took left fork
+  1733236354289  |  Philo 25  :  Eating
+  1733236354289  |  Philo 26  :  Thinking
+  1733236354289  |  Philo 28  :  Thinking
+  1733236354289  |  Philo 28  :  Took left fork
+  1733236354289  |  Philo 28  :  Took right fork
+  1733236354289  |  Philo 28  :  Eating
+  1733236354289  |  Philo 27  :  Thinking
+  1733236354289  |  Philo 29  :  Thinking
+  1733236354289  |  Philo 29  :  Took right fork
+  1733236354289  |  Philo 31  :  Thinking
+  1733236354289  |  Philo 31  :  Took right fork
+  1733236354289  |  Philo 31  :  Took left fork
+  1733236354289  |  Philo 31  :  Eating
+  1733236354289  |  Philo 32  :  Thinking
+  1733236354289  |  Philo 30  :  Thinking
+  1733236354289  |  Philo 33  :  Thinking
+  1733236354289  |  Philo 33  :  Took right fork
+  1733236354289  |  Philo 33  :  Took left fork
+  1733236354289  |  Philo 33  :  Eating
+  1733236354289  |  Philo 34  :  Thinking
+  1733236354289  |  Philo 35  :  Thinking
+  1733236354289  |  Philo 35  :  Took right fork
+  1733236354289  |  Philo 35  :  Took left fork
+  1733236354289  |  Philo 35  :  Eating
+  1733236354290  |  Philo 36  :  Thinking
+  1733236354290  |  Philo 37  :  Thinking
+  1733236354290  |  Philo 37  :  Took right fork
+  1733236354290  |  Philo 37  :  Took left fork
+  1733236354290  |  Philo 37  :  Eating
+  1733236354290  |  Philo 39  :  Thinking
+  1733236354290  |  Philo 39  :  Took right fork
+  1733236354290  |  Philo 39  :  Took left fork
+  1733236354290  |  Philo 39  :  Eating
+  1733236354290  |  Philo 38  :  Thinking
+  1733236354290  |  Philo 40  :  Thinking
+  1733236354290  |  Philo 41  :  Thinking
+  1733236354290  |  Philo 41  :  Took right fork
+  1733236354290  |  Philo 41  :  Took left fork
+  1733236354290  |  Philo 41  :  Eating
+  1733236354290  |  Philo 42  :  Thinking
+  1733236354290  |  Philo 43  :  Thinking
+  1733236354290  |  Philo 43  :  Took right fork
+  1733236354290  |  Philo 43  :  Took left fork
+  1733236354290  |  Philo 43  :  Eating
+  1733236354290  |  Philo 44  :  Thinking
+  1733236354290  |  Philo 45  :  Thinking
+  1733236354290  |  Philo 45  :  Took right fork
+  1733236354290  |  Philo 45  :  Took left fork
+  1733236354290  |  Philo 45  :  Eating
+  1733236354290  |  Philo 46  :  Thinking
+  1733236354290  |  Philo 47  :  Thinking
+  1733236354290  |  Philo 47  :  Took right fork
+  1733236354290  |  Philo 47  :  Took left fork
+  1733236354290  |  Philo 47  :  Eating
+  1733236354290  |  Philo 48  :  Thinking
+  1733236354290  |  Philo 49  :  Thinking
+  1733236354290  |  Philo 49  :  Took right fork
+  1733236354290  |  Philo 49  :  Took left fork
+  1733236354290  |  Philo 49  :  Eating
+  1733236354290  |  Philo 51  :  Thinking
+  1733236354290  |  Philo 51  :  Took right fork
+  1733236354290  |  Philo 51  :  Took left fork
+  1733236354290  |  Philo 51  :  Eating
+  1733236354290  |  Philo 50  :  Thinking
+  1733236354290  |  Philo 52  :  Thinking
+  1733236354290  |  Philo 53  :  Thinking
+  1733236354290  |  Philo 53  :  Took right fork
+  1733236354290  |  Philo 53  :  Took left fork
+  1733236354290  |  Philo 53  :  Eating
+  1733236354290  |  Philo 54  :  Thinking
+  1733236354290  |  Philo 55  :  Thinking
+  1733236354290  |  Philo 55  :  Took right fork
+  1733236354290  |  Philo 55  :  Took left fork
+  1733236354290  |  Philo 55  :  Eating
+  1733236354290  |  Philo 56  :  Thinking
+  1733236354290  |  Philo 57  :  Thinking
+  1733236354290  |  Philo 57  :  Took right fork
+  1733236354290  |  Philo 57  :  Took left fork
+  1733236354290  |  Philo 57  :  Eating
+  1733236354290  |  Philo 58  :  Thinking
+  1733236354290  |  Philo 59  :  Thinking
+  1733236354290  |  Philo 59  :  Took right fork
+  1733236354290  |  Philo 59  :  Took left fork
+  1733236354290  |  Philo 59  :  Eating
+  1733236354290  |  Philo 60  :  Thinking
+  1733236354290  |  Philo 61  :  Thinking
+  1733236354290  |  Philo 61  :  Took right fork
+  1733236354290  |  Philo 61  :  Took left fork
+  1733236354290  |  Philo 61  :  Eating
+  1733236354290  |  Philo 62  :  Thinking
+  1733236354290  |  Philo 63  :  Thinking
+  1733236354290  |  Philo 63  :  Took right fork
+  1733236354290  |  Philo 63  :  Took left fork
+  1733236354290  |  Philo 63  :  Eating
+  1733236354290  |  Philo 64  :  Thinking
+  1733236354290  |  Philo 65  :  Thinking
+  1733236354290  |  Philo 65  :  Took right fork
+  1733236354290  |  Philo 65  :  Took left fork
+  1733236354290  |  Philo 65  :  Eating
+  1733236354290  |  Philo 66  :  Thinking
+  1733236354290  |  Philo 67  :  Thinking
+  1733236354290  |  Philo 67  :  Took right fork
+  1733236354290  |  Philo 67  :  Took left fork
+  1733236354290  |  Philo 67  :  Eating
+  1733236354290  |  Philo 68  :  Thinking
+  1733236354290  |  Philo 69  :  Thinking
+  1733236354290  |  Philo 69  :  Took right fork
+  1733236354290  |  Philo 69  :  Took left fork
+  1733236354290  |  Philo 69  :  Eating
+  1733236354290  |  Philo 70  :  Thinking
+  1733236354290  |  Philo 71  :  Thinking
+  1733236354290  |  Philo 71  :  Took right fork
+  1733236354290  |  Philo 71  :  Took left fork
+  1733236354290  |  Philo 71  :  Eating
+  1733236354290  |  Philo 72  :  Thinking
+  1733236354290  |  Philo 73  :  Thinking
+  1733236354290  |  Philo 73  :  Took right fork
+  1733236354290  |  Philo 73  :  Took left fork
+  1733236354290  |  Philo 73  :  Eating
+  1733236354290  |  Philo 74  :  Thinking
+  1733236354290  |  Philo 75  :  Thinking
+  1733236354290  |  Philo 75  :  Took right fork
+  1733236354290  |  Philo 75  :  Took left fork
+  1733236354290  |  Philo 75  :  Eating
+  1733236354290  |  Philo 76  :  Thinking
+  1733236354290  |  Philo 77  :  Thinking
+  1733236354290  |  Philo 77  :  Took right fork
+  1733236354290  |  Philo 77  :  Took left fork
+  1733236354290  |  Philo 77  :  Eating
+  1733236354290  |  Philo 78  :  Thinking
+  1733236354290  |  Philo 79  :  Thinking
+  1733236354290  |  Philo 79  :  Took right fork
+  1733236354290  |  Philo 79  :  Took left fork
+  1733236354290  |  Philo 79  :  Eating
+  1733236354290  |  Philo 80  :  Thinking
+  1733236354290  |  Philo 81  :  Thinking
+  1733236354290  |  Philo 81  :  Took right fork
+  1733236354290  |  Philo 81  :  Took left fork
+  1733236354290  |  Philo 81  :  Eating
+  1733236354290  |  Philo 82  :  Thinking
+  1733236354290  |  Philo 83  :  Thinking
+  1733236354290  |  Philo 83  :  Took right fork
+  1733236354290  |  Philo 83  :  Took left fork
+  1733236354290  |  Philo 83  :  Eating
+  1733236354290  |  Philo 84  :  Thinking
+  1733236354290  |  Philo 85  :  Thinking
+  1733236354290  |  Philo 85  :  Took right fork
+  1733236354290  |  Philo 85  :  Took left fork
+  1733236354290  |  Philo 85  :  Eating
+  1733236354290  |  Philo 86  :  Thinking
+  1733236354290  |  Philo 87  :  Thinking
+  1733236354290  |  Philo 87  :  Took right fork
+  1733236354290  |  Philo 87  :  Took left fork
+  1733236354290  |  Philo 87  :  Eating
+  1733236354291  |  Philo 88  :  Thinking
+  1733236354291  |  Philo 89  :  Thinking
+  1733236354291  |  Philo 89  :  Took right fork
+  1733236354291  |  Philo 89  :  Took left fork
+  1733236354291  |  Philo 89  :  Eating
+  1733236354291  |  Philo 90  :  Thinking
+  1733236354291  |  Philo 91  :  Thinking
+  1733236354291  |  Philo 91  :  Took right fork
+  1733236354291  |  Philo 91  :  Took left fork
+  1733236354291  |  Philo 91  :  Eating
+  1733236354291  |  Philo 92  :  Thinking
+  1733236354291  |  Philo 93  :  Thinking
+  1733236354291  |  Philo 93  :  Took right fork
+  1733236354291  |  Philo 93  :  Took left fork
+  1733236354291  |  Philo 93  :  Eating
+  1733236354291  |  Philo 94  :  Thinking
+  1733236354291  |  Philo 95  :  Thinking
+  1733236354291  |  Philo 95  :  Took right fork
+  1733236354291  |  Philo 95  :  Took left fork
+  1733236354291  |  Philo 95  :  Eating
+  1733236354291  |  Philo 96  :  Thinking
+  1733236354291  |  Philo 97  :  Thinking
+  1733236354291  |  Philo 97  :  Took right fork
+  1733236354291  |  Philo 97  :  Took left fork
+  1733236354291  |  Philo 97  :  Eating
+  1733236354291  |  Philo 98  :  Thinking
+  1733236354291  |  Philo 99  :  Thinking
+  1733236354291  |  Philo 99  :  Took right fork
+  1733236354291  |  Philo 99  :  Took left fork
+  1733236354291  |  Philo 99  :  Eating
+  1733236354291  |  Philo 100  :  Thinking
+  1733236354291  |  Philo 101  :  Thinking
+  1733236354291  |  Philo 101  :  Took right fork
+  1733236354291  |  Philo 101  :  Took left fork
+  1733236354291  |  Philo 101  :  Eating
+  1733236354291  |  Philo 102  :  Thinking
+  1733236354291  |  Philo 103  :  Thinking
+  1733236354291  |  Philo 103  :  Took right fork
+  1733236354291  |  Philo 103  :  Took left fork
+  1733236354291  |  Philo 103  :  Eating
+  1733236354291  |  Philo 104  :  Thinking
+  1733236354291  |  Philo 105  :  Thinking
+  1733236354291  |  Philo 105  :  Took right fork
+  1733236354291  |  Philo 105  :  Took left fork
+  1733236354291  |  Philo 105  :  Eating
+  1733236354291  |  Philo 106  :  Thinking
+  1733236354291  |  Philo 107  :  Thinking
+  1733236354291  |  Philo 107  :  Took right fork
+  1733236354291  |  Philo 107  :  Took left fork
+  1733236354291  |  Philo 107  :  Eating
+  1733236354291  |  Philo 108  :  Thinking
+  1733236354291  |  Philo 109  :  Thinking
+  1733236354291  |  Philo 109  :  Took right fork
+  1733236354291  |  Philo 109  :  Took left fork
+  1733236354291  |  Philo 109  :  Eating
+  1733236354291  |  Philo 110  :  Thinking
+  1733236354291  |  Philo 111  :  Thinking
+  1733236354291  |  Philo 111  :  Took right fork
+  1733236354291  |  Philo 111  :  Took left fork
+  1733236354291  |  Philo 111  :  Eating
+  1733236354291  |  Philo 112  :  Thinking
+  1733236354291  |  Philo 113  :  Thinking
+  1733236354291  |  Philo 113  :  Took right fork
+  1733236354291  |  Philo 113  :  Took left fork
+  1733236354291  |  Philo 113  :  Eating
+  1733236354291  |  Philo 114  :  Thinking
+  1733236354291  |  Philo 115  :  Thinking
+  1733236354291  |  Philo 115  :  Took right fork
+  1733236354291  |  Philo 115  :  Took left fork
+  1733236354291  |  Philo 115  :  Eating
+  1733236354291  |  Philo 116  :  Thinking
+  1733236354291  |  Philo 117  :  Thinking
+  1733236354291  |  Philo 117  :  Took right fork
+  1733236354291  |  Philo 117  :  Took left fork
+  1733236354291  |  Philo 117  :  Eating
+  1733236354291  |  Philo 118  :  Thinking
+  1733236354291  |  Philo 119  :  Thinking
+  1733236354291  |  Philo 119  :  Took right fork
+  1733236354291  |  Philo 119  :  Took left fork
+  1733236354291  |  Philo 119  :  Eating
+  1733236354291  |  Philo 120  :  Thinking
+  1733236354291  |  Philo 121  :  Thinking
+  1733236354291  |  Philo 121  :  Took right fork
+  1733236354291  |  Philo 121  :  Took left fork
+  1733236354291  |  Philo 121  :  Eating
+  1733236354291  |  Philo 122  :  Thinking
+  1733236354291  |  Philo 123  :  Thinking
+  1733236354291  |  Philo 123  :  Took right fork
+  1733236354291  |  Philo 123  :  Took left fork
+  1733236354291  |  Philo 123  :  Eating
+  1733236354291  |  Philo 124  :  Thinking
+  1733236354291  |  Philo 125  :  Thinking
+  1733236354291  |  Philo 125  :  Took right fork
+  1733236354291  |  Philo 125  :  Took left fork
+  1733236354291  |  Philo 125  :  Eating
+  1733236354291  |  Philo 126  :  Thinking
+  1733236354291  |  Philo 127  :  Thinking
+  1733236354291  |  Philo 127  :  Took right fork
+  1733236354291  |  Philo 127  :  Took left fork
+  1733236354291  |  Philo 127  :  Eating
+  1733236354291  |  Philo 128  :  Thinking
+  1733236354291  |  Philo 129  :  Thinking
+  1733236354291  |  Philo 129  :  Took right fork
+  1733236354291  |  Philo 129  :  Took left fork
+  1733236354291  |  Philo 129  :  Eating
+  1733236354291  |  Philo 130  :  Thinking
+  1733236354291  |  Philo 131  :  Thinking
+  1733236354291  |  Philo 131  :  Took right fork
+  1733236354291  |  Philo 131  :  Took left fork
+  1733236354291  |  Philo 131  :  Eating
+  1733236354291  |  Philo 132  :  Thinking
+  1733236354291  |  Philo 133  :  Thinking
+  1733236354291  |  Philo 133  :  Took right fork
+  1733236354291  |  Philo 133  :  Took left fork
+  1733236354291  |  Philo 133  :  Eating
+  1733236354291  |  Philo 134  :  Thinking
+  1733236354291  |  Philo 135  :  Thinking
+  1733236354291  |  Philo 135  :  Took right fork
+  1733236354291  |  Philo 135  :  Took left fork
+  1733236354291  |  Philo 135  :  Eating
+  1733236354291  |  Philo 136  :  Thinking
+  1733236354291  |  Philo 137  :  Thinking
+  1733236354291  |  Philo 137  :  Took right fork
+  1733236354291  |  Philo 137  :  Took left fork
+  1733236354291  |  Philo 137  :  Eating
+  1733236354291  |  Philo 138  :  Thinking
+  1733236354292  |  Philo 139  :  Thinking
+  1733236354292  |  Philo 139  :  Took right fork
+  1733236354292  |  Philo 139  :  Took left fork
+  1733236354292  |  Philo 139  :  Eating
+  1733236354292  |  Philo 140  :  Thinking
+  1733236354292  |  Philo 141  :  Thinking
+  1733236354292  |  Philo 141  :  Took right fork
+  1733236354292  |  Philo 141  :  Took left fork
+  1733236354292  |  Philo 141  :  Eating
+  1733236354292  |  Philo 142  :  Thinking
+  1733236354292  |  Philo 143  :  Thinking
+  1733236354292  |  Philo 143  :  Took right fork
+  1733236354292  |  Philo 143  :  Took left fork
+  1733236354292  |  Philo 143  :  Eating
+  1733236354292  |  Philo 144  :  Thinking
+  1733236354292  |  Philo 145  :  Thinking
+  1733236354292  |  Philo 145  :  Took right fork
+  1733236354292  |  Philo 145  :  Took left fork
+  1733236354292  |  Philo 145  :  Eating
+  1733236354292  |  Philo 146  :  Thinking
+  1733236354292  |  Philo 147  :  Thinking
+  1733236354292  |  Philo 147  :  Took right fork
+  1733236354292  |  Philo 147  :  Took left fork
+  1733236354292  |  Philo 147  :  Eating
+  1733236354292  |  Philo 148  :  Thinking
+  1733236354292  |  Philo 149  :  Thinking
+  1733236354292  |  Philo 149  :  Took right fork
+  1733236354292  |  Philo 149  :  Took left fork
+  1733236354292  |  Philo 149  :  Eating
+  1733236354292  |  Philo 150  :  Thinking
+  1733236354292  |  Philo 152  :  Thinking
+  1733236354292  |  Philo 152  :  Took left fork
+  1733236354292  |  Philo 152  :  Took right fork
+  1733236354292  |  Philo 152  :  Eating
+  1733236354292  |  Philo 151  :  Thinking
+  1733236354292  |  Philo 153  :  Thinking
+  1733236354292  |  Philo 153  :  Took right fork
+  1733236354292  |  Philo 154  :  Thinking
+  1733236354292  |  Philo 155  :  Thinking
+  1733236354292  |  Philo 155  :  Took right fork
+  1733236354292  |  Philo 155  :  Took left fork
+  1733236354292  |  Philo 155  :  Eating
+  1733236354292  |  Philo 156  :  Thinking
+  1733236354292  |  Philo 157  :  Thinking
+  1733236354292  |  Philo 157  :  Took right fork
+  1733236354292  |  Philo 157  :  Took left fork
+  1733236354292  |  Philo 157  :  Eating
+  1733236354292  |  Philo 158  :  Thinking
+  1733236354292  |  Philo 159  :  Thinking
+  1733236354292  |  Philo 159  :  Took right fork
+  1733236354292  |  Philo 159  :  Took left fork
+  1733236354292  |  Philo 159  :  Eating
+  1733236354292  |  Philo 160  :  Thinking
+  1733236354292  |  Philo 161  :  Thinking
+  1733236354292  |  Philo 161  :  Took right fork
+  1733236354292  |  Philo 161  :  Took left fork
+  1733236354292  |  Philo 161  :  Eating
+  1733236354292  |  Philo 162  :  Thinking
+  1733236354292  |  Philo 163  :  Thinking
+  1733236354292  |  Philo 163  :  Took right fork
+  1733236354292  |  Philo 163  :  Took left fork
+  1733236354292  |  Philo 163  :  Eating
+  1733236354292  |  Philo 164  :  Thinking
+  1733236354292  |  Philo 166  :  Thinking
+  1733236354292  |  Philo 165  :  Thinking
+  1733236354292  |  Philo 166  :  Took left fork
+  1733236354292  |  Philo 166  :  Took right fork
+  1733236354292  |  Philo 166  :  Eating
+  1733236354292  |  Philo 167  :  Thinking
+  1733236354292  |  Philo 167  :  Took right fork
+  1733236354292  |  Philo 168  :  Thinking
+  1733236354292  |  Philo 169  :  Thinking
+  1733236354292  |  Philo 169  :  Took right fork
+  1733236354292  |  Philo 169  :  Took left fork
+  1733236354292  |  Philo 169  :  Eating
+  1733236354292  |  Philo 170  :  Thinking
+  1733236354292  |  Philo 171  :  Thinking
+  1733236354292  |  Philo 171  :  Took right fork
+  1733236354292  |  Philo 171  :  Took left fork
+  1733236354292  |  Philo 171  :  Eating
+  1733236354292  |  Philo 172  :  Thinking
+  1733236354292  |  Philo 173  :  Thinking
+  1733236354292  |  Philo 173  :  Took right fork
+  1733236354292  |  Philo 173  :  Took left fork
+  1733236354292  |  Philo 173  :  Eating
+  1733236354292  |  Philo 174  :  Thinking
+  1733236354292  |  Philo 175  :  Thinking
+  1733236354292  |  Philo 175  :  Took right fork
+  1733236354292  |  Philo 175  :  Took left fork
+  1733236354292  |  Philo 175  :  Eating
+  1733236354292  |  Philo 176  :  Thinking
+  1733236354292  |  Philo 177  :  Thinking
+  1733236354292  |  Philo 177  :  Took right fork
+  1733236354292  |  Philo 177  :  Took left fork
+  1733236354292  |  Philo 177  :  Eating
+  1733236354292  |  Philo 178  :  Thinking
+  1733236354292  |  Philo 179  :  Thinking
+  1733236354292  |  Philo 179  :  Took right fork
+  1733236354292  |  Philo 179  :  Took left fork
+  1733236354292  |  Philo 179  :  Eating
+  1733236354292  |  Philo 180  :  Thinking
+  1733236354292  |  Philo 181  :  Thinking
+  1733236354292  |  Philo 181  :  Took right fork
+  1733236354292  |  Philo 181  :  Took left fork
+  1733236354292  |  Philo 181  :  Eating
+  1733236354292  |  Philo 182  :  Thinking
+  1733236354293  |  Philo 183  :  Thinking
+  1733236354293  |  Philo 183  :  Took right fork
+  1733236354293  |  Philo 183  :  Took left fork
+  1733236354293  |  Philo 183  :  Eating
+  1733236354293  |  Philo 184  :  Thinking
+  1733236354293  |  Philo 186  :  Thinking
+  1733236354293  |  Philo 186  :  Took left fork
+  1733236354293  |  Philo 186  :  Took right fork
+  1733236354293  |  Philo 186  :  Eating
+  1733236354293  |  Philo 185  :  Thinking
+  1733236354293  |  Philo 187  :  Thinking
+  1733236354293  |  Philo 187  :  Took right fork
+  1733236354293  |  Philo 188  :  Thinking
+  1733236354293  |  Philo 189  :  Thinking
+  1733236354293  |  Philo 189  :  Took right fork
+  1733236354293  |  Philo 189  :  Took left fork
+  1733236354293  |  Philo 189  :  Eating
+  1733236354293  |  Philo 190  :  Thinking
+  1733236354293  |  Philo 191  :  Thinking
+  1733236354293  |  Philo 191  :  Took right fork
+  1733236354293  |  Philo 191  :  Took left fork
+  1733236354293  |  Philo 191  :  Eating
+  1733236354293  |  Philo 192  :  Thinking
+  1733236354293  |  Philo 193  :  Thinking
+  1733236354293  |  Philo 193  :  Took right fork
+  1733236354293  |  Philo 193  :  Took left fork
+  1733236354293  |  Philo 193  :  Eating
+  1733236354293  |  Philo 194  :  Thinking
+  1733236354293  |  Philo 195  :  Thinking
+  1733236354293  |  Philo 195  :  Took right fork
+  1733236354293  |  Philo 195  :  Took left fork
+  1733236354293  |  Philo 195  :  Eating
+  1733236354293  |  Philo 196  :  Thinking
+  1733236354293  |  Philo 197  :  Thinking
+  1733236354293  |  Philo 197  :  Took right fork
+  1733236354293  |  Philo 197  :  Took left fork
+  1733236354293  |  Philo 197  :  Eating
+  1733236354293  |  Philo 198  :  Thinking
+  1733236354293  |  Philo 199  :  Thinking
+  1733236354489  |  Philo 0  :  Left left fork
+  1733236354489  |  Philo 0  :  Left right fork
+  1733236354489  |  Philo 0  :  Sleeping
+  1733236354489  |  Philo 199  :  Took right fork
+  1733236354489  |  Philo 199  :  Took left fork
+  1733236354489  |  Philo 199  :  Eating
+  1733236354489  |  Philo 1  :  Took left fork
+  1733236354489  |  Philo 1  :  Eating
+  1733236354489  |  Philo 7  :  Left left fork
+  1733236354489  |  Philo 7  :  Left right fork
+  1733236354489  |  Philo 7  :  Sleeping
+  1733236354489  |  Philo 3  :  Left left fork
+  1733236354489  |  Philo 3  :  Left right fork
+  1733236354489  |  Philo 8  :  Took left fork
+  1733236354489  |  Philo 4  :  Took left fork
+  1733236354489  |  Philo 3  :  Sleeping
+  1733236354489  |  Philo 9  :  Left left fork
+  1733236354489  |  Philo 9  :  Left right fork
+  1733236354489  |  Philo 9  :  Sleeping
+  1733236354489  |  Philo 5  :  Left left fork
+  1733236354489  |  Philo 5  :  Left right fork
+  1733236354489  |  Philo 4  :  Took right fork
+  1733236354489  |  Philo 10  :  Took left fork
+  1733236354489  |  Philo 6  :  Took left fork
+  1733236354489  |  Philo 4  :  Eating
+  1733236354489  |  Philo 5  :  Sleeping
+  1733236354489  |  Philo 6  :  Took right fork
+  1733236354489  |  Philo 8  :  Took right fork
+  1733236354489  |  Philo 11  :  Left left fork
+  1733236354489  |  Philo 11  :  Left right fork
+  1733236354489  |  Philo 10  :  Took right fork
+  1733236354489  |  Philo 12  :  Took left fork
+  1733236354489  |  Philo 6  :  Eating
+  1733236354489  |  Philo 8  :  Eating
+  1733236354489  |  Philo 11  :  Sleeping
+  1733236354489  |  Philo 10  :  Eating
+  1733236354489  |  Philo 13  :  Left left fork
+  1733236354489  |  Philo 13  :  Left right fork
+  1733236354489  |  Philo 13  :  Sleeping
+  1733236354489  |  Philo 12  :  Took right fork
+  1733236354489  |  Philo 12  :  Eating
+  1733236354489  |  Philo 14  :  Took left fork
+  1733236354489  |  Philo 15  :  Left left fork
+  1733236354489  |  Philo 15  :  Left right fork
+  1733236354489  |  Philo 15  :  Sleeping
+  1733236354489  |  Philo 14  :  Took right fork
+  1733236354489  |  Philo 14  :  Eating
+  1733236354489  |  Philo 16  :  Took left fork
+  1733236354489  |  Philo 17  :  Left left fork
+  1733236354489  |  Philo 17  :  Left right fork
+  1733236354489  |  Philo 17  :  Sleeping
+  1733236354489  |  Philo 16  :  Took right fork
+  1733236354489  |  Philo 16  :  Eating
+  1733236354489  |  Philo 18  :  Took left fork
+  1733236354489  |  Philo 19  :  Left left fork
+  1733236354489  |  Philo 19  :  Left right fork
+  1733236354489  |  Philo 19  :  Sleeping
+  1733236354489  |  Philo 18  :  Took right fork
+  1733236354489  |  Philo 18  :  Eating
+  1733236354489  |  Philo 20  :  Took left fork
+  1733236354489  |  Philo 21  :  Left left fork
+  1733236354489  |  Philo 21  :  Left right fork
+  1733236354489  |  Philo 21  :  Sleeping
+  1733236354489  |  Philo 20  :  Took right fork
+  1733236354489  |  Philo 20  :  Eating
+  1733236354489  |  Philo 22  :  Took left fork
+  1733236354489  |  Philo 23  :  Left left fork
+  1733236354489  |  Philo 23  :  Left right fork
+  1733236354489  |  Philo 23  :  Sleeping
+  1733236354489  |  Philo 22  :  Took right fork
+  1733236354489  |  Philo 22  :  Eating
+  1733236354489  |  Philo 24  :  Took left fork
+  1733236354489  |  Philo 25  :  Left left fork
+  1733236354489  |  Philo 25  :  Left right fork
+  1733236354489  |  Philo 25  :  Sleeping
+  1733236354489  |  Philo 24  :  Took right fork
+  1733236354489  |  Philo 24  :  Eating
+  1733236354489  |  Philo 28  :  Left left fork
+  1733236354489  |  Philo 28  :  Left right fork
+  1733236354489  |  Philo 28  :  Sleeping
+  1733236354489  |  Philo 27  :  Took right fork
+  1733236354489  |  Philo 29  :  Took left fork
+  1733236354489  |  Philo 27  :  Took left fork
+  1733236354489  |  Philo 29  :  Eating
+  1733236354489  |  Philo 27  :  Eating
+  1733236354489  |  Philo 26  :  Took left fork
+  1733236354489  |  Philo 31  :  Left left fork
+  1733236354489  |  Philo 31  :  Left right fork
+  1733236354489  |  Philo 31  :  Sleeping
+  1733236354490  |  Philo 32  :  Took left fork
+  1733236354490  |  Philo 33  :  Left left fork
+  1733236354490  |  Philo 33  :  Left right fork
+  1733236354490  |  Philo 33  :  Sleeping
+  1733236354490  |  Philo 32  :  Took right fork
+  1733236354490  |  Philo 32  :  Eating
+  1733236354490  |  Philo 34  :  Took left fork
+  1733236354490  |  Philo 35  :  Left left fork
+  1733236354490  |  Philo 35  :  Left right fork
+  1733236354490  |  Philo 35  :  Sleeping
+  1733236354490  |  Philo 34  :  Took right fork
+  1733236354490  |  Philo 34  :  Eating
+  1733236354490  |  Philo 36  :  Took left fork
+  1733236354490  |  Philo 37  :  Left left fork
+  1733236354490  |  Philo 37  :  Left right fork
+  1733236354490  |  Philo 36  :  Took right fork
+  1733236354490  |  Philo 37  :  Sleeping
+  1733236354490  |  Philo 36  :  Eating
+  1733236354490  |  Philo 38  :  Took left fork
+  1733236354490  |  Philo 39  :  Left left fork
+  1733236354490  |  Philo 39  :  Left right fork
+  1733236354490  |  Philo 39  :  Sleeping
+  1733236354490  |  Philo 40  :  Took left fork
+  1733236354490  |  Philo 41  :  Left left fork
+  1733236354490  |  Philo 41  :  Left right fork
+  1733236354490  |  Philo 41  :  Sleeping
+  1733236354490  |  Philo 42  :  Took left fork
+  1733236354490  |  Philo 40  :  Took right fork
+  1733236354490  |  Philo 38  :  Took right fork
+  1733236354490  |  Philo 40  :  Eating
+  1733236354490  |  Philo 38  :  Eating
+  1733236354490  |  Philo 43  :  Left left fork
+  1733236354490  |  Philo 43  :  Left right fork
+  1733236354490  |  Philo 43  :  Sleeping
+  1733236354490  |  Philo 42  :  Took right fork
+  1733236354490  |  Philo 42  :  Eating
+  1733236354490  |  Philo 44  :  Took left fork
+  1733236354490  |  Philo 45  :  Left left fork
+  1733236354490  |  Philo 44  :  Took right fork
+  1733236354490  |  Philo 45  :  Left right fork
+  1733236354490  |  Philo 44  :  Eating
+  1733236354490  |  Philo 45  :  Sleeping
+  1733236354490  |  Philo 47  :  Left left fork
+  1733236354490  |  Philo 47  :  Left right fork
+  1733236354490  |  Philo 47  :  Sleeping
+  1733236354490  |  Philo 48  :  Took left fork
+  1733236354490  |  Philo 46  :  Took left fork
+  1733236354490  |  Philo 46  :  Took right fork
+  1733236354490  |  Philo 46  :  Eating
+  1733236354490  |  Philo 49  :  Left left fork
+  1733236354490  |  Philo 49  :  Left right fork
+  1733236354490  |  Philo 49  :  Sleeping
+  1733236354490  |  Philo 50  :  Took left fork
+  1733236354490  |  Philo 51  :  Left left fork
+  1733236354490  |  Philo 51  :  Left right fork
+  1733236354490  |  Philo 51  :  Sleeping
+  1733236354490  |  Philo 50  :  Took right fork
+  1733236354490  |  Philo 50  :  Eating
+  1733236354490  |  Philo 48  :  Took right fork
+  1733236354490  |  Philo 48  :  Eating
+  1733236354490  |  Philo 52  :  Took left fork
+  1733236354490  |  Philo 53  :  Left left fork
+  1733236354490  |  Philo 53  :  Left right fork
+  1733236354490  |  Philo 53  :  Sleeping
+  1733236354490  |  Philo 52  :  Took right fork
+  1733236354490  |  Philo 52  :  Eating
+  1733236354490  |  Philo 54  :  Took left fork
+  1733236354490  |  Philo 55  :  Left left fork
+  1733236354490  |  Philo 55  :  Left right fork
+  1733236354490  |  Philo 55  :  Sleeping
+  1733236354490  |  Philo 56  :  Took left fork
+  1733236354490  |  Philo 57  :  Left left fork
+  1733236354490  |  Philo 59  :  Left left fork
+  1733236354490  |  Philo 56  :  Took right fork
+  1733236354490  |  Philo 56  :  Eating
+  1733236354490  |  Philo 59  :  Left right fork
+  1733236354490  |  Philo 59  :  Sleeping
+  1733236354490  |  Philo 57  :  Left right fork
+  1733236354490  |  Philo 57  :  Sleeping
+  1733236354490  |  Philo 54  :  Took right fork
+  1733236354490  |  Philo 54  :  Eating
+  1733236354490  |  Philo 58  :  Took left fork
+  1733236354490  |  Philo 58  :  Took right fork
+  1733236354490  |  Philo 58  :  Eating
+  1733236354490  |  Philo 61  :  Left left fork
+  1733236354490  |  Philo 61  :  Left right fork
+  1733236354490  |  Philo 61  :  Sleeping
+  1733236354490  |  Philo 60  :  Took left fork
+  1733236354490  |  Philo 60  :  Took right fork
+  1733236354490  |  Philo 60  :  Eating
+  1733236354490  |  Philo 62  :  Took left fork
+  1733236354490  |  Philo 63  :  Left left fork
+  1733236354490  |  Philo 63  :  Left right fork
+  1733236354490  |  Philo 63  :  Sleeping
+  1733236354490  |  Philo 64  :  Took left fork
+  1733236354490  |  Philo 62  :  Took right fork
+  1733236354490  |  Philo 62  :  Eating
+  1733236354490  |  Philo 65  :  Left left fork
+  1733236354490  |  Philo 65  :  Left right fork
+  1733236354490  |  Philo 65  :  Sleeping
+  1733236354490  |  Philo 67  :  Left left fork
+  1733236354490  |  Philo 67  :  Left right fork
+  1733236354490  |  Philo 67  :  Sleeping
+  1733236354490  |  Philo 66  :  Took left fork
+  1733236354490  |  Philo 66  :  Took right fork
+  1733236354490  |  Philo 66  :  Eating
+  1733236354490  |  Philo 64  :  Took right fork
+  1733236354490  |  Philo 64  :  Eating
+  1733236354490  |  Philo 68  :  Took left fork
+  1733236354490  |  Philo 69  :  Left left fork
+  1733236354490  |  Philo 69  :  Left right fork
+  1733236354490  |  Philo 71  :  Left left fork
+  1733236354490  |  Philo 71  :  Left right fork
+  1733236354490  |  Philo 71  :  Sleeping
+  1733236354490  |  Philo 70  :  Took left fork
+  1733236354490  |  Philo 70  :  Took right fork
+  1733236354490  |  Philo 70  :  Eating
+  1733236354490  |  Philo 69  :  Sleeping
+  1733236354490  |  Philo 68  :  Took right fork
+  1733236354490  |  Philo 68  :  Eating
+  1733236354490  |  Philo 72  :  Took left fork
+  1733236354490  |  Philo 73  :  Left left fork
+  1733236354490  |  Philo 73  :  Left right fork
+  1733236354490  |  Philo 73  :  Sleeping
+  1733236354490  |  Philo 75  :  Left left fork
+  1733236354490  |  Philo 75  :  Left right fork
+  1733236354490  |  Philo 75  :  Sleeping
+  1733236354490  |  Philo 74  :  Took left fork
+  1733236354490  |  Philo 74  :  Took right fork
+  1733236354490  |  Philo 74  :  Eating
+  1733236354490  |  Philo 76  :  Took left fork
+  1733236354490  |  Philo 72  :  Took right fork
+  1733236354490  |  Philo 72  :  Eating
+  1733236354490  |  Philo 79  :  Left left fork
+  1733236354490  |  Philo 76  :  Took right fork
+  1733236354490  |  Philo 76  :  Eating
+  1733236354490  |  Philo 79  :  Left right fork
+  1733236354490  |  Philo 79  :  Sleeping
+  1733236354490  |  Philo 77  :  Left left fork
+  1733236354490  |  Philo 77  :  Left right fork
+  1733236354490  |  Philo 77  :  Sleeping
+  1733236354490  |  Philo 80  :  Took left fork
+  1733236354490  |  Philo 78  :  Took left fork
+  1733236354490  |  Philo 78  :  Took right fork
+  1733236354490  |  Philo 78  :  Eating
+  1733236354490  |  Philo 81  :  Left left fork
+  1733236354490  |  Philo 81  :  Left right fork
+  1733236354490  |  Philo 83  :  Left left fork
+  1733236354490  |  Philo 83  :  Left right fork
+  1733236354490  |  Philo 83  :  Sleeping
+  1733236354490  |  Philo 84  :  Took left fork
+  1733236354490  |  Philo 81  :  Sleeping
+  1733236354490  |  Philo 80  :  Took right fork
+  1733236354490  |  Philo 80  :  Eating
+  1733236354490  |  Philo 82  :  Took left fork
+  1733236354490  |  Philo 82  :  Took right fork
+  1733236354490  |  Philo 82  :  Eating
+  1733236354491  |  Philo 85  :  Left left fork
+  1733236354491  |  Philo 87  :  Left left fork
+  1733236354491  |  Philo 84  :  Took right fork
+  1733236354491  |  Philo 84  :  Eating
+  1733236354491  |  Philo 86  :  Took left fork
+  1733236354491  |  Philo 86  :  Took right fork
+  1733236354491  |  Philo 86  :  Eating
+  1733236354491  |  Philo 87  :  Left right fork
+  1733236354491  |  Philo 87  :  Sleeping
+  1733236354491  |  Philo 88  :  Took left fork
+  1733236354491  |  Philo 85  :  Left right fork
+  1733236354491  |  Philo 85  :  Sleeping
+  1733236354491  |  Philo 89  :  Left left fork
+  1733236354491  |  Philo 91  :  Left left fork
+  1733236354491  |  Philo 88  :  Took right fork
+  1733236354491  |  Philo 88  :  Eating
+  1733236354491  |  Philo 92  :  Took left fork
+  1733236354491  |  Philo 91  :  Left right fork
+  1733236354491  |  Philo 91  :  Sleeping
+  1733236354491  |  Philo 89  :  Left right fork
+  1733236354491  |  Philo 89  :  Sleeping
+  1733236354491  |  Philo 90  :  Took left fork
+  1733236354491  |  Philo 90  :  Took right fork
+  1733236354491  |  Philo 90  :  Eating
+  1733236354491  |  Philo 93  :  Left left fork
+  1733236354491  |  Philo 93  :  Left right fork
+  1733236354491  |  Philo 95  :  Left left fork
+  1733236354491  |  Philo 95  :  Left right fork
+  1733236354491  |  Philo 94  :  Took left fork
+  1733236354491  |  Philo 95  :  Sleeping
+  1733236354491  |  Philo 94  :  Took right fork
+  1733236354491  |  Philo 94  :  Eating
+  1733236354491  |  Philo 93  :  Sleeping
+  1733236354491  |  Philo 92  :  Took right fork
+  1733236354491  |  Philo 96  :  Took left fork
+  1733236354491  |  Philo 92  :  Eating
+  1733236354491  |  Philo 97  :  Left left fork
+  1733236354491  |  Philo 96  :  Took right fork
+  1733236354491  |  Philo 96  :  Eating
+  1733236354491  |  Philo 97  :  Left right fork
+  1733236354491  |  Philo 97  :  Sleeping
+  1733236354491  |  Philo 98  :  Took left fork
+  1733236354491  |  Philo 98  :  Took right fork
+  1733236354491  |  Philo 99  :  Left left fork
+  1733236354491  |  Philo 98  :  Eating
+  1733236354491  |  Philo 99  :  Left right fork
+  1733236354491  |  Philo 99  :  Sleeping
+  1733236354491  |  Philo 100  :  Took left fork
+  1733236354491  |  Philo 101  :  Left left fork
+  1733236354491  |  Philo 100  :  Took right fork
+  1733236354491  |  Philo 100  :  Eating
+  1733236354491  |  Philo 101  :  Left right fork
+  1733236354491  |  Philo 101  :  Sleeping
+  1733236354491  |  Philo 103  :  Left left fork
+  1733236354491  |  Philo 102  :  Took left fork
+  1733236354491  |  Philo 103  :  Left right fork
+  1733236354491  |  Philo 102  :  Took right fork
+  1733236354491  |  Philo 103  :  Sleeping
+  1733236354491  |  Philo 102  :  Eating
+  1733236354491  |  Philo 104  :  Took left fork
+  1733236354491  |  Philo 107  :  Left left fork
+  1733236354491  |  Philo 105  :  Left left fork
+  1733236354491  |  Philo 107  :  Left right fork
+  1733236354491  |  Philo 107  :  Sleeping
+  1733236354491  |  Philo 105  :  Left right fork
+  1733236354491  |  Philo 105  :  Sleeping
+  1733236354491  |  Philo 108  :  Took left fork
+  1733236354491  |  Philo 106  :  Took left fork
+  1733236354491  |  Philo 106  :  Took right fork
+  1733236354491  |  Philo 106  :  Eating
+  1733236354491  |  Philo 104  :  Took right fork
+  1733236354491  |  Philo 104  :  Eating
+  1733236354491  |  Philo 109  :  Left left fork
+  1733236354491  |  Philo 109  :  Left right fork
+  1733236354491  |  Philo 109  :  Sleeping
+  1733236354491  |  Philo 108  :  Took right fork
+  1733236354491  |  Philo 108  :  Eating
+  1733236354491  |  Philo 111  :  Left left fork
+  1733236354491  |  Philo 110  :  Took left fork
+  1733236354491  |  Philo 111  :  Left right fork
+  1733236354491  |  Philo 112  :  Took left fork
+  1733236354491  |  Philo 110  :  Took right fork
+  1733236354491  |  Philo 111  :  Sleeping
+  1733236354491  |  Philo 110  :  Eating
+  1733236354491  |  Philo 113  :  Left left fork
+  1733236354491  |  Philo 113  :  Left right fork
+  1733236354491  |  Philo 113  :  Sleeping
+  1733236354491  |  Philo 112  :  Took right fork
+  1733236354491  |  Philo 112  :  Eating
+  1733236354491  |  Philo 114  :  Took left fork
+  1733236354491  |  Philo 115  :  Left left fork
+  1733236354491  |  Philo 115  :  Left right fork
+  1733236354491  |  Philo 115  :  Sleeping
+  1733236354491  |  Philo 114  :  Took right fork
+  1733236354491  |  Philo 114  :  Eating
+  1733236354491  |  Philo 116  :  Took left fork
+  1733236354491  |  Philo 117  :  Left left fork
+  1733236354491  |  Philo 117  :  Left right fork
+  1733236354491  |  Philo 117  :  Sleeping
+  1733236354491  |  Philo 118  :  Took left fork
+  1733236354491  |  Philo 116  :  Took right fork
+  1733236354491  |  Philo 116  :  Eating
+  1733236354491  |  Philo 119  :  Left left fork
+  1733236354491  |  Philo 119  :  Left right fork
+  1733236354491  |  Philo 119  :  Sleeping
+  1733236354491  |  Philo 121  :  Left left fork
+  1733236354491  |  Philo 121  :  Left right fork
+  1733236354491  |  Philo 121  :  Sleeping
+  1733236354491  |  Philo 118  :  Took right fork
+  1733236354491  |  Philo 122  :  Took left fork
+  1733236354491  |  Philo 118  :  Eating
+  1733236354491  |  Philo 120  :  Took left fork
+  1733236354491  |  Philo 120  :  Took right fork
+  1733236354491  |  Philo 120  :  Eating
+  1733236354491  |  Philo 123  :  Left left fork
+  1733236354491  |  Philo 123  :  Left right fork
+  1733236354491  |  Philo 123  :  Sleeping
+  1733236354491  |  Philo 122  :  Took right fork
+  1733236354491  |  Philo 122  :  Eating
+  1733236354491  |  Philo 124  :  Took left fork
+  1733236354491  |  Philo 125  :  Left left fork
+  1733236354491  |  Philo 125  :  Left right fork
+  1733236354491  |  Philo 125  :  Sleeping
+  1733236354491  |  Philo 126  :  Took left fork
+  1733236354491  |  Philo 124  :  Took right fork
+  1733236354491  |  Philo 124  :  Eating
+  1733236354491  |  Philo 127  :  Left left fork
+  1733236354491  |  Philo 127  :  Left right fork
+  1733236354491  |  Philo 127  :  Sleeping
+  1733236354491  |  Philo 126  :  Took right fork
+  1733236354491  |  Philo 126  :  Eating
+  1733236354491  |  Philo 128  :  Took left fork
+  1733236354491  |  Philo 129  :  Left left fork
+  1733236354491  |  Philo 129  :  Left right fork
+  1733236354491  |  Philo 129  :  Sleeping
+  1733236354491  |  Philo 130  :  Took left fork
+  1733236354491  |  Philo 128  :  Took right fork
+  1733236354491  |  Philo 128  :  Eating
+  1733236354491  |  Philo 131  :  Left left fork
+  1733236354491  |  Philo 131  :  Left right fork
+  1733236354491  |  Philo 131  :  Sleeping
+  1733236354491  |  Philo 133  :  Left left fork
+  1733236354491  |  Philo 133  :  Left right fork
+  1733236354491  |  Philo 133  :  Sleeping
+  1733236354491  |  Philo 130  :  Took right fork
+  1733236354491  |  Philo 132  :  Took left fork
+  1733236354491  |  Philo 132  :  Took right fork
+  1733236354491  |  Philo 130  :  Eating
+  1733236354491  |  Philo 134  :  Took left fork
+  1733236354491  |  Philo 132  :  Eating
+  1733236354491  |  Philo 137  :  Left left fork
+  1733236354491  |  Philo 137  :  Left right fork
+  1733236354491  |  Philo 137  :  Sleeping
+  1733236354491  |  Philo 135  :  Left left fork
+  1733236354491  |  Philo 135  :  Left right fork
+  1733236354491  |  Philo 135  :  Sleeping
+  1733236354491  |  Philo 134  :  Took right fork
+  1733236354491  |  Philo 134  :  Eating
+  1733236354491  |  Philo 138  :  Took left fork
+  1733236354492  |  Philo 136  :  Took left fork
+  1733236354492  |  Philo 136  :  Took right fork
+  1733236354492  |  Philo 136  :  Eating
+  1733236354492  |  Philo 139  :  Left left fork
+  1733236354492  |  Philo 139  :  Left right fork
+  1733236354492  |  Philo 138  :  Took right fork
+  1733236354492  |  Philo 139  :  Sleeping
+  1733236354492  |  Philo 138  :  Eating
+  1733236354492  |  Philo 141  :  Left left fork
+  1733236354492  |  Philo 140  :  Took left fork
+  1733236354492  |  Philo 142  :  Took left fork
+  1733236354492  |  Philo 140  :  Took right fork
+  1733236354492  |  Philo 140  :  Eating
+  1733236354492  |  Philo 141  :  Left right fork
+  1733236354492  |  Philo 141  :  Sleeping
+  1733236354492  |  Philo 143  :  Left left fork
+  1733236354492  |  Philo 143  :  Left right fork
+  1733236354492  |  Philo 143  :  Sleeping
+  1733236354492  |  Philo 142  :  Took right fork
+  1733236354492  |  Philo 142  :  Eating
+  1733236354492  |  Philo 144  :  Took left fork
+  1733236354492  |  Philo 145  :  Left left fork
+  1733236354492  |  Philo 145  :  Left right fork
+  1733236354492  |  Philo 144  :  Took right fork
+  1733236354492  |  Philo 145  :  Sleeping
+  1733236354492  |  Philo 144  :  Eating
+  1733236354492  |  Philo 146  :  Took left fork
+  1733236354492  |  Philo 149  :  Left left fork
+  1733236354492  |  Philo 149  :  Left right fork
+  1733236354492  |  Philo 149  :  Sleeping
+  1733236354492  |  Philo 147  :  Left left fork
+  1733236354492  |  Philo 150  :  Took left fork
+  1733236354492  |  Philo 147  :  Left right fork
+  1733236354492  |  Philo 150  :  Took right fork
+  1733236354492  |  Philo 147  :  Sleeping
+  1733236354492  |  Philo 150  :  Eating
+  1733236354492  |  Philo 146  :  Took right fork
+  1733236354492  |  Philo 146  :  Eating
+  1733236354492  |  Philo 148  :  Took left fork
+  1733236354492  |  Philo 148  :  Took right fork
+  1733236354492  |  Philo 148  :  Eating
+  1733236354492  |  Philo 155  :  Left left fork
+  1733236354492  |  Philo 155  :  Left right fork
+  1733236354492  |  Philo 155  :  Sleeping
+  1733236354492  |  Philo 152  :  Left left fork
+  1733236354492  |  Philo 152  :  Left right fork
+  1733236354492  |  Philo 152  :  Sleeping
+  1733236354492  |  Philo 156  :  Took left fork
+  1733236354492  |  Philo 151  :  Took right fork
+  1733236354492  |  Philo 153  :  Took left fork
+  1733236354492  |  Philo 153  :  Eating
+  1733236354492  |  Philo 157  :  Left left fork
+  1733236354492  |  Philo 156  :  Took right fork
+  1733236354492  |  Philo 157  :  Left right fork
+  1733236354492  |  Philo 156  :  Eating
+  1733236354492  |  Philo 157  :  Sleeping
+  1733236354492  |  Philo 158  :  Took left fork
+  1733236354492  |  Philo 159  :  Left left fork
+  1733236354492  |  Philo 159  :  Left right fork
+  1733236354492  |  Philo 159  :  Sleeping
+  1733236354492  |  Philo 158  :  Took right fork
+  1733236354492  |  Philo 158  :  Eating
+  1733236354492  |  Philo 160  :  Took left fork
+  1733236354492  |  Philo 161  :  Left left fork
+  1733236354492  |  Philo 161  :  Left right fork
+  1733236354492  |  Philo 161  :  Sleeping
+  1733236354492  |  Philo 162  :  Took left fork
+  1733236354492  |  Philo 160  :  Took right fork
+  1733236354492  |  Philo 160  :  Eating
+  1733236354492  |  Philo 163  :  Left left fork
+  1733236354492  |  Philo 163  :  Left right fork
+  1733236354492  |  Philo 162  :  Took right fork
+  1733236354492  |  Philo 162  :  Eating
+  1733236354492  |  Philo 163  :  Sleeping
+  1733236354492  |  Philo 164  :  Took left fork
+  1733236354492  |  Philo 164  :  Took right fork
+  1733236354492  |  Philo 164  :  Eating
+  1733236354492  |  Philo 166  :  Left left fork
+  1733236354492  |  Philo 166  :  Left right fork
+  1733236354492  |  Philo 166  :  Sleeping
+  1733236354492  |  Philo 165  :  Took right fork
+  1733236354492  |  Philo 167  :  Took left fork
+  1733236354492  |  Philo 167  :  Eating
+  1733236354492  |  Philo 169  :  Left left fork
+  1733236354492  |  Philo 169  :  Left right fork
+  1733236354492  |  Philo 169  :  Sleeping
+  1733236354492  |  Philo 170  :  Took left fork
+  1733236354492  |  Philo 171  :  Left left fork
+  1733236354492  |  Philo 171  :  Left right fork
+  1733236354492  |  Philo 171  :  Sleeping
+  1733236354492  |  Philo 172  :  Took left fork
+  1733236354492  |  Philo 170  :  Took right fork
+  1733236354492  |  Philo 170  :  Eating
+  1733236354492  |  Philo 173  :  Left left fork
+  1733236354492  |  Philo 173  :  Left right fork
+  1733236354492  |  Philo 173  :  Sleeping
+  1733236354492  |  Philo 172  :  Took right fork
+  1733236354492  |  Philo 172  :  Eating
+  1733236354492  |  Philo 174  :  Took left fork
+  1733236354492  |  Philo 175  :  Left left fork
+  1733236354492  |  Philo 175  :  Left right fork
+  1733236354492  |  Philo 175  :  Sleeping
+  1733236354492  |  Philo 176  :  Took left fork
+  1733236354492  |  Philo 174  :  Took right fork
+  1733236354492  |  Philo 174  :  Eating
+  1733236354492  |  Philo 177  :  Left left fork
+  1733236354492  |  Philo 177  :  Left right fork
+  1733236354492  |  Philo 177  :  Sleeping
+  1733236354492  |  Philo 176  :  Took right fork
+  1733236354492  |  Philo 176  :  Eating
+  1733236354492  |  Philo 178  :  Took left fork
+  1733236354492  |  Philo 179  :  Left left fork
+  1733236354492  |  Philo 179  :  Left right fork
+  1733236354492  |  Philo 179  :  Sleeping
+  1733236354492  |  Philo 180  :  Took left fork
+  1733236354492  |  Philo 178  :  Took right fork
+  1733236354493  |  Philo 178  :  Eating
+  1733236354493  |  Philo 181  :  Left left fork
+  1733236354493  |  Philo 180  :  Took right fork
+  1733236354493  |  Philo 181  :  Left right fork
+  1733236354493  |  Philo 180  :  Eating
+  1733236354493  |  Philo 182  :  Took left fork
+  1733236354493  |  Philo 181  :  Sleeping
+  1733236354493  |  Philo 183  :  Left left fork
+  1733236354493  |  Philo 183  :  Left right fork
+  1733236354493  |  Philo 183  :  Sleeping
+  1733236354493  |  Philo 182  :  Took right fork
+  1733236354493  |  Philo 182  :  Eating
+  1733236354493  |  Philo 184  :  Took left fork
+  1733236354493  |  Philo 184  :  Took right fork
+  1733236354493  |  Philo 184  :  Eating
+  1733236354493  |  Philo 189  :  Left left fork
+  1733236354493  |  Philo 189  :  Left right fork
+  1733236354493  |  Philo 189  :  Sleeping
+  1733236354493  |  Philo 190  :  Took left fork
+  1733236354493  |  Philo 186  :  Left left fork
+  1733236354493  |  Philo 186  :  Left right fork
+  1733236354493  |  Philo 185  :  Took right fork
+  1733236354493  |  Philo 186  :  Sleeping
+  1733236354493  |  Philo 187  :  Took left fork
+  1733236354493  |  Philo 187  :  Eating
+  1733236354493  |  Philo 193  :  Left left fork
+  1733236354493  |  Philo 190  :  Took right fork
+  1733236354493  |  Philo 190  :  Eating
+  1733236354493  |  Philo 193  :  Left right fork
+  1733236354493  |  Philo 193  :  Sleeping
+  1733236354493  |  Philo 191  :  Left left fork
+  1733236354493  |  Philo 191  :  Left right fork
+  1733236354493  |  Philo 191  :  Sleeping
+  1733236354493  |  Philo 194  :  Took left fork
+  1733236354493  |  Philo 192  :  Took left fork
+  1733236354493  |  Philo 192  :  Took right fork
+  1733236354493  |  Philo 192  :  Eating
+  1733236354493  |  Philo 195  :  Left left fork
+  1733236354493  |  Philo 195  :  Left right fork
+  1733236354493  |  Philo 195  :  Sleeping
+  1733236354493  |  Philo 194  :  Took right fork
+  1733236354493  |  Philo 194  :  Eating
+  1733236354493  |  Philo 197  :  Left left fork
+  1733236354493  |  Philo 197  :  Left right fork
+  1733236354493  |  Philo 197  :  Sleeping
+  1733236354493  |  Philo 196  :  Took left fork
+  1733236354493  |  Philo 196  :  Took right fork
+  1733236354493  |  Philo 196  :  Eating
+  1733236354493  |  Philo 198  :  Took left fork
+  1733236354689  |  Philo 3  :  Thinking
+  1733236354689  |  Philo 10  :  Left left fork
+  1733236354689  |  Philo 10  :  Left right fork
+  1733236354689  |  Philo 10  :  Sleeping
+  1733236354689  |  Philo 5  :  Thinking
+  1733236354689  |  Philo 6  :  Left left fork
+  1733236354689  |  Philo 6  :  Left right fork
+  1733236354689  |  Philo 6  :  Sleeping
+  1733236354689  |  Philo 8  :  Left left fork
+  1733236354689  |  Philo 8  :  Left right fork
+  1733236354689  |  Philo 8  :  Sleeping
+  1733236354689  |  Philo 5  :  Took right fork
+  1733236354689  |  Philo 11  :  Thinking
+  1733236354689  |  Philo 9  :  Thinking
+  1733236354689  |  Philo 7  :  Thinking
+  1733236354689  |  Philo 9  :  Took right fork
+  1733236354689  |  Philo 7  :  Took right fork
+  1733236354689  |  Philo 7  :  Took left fork
+  1733236354689  |  Philo 7  :  Eating
+  1733236354689  |  Philo 9  :  Took left fork
+  1733236354689  |  Philo 9  :  Eating
+  1733236354689  |  Philo 198  :  Took right fork
+  1733236354689  |  Philo 198  :  Eating
+  1733236354689  |  Philo 0  :  Thinking
+  1733236354689  |  Philo 0  :  Took left fork
+  1733236354689  |  Philo 0  :  Took right fork
+  1733236354689  |  Philo 0  :  Eating
+  1733236354689  |  Philo 1  :  Left left fork
+  1733236354689  |  Philo 1  :  Left right fork
+  1733236354689  |  Philo 1  :  Sleeping
+  1733236354689  |  Philo 2  :  Took left fork
+  1733236354689  |  Philo 2  :  Took right fork
+  1733236354689  |  Philo 2  :  Eating
+  1733236354689  |  Philo 199  :  Left left fork
+  1733236354689  |  Philo 199  :  Left right fork
+  1733236354689  |  Philo 5  :  Took left fork
+  1733236354689  |  Philo 5  :  Eating
+  1733236354689  |  Philo 3  :  Took right fork
+  1733236354689  |  Philo 4  :  Left left fork
+  1733236354689  |  Philo 4  :  Left right fork
+  1733236354689  |  Philo 4  :  Sleeping
+  1733236354689  |  Philo 199  :  Sleeping
+  1733236354689  |  Philo 13  :  Thinking
+  1733236354689  |  Philo 17  :  Thinking
+  1733236354689  |  Philo 12  :  Left left fork
+  1733236354689  |  Philo 12  :  Left right fork
+  1733236354689  |  Philo 12  :  Sleeping
+  1733236354689  |  Philo 11  :  Took right fork
+  1733236354689  |  Philo 11  :  Took left fork
+  1733236354689  |  Philo 11  :  Eating
+  1733236354689  |  Philo 15  :  Thinking
+  1733236354689  |  Philo 14  :  Left left fork
+  1733236354689  |  Philo 14  :  Left right fork
+  1733236354689  |  Philo 14  :  Sleeping
+  1733236354689  |  Philo 13  :  Took right fork
+  1733236354689  |  Philo 13  :  Took left fork
+  1733236354689  |  Philo 13  :  Eating
+  1733236354689  |  Philo 16  :  Left left fork
+  1733236354689  |  Philo 16  :  Left right fork
+  1733236354689  |  Philo 16  :  Sleeping
+  1733236354689  |  Philo 15  :  Took right fork
+  1733236354689  |  Philo 15  :  Took left fork
+  1733236354689  |  Philo 15  :  Eating
+  1733236354689  |  Philo 19  :  Thinking
+  1733236354689  |  Philo 18  :  Left left fork
+  1733236354689  |  Philo 18  :  Left right fork
+  1733236354689  |  Philo 18  :  Sleeping
+  1733236354689  |  Philo 17  :  Took right fork
+  1733236354689  |  Philo 17  :  Took left fork
+  1733236354689  |  Philo 17  :  Eating
+  1733236354689  |  Philo 21  :  Thinking
+  1733236354689  |  Philo 20  :  Left left fork
+  1733236354689  |  Philo 20  :  Left right fork
+  1733236354689  |  Philo 20  :  Sleeping
+  1733236354689  |  Philo 19  :  Took right fork
+  1733236354689  |  Philo 19  :  Took left fork
+  1733236354689  |  Philo 19  :  Eating
+  1733236354689  |  Philo 23  :  Thinking
+  1733236354689  |  Philo 22  :  Left left fork
+  1733236354689  |  Philo 22  :  Left right fork
+  1733236354689  |  Philo 22  :  Sleeping
+  1733236354689  |  Philo 21  :  Took right fork
+  1733236354689  |  Philo 21  :  Took left fork
+  1733236354689  |  Philo 21  :  Eating
+  1733236354689  |  Philo 25  :  Thinking
+  1733236354689  |  Philo 23  :  Took right fork
+  1733236354689  |  Philo 23  :  Took left fork
+  1733236354689  |  Philo 23  :  Eating
+  1733236354689  |  Philo 24  :  Left left fork
+  1733236354689  |  Philo 24  :  Left right fork
+  1733236354689  |  Philo 24  :  Sleeping
+  1733236354689  |  Philo 28  :  Thinking
+  1733236354689  |  Philo 28  :  Took left fork
+  1733236354689  |  Philo 28  :  Took right fork
+  1733236354689  |  Philo 28  :  Eating
+  1733236354689  |  Philo 27  :  Left left fork
+  1733236354689  |  Philo 27  :  Left right fork
+  1733236354689  |  Philo 27  :  Sleeping
+  1733236354689  |  Philo 29  :  Left left fork
+  1733236354689  |  Philo 29  :  Left right fork
+  1733236354690  |  Philo 29  :  Sleeping
+  1733236354690  |  Philo 26  :  Took right fork
+  1733236354690  |  Philo 26  :  Eating
+  1733236354690  |  Philo 30  :  Took left fork
+  1733236354690  |  Philo 30  :  Took right fork
+  1733236354690  |  Philo 30  :  Eating
+  1733236354690  |  Philo 31  :  Thinking
+  1733236354690  |  Philo 33  :  Thinking
+  1733236354690  |  Philo 32  :  Left left fork
+  1733236354690  |  Philo 32  :  Left right fork
+  1733236354690  |  Philo 32  :  Sleeping
+  1733236354690  |  Philo 31  :  Took right fork
+  1733236354690  |  Philo 35  :  Thinking
+  1733236354690  |  Philo 34  :  Left left fork
+  1733236354690  |  Philo 34  :  Left right fork
+  1733236354690  |  Philo 34  :  Sleeping
+  1733236354690  |  Philo 33  :  Took right fork
+  1733236354690  |  Philo 33  :  Took left fork
+  1733236354690  |  Philo 33  :  Eating
+  1733236354690  |  Philo 37  :  Thinking
+  1733236354690  |  Philo 36  :  Left left fork
+  1733236354690  |  Philo 36  :  Left right fork
+  1733236354690  |  Philo 36  :  Sleeping
+  1733236354690  |  Philo 35  :  Took right fork
+  1733236354690  |  Philo 35  :  Took left fork
+  1733236354690  |  Philo 35  :  Eating
+  1733236354690  |  Philo 39  :  Thinking
+  1733236354690  |  Philo 41  :  Thinking
+  1733236354690  |  Philo 40  :  Left left fork
+  1733236354690  |  Philo 40  :  Left right fork
+  1733236354690  |  Philo 40  :  Sleeping
+  1733236354690  |  Philo 39  :  Took right fork
+  1733236354690  |  Philo 38  :  Left left fork
+  1733236354690  |  Philo 38  :  Left right fork
+  1733236354690  |  Philo 38  :  Sleeping
+  1733236354690  |  Philo 37  :  Took right fork
+  1733236354690  |  Philo 37  :  Took left fork
+  1733236354690  |  Philo 37  :  Eating
+  1733236354690  |  Philo 39  :  Took left fork
+  1733236354690  |  Philo 39  :  Eating
+  1733236354690  |  Philo 43  :  Thinking
+  1733236354690  |  Philo 42  :  Left left fork
+  1733236354690  |  Philo 42  :  Left right fork
+  1733236354690  |  Philo 42  :  Sleeping
+  1733236354690  |  Philo 41  :  Took right fork
+  1733236354690  |  Philo 41  :  Took left fork
+  1733236354690  |  Philo 41  :  Eating
+  1733236354690  |  Philo 44  :  Left left fork
+  1733236354690  |  Philo 44  :  Left right fork
+  1733236354690  |  Philo 44  :  Sleeping
+  1733236354690  |  Philo 43  :  Took right fork
+  1733236354690  |  Philo 45  :  Thinking
+  1733236354690  |  Philo 43  :  Took left fork
+  1733236354690  |  Philo 43  :  Eating
+  1733236354690  |  Philo 47  :  Thinking
+  1733236354690  |  Philo 49  :  Thinking
+  1733236354690  |  Philo 49  :  Took right fork
+  1733236354690  |  Philo 50  :  Left left fork
+  1733236354690  |  Philo 50  :  Left right fork
+  1733236354690  |  Philo 50  :  Sleeping
+  1733236354690  |  Philo 46  :  Left left fork
+  1733236354690  |  Philo 46  :  Left right fork
+  1733236354690  |  Philo 46  :  Sleeping
+  1733236354690  |  Philo 45  :  Took right fork
+  1733236354690  |  Philo 45  :  Took left fork
+  1733236354690  |  Philo 45  :  Eating
+  1733236354690  |  Philo 51  :  Thinking
+  1733236354690  |  Philo 48  :  Left left fork
+  1733236354690  |  Philo 48  :  Left right fork
+  1733236354690  |  Philo 48  :  Sleeping
+  1733236354690  |  Philo 47  :  Took right fork
+  1733236354690  |  Philo 47  :  Took left fork
+  1733236354690  |  Philo 47  :  Eating
+  1733236354690  |  Philo 49  :  Took left fork
+  1733236354690  |  Philo 49  :  Eating
+  1733236354690  |  Philo 53  :  Thinking
+  1733236354690  |  Philo 52  :  Left left fork
+  1733236354690  |  Philo 51  :  Took right fork
+  1733236354690  |  Philo 52  :  Left right fork
+  1733236354690  |  Philo 51  :  Took left fork
+  1733236354690  |  Philo 52  :  Sleeping
+  1733236354690  |  Philo 55  :  Thinking
+  1733236354690  |  Philo 51  :  Eating
+  1733236354690  |  Philo 59  :  Thinking
+  1733236354690  |  Philo 57  :  Thinking
+  1733236354690  |  Philo 56  :  Left left fork
+  1733236354690  |  Philo 55  :  Took right fork
+  1733236354690  |  Philo 56  :  Left right fork
+  1733236354690  |  Philo 56  :  Sleeping
+  1733236354690  |  Philo 54  :  Left left fork
+  1733236354690  |  Philo 54  :  Left right fork
+  1733236354690  |  Philo 54  :  Sleeping
+  1733236354690  |  Philo 53  :  Took right fork
+  1733236354690  |  Philo 53  :  Took left fork
+  1733236354690  |  Philo 53  :  Eating
+  1733236354690  |  Philo 55  :  Took left fork
+  1733236354690  |  Philo 55  :  Eating
+  1733236354690  |  Philo 58  :  Left left fork
+  1733236354690  |  Philo 58  :  Left right fork
+  1733236354690  |  Philo 60  :  Left left fork
+  1733236354690  |  Philo 60  :  Left right fork
+  1733236354690  |  Philo 58  :  Sleeping
+  1733236354690  |  Philo 60  :  Sleeping
+  1733236354690  |  Philo 57  :  Took right fork
+  1733236354690  |  Philo 59  :  Took right fork
+  1733236354690  |  Philo 59  :  Took left fork
+  1733236354690  |  Philo 57  :  Took left fork
+  1733236354690  |  Philo 57  :  Eating
+  1733236354690  |  Philo 59  :  Eating
+  1733236354690  |  Philo 61  :  Thinking
+  1733236354690  |  Philo 63  :  Thinking
+  1733236354690  |  Philo 67  :  Thinking
+  1733236354690  |  Philo 62  :  Left left fork
+  1733236354690  |  Philo 62  :  Left right fork
+  1733236354690  |  Philo 62  :  Sleeping
+  1733236354690  |  Philo 61  :  Took right fork
+  1733236354690  |  Philo 61  :  Took left fork
+  1733236354690  |  Philo 61  :  Eating
+  1733236354690  |  Philo 65  :  Thinking
+  1733236354690  |  Philo 66  :  Left left fork
+  1733236354690  |  Philo 66  :  Left right fork
+  1733236354690  |  Philo 66  :  Sleeping
+  1733236354690  |  Philo 65  :  Took right fork
+  1733236354690  |  Philo 64  :  Left left fork
+  1733236354690  |  Philo 64  :  Left right fork
+  1733236354690  |  Philo 64  :  Sleeping
+  1733236354690  |  Philo 63  :  Took right fork
+  1733236354690  |  Philo 63  :  Took left fork
+  1733236354690  |  Philo 63  :  Eating
+  1733236354690  |  Philo 65  :  Took left fork
+  1733236354690  |  Philo 65  :  Eating
+  1733236354690  |  Philo 71  :  Thinking
+  1733236354690  |  Philo 70  :  Left left fork
+  1733236354690  |  Philo 70  :  Left right fork
+  1733236354690  |  Philo 69  :  Thinking
+  1733236354690  |  Philo 69  :  Took right fork
+  1733236354690  |  Philo 70  :  Sleeping
+  1733236354690  |  Philo 68  :  Left left fork
+  1733236354690  |  Philo 68  :  Left right fork
+  1733236354690  |  Philo 68  :  Sleeping
+  1733236354690  |  Philo 67  :  Took right fork
+  1733236354690  |  Philo 69  :  Took left fork
+  1733236354690  |  Philo 67  :  Took left fork
+  1733236354690  |  Philo 69  :  Eating
+  1733236354690  |  Philo 67  :  Eating
+  1733236354690  |  Philo 73  :  Thinking
+  1733236354690  |  Philo 75  :  Thinking
+  1733236354690  |  Philo 74  :  Left left fork
+  1733236354690  |  Philo 74  :  Left right fork
+  1733236354690  |  Philo 74  :  Sleeping
+  1733236354690  |  Philo 73  :  Took right fork
+  1733236354690  |  Philo 72  :  Left left fork
+  1733236354690  |  Philo 72  :  Left right fork
+  1733236354690  |  Philo 71  :  Took right fork
+  1733236354690  |  Philo 72  :  Sleeping
+  1733236354690  |  Philo 73  :  Took left fork
+  1733236354690  |  Philo 73  :  Eating
+  1733236354690  |  Philo 71  :  Took left fork
+  1733236354690  |  Philo 71  :  Eating
+  1733236354690  |  Philo 79  :  Thinking
+  1733236354690  |  Philo 76  :  Left left fork
+  1733236354690  |  Philo 76  :  Left right fork
+  1733236354690  |  Philo 76  :  Sleeping
+  1733236354690  |  Philo 77  :  Thinking
+  1733236354690  |  Philo 75  :  Took right fork
+  1733236354690  |  Philo 75  :  Took left fork
+  1733236354690  |  Philo 75  :  Eating
+  1733236354690  |  Philo 78  :  Left left fork
+  1733236354690  |  Philo 78  :  Left right fork
+  1733236354690  |  Philo 78  :  Sleeping
+  1733236354690  |  Philo 77  :  Took right fork
+  1733236354690  |  Philo 77  :  Took left fork
+  1733236354690  |  Philo 77  :  Eating
+  1733236354690  |  Philo 83  :  Thinking
+  1733236354690  |  Philo 81  :  Thinking
+  1733236354691  |  Philo 80  :  Left left fork
+  1733236354691  |  Philo 80  :  Left right fork
+  1733236354691  |  Philo 80  :  Sleeping
+  1733236354691  |  Philo 79  :  Took right fork
+  1733236354691  |  Philo 79  :  Took left fork
+  1733236354691  |  Philo 79  :  Eating
+  1733236354691  |  Philo 82  :  Left left fork
+  1733236354691  |  Philo 82  :  Left right fork
+  1733236354691  |  Philo 82  :  Sleeping
+  1733236354691  |  Philo 81  :  Took right fork
+  1733236354691  |  Philo 81  :  Took left fork
+  1733236354691  |  Philo 81  :  Eating
+  1733236354691  |  Philo 84  :  Left left fork
+  1733236354691  |  Philo 84  :  Left right fork
+  1733236354691  |  Philo 84  :  Sleeping
+  1733236354691  |  Philo 86  :  Left left fork
+  1733236354691  |  Philo 85  :  Thinking
+  1733236354691  |  Philo 83  :  Took right fork
+  1733236354691  |  Philo 83  :  Took left fork
+  1733236354691  |  Philo 83  :  Eating
+  1733236354691  |  Philo 85  :  Took right fork
+  1733236354691  |  Philo 87  :  Thinking
+  1733236354691  |  Philo 86  :  Left right fork
+  1733236354691  |  Philo 85  :  Took left fork
+  1733236354691  |  Philo 86  :  Sleeping
+  1733236354691  |  Philo 85  :  Eating
+  1733236354691  |  Philo 91  :  Thinking
+  1733236354691  |  Philo 88  :  Left left fork
+  1733236354691  |  Philo 88  :  Left right fork
+  1733236354691  |  Philo 88  :  Sleeping
+  1733236354691  |  Philo 89  :  Thinking
+  1733236354691  |  Philo 87  :  Took right fork
+  1733236354691  |  Philo 87  :  Took left fork
+  1733236354691  |  Philo 87  :  Eating
+  1733236354691  |  Philo 90  :  Left left fork
+  1733236354691  |  Philo 90  :  Left right fork
+  1733236354691  |  Philo 90  :  Sleeping
+  1733236354691  |  Philo 89  :  Took right fork
+  1733236354691  |  Philo 89  :  Took left fork
+  1733236354691  |  Philo 89  :  Eating
+  1733236354691  |  Philo 95  :  Thinking
+  1733236354691  |  Philo 94  :  Left left fork
+  1733236354691  |  Philo 94  :  Left right fork
+  1733236354691  |  Philo 93  :  Thinking
+  1733236354691  |  Philo 93  :  Took right fork
+  1733236354691  |  Philo 94  :  Sleeping
+  1733236354691  |  Philo 92  :  Left left fork
+  1733236354691  |  Philo 91  :  Took right fork
+  1733236354691  |  Philo 91  :  Took left fork
+  1733236354691  |  Philo 91  :  Eating
+  1733236354691  |  Philo 92  :  Left right fork
+  1733236354691  |  Philo 93  :  Took left fork
+  1733236354691  |  Philo 92  :  Sleeping
+  1733236354691  |  Philo 93  :  Eating
+  1733236354691  |  Philo 97  :  Thinking
+  1733236354691  |  Philo 96  :  Left left fork
+  1733236354691  |  Philo 96  :  Left right fork
+  1733236354691  |  Philo 96  :  Sleeping
+  1733236354691  |  Philo 95  :  Took right fork
+  1733236354691  |  Philo 95  :  Took left fork
+  1733236354691  |  Philo 95  :  Eating
+  1733236354691  |  Philo 99  :  Thinking
+  1733236354691  |  Philo 98  :  Left left fork
+  1733236354691  |  Philo 98  :  Left right fork
+  1733236354691  |  Philo 98  :  Sleeping
+  1733236354691  |  Philo 97  :  Took right fork
+  1733236354691  |  Philo 97  :  Took left fork
+  1733236354691  |  Philo 97  :  Eating
+  1733236354691  |  Philo 101  :  Thinking
+  1733236354691  |  Philo 100  :  Left left fork
+  1733236354691  |  Philo 100  :  Left right fork
+  1733236354691  |  Philo 100  :  Sleeping
+  1733236354691  |  Philo 99  :  Took right fork
+  1733236354691  |  Philo 99  :  Took left fork
+  1733236354691  |  Philo 99  :  Eating
+  1733236354691  |  Philo 103  :  Thinking
+  1733236354691  |  Philo 102  :  Left left fork
+  1733236354691  |  Philo 102  :  Left right fork
+  1733236354691  |  Philo 102  :  Sleeping
+  1733236354691  |  Philo 101  :  Took right fork
+  1733236354691  |  Philo 101  :  Took left fork
+  1733236354691  |  Philo 101  :  Eating
+  1733236354691  |  Philo 107  :  Thinking
+  1733236354691  |  Philo 106  :  Left left fork
+  1733236354691  |  Philo 106  :  Left right fork
+  1733236354691  |  Philo 105  :  Thinking
+  1733236354691  |  Philo 105  :  Took right fork
+  1733236354691  |  Philo 105  :  Took left fork
+  1733236354691  |  Philo 105  :  Eating
+  1733236354691  |  Philo 106  :  Sleeping
+  1733236354691  |  Philo 104  :  Left left fork
+  1733236354691  |  Philo 104  :  Left right fork
+  1733236354691  |  Philo 104  :  Sleeping
+  1733236354691  |  Philo 103  :  Took right fork
+  1733236354691  |  Philo 103  :  Took left fork
+  1733236354691  |  Philo 103  :  Eating
+  1733236354691  |  Philo 109  :  Thinking
+  1733236354691  |  Philo 108  :  Left left fork
+  1733236354691  |  Philo 108  :  Left right fork
+  1733236354691  |  Philo 108  :  Sleeping
+  1733236354691  |  Philo 107  :  Took right fork
+  1733236354691  |  Philo 111  :  Thinking
+  1733236354691  |  Philo 107  :  Took left fork
+  1733236354691  |  Philo 110  :  Left left fork
+  1733236354691  |  Philo 107  :  Eating
+  1733236354691  |  Philo 110  :  Left right fork
+  1733236354691  |  Philo 109  :  Took right fork
+  1733236354691  |  Philo 110  :  Sleeping
+  1733236354691  |  Philo 109  :  Took left fork
+  1733236354691  |  Philo 109  :  Eating
+  1733236354691  |  Philo 113  :  Thinking
+  1733236354691  |  Philo 112  :  Left left fork
+  1733236354691  |  Philo 112  :  Left right fork
+  1733236354691  |  Philo 112  :  Sleeping
+  1733236354691  |  Philo 111  :  Took right fork
+  1733236354691  |  Philo 111  :  Took left fork
+  1733236354691  |  Philo 111  :  Eating
+  1733236354691  |  Philo 115  :  Thinking
+  1733236354691  |  Philo 114  :  Left left fork
+  1733236354691  |  Philo 114  :  Left right fork
+  1733236354691  |  Philo 114  :  Sleeping
+  1733236354691  |  Philo 113  :  Took right fork
+  1733236354691  |  Philo 113  :  Took left fork
+  1733236354691  |  Philo 113  :  Eating
+  1733236354691  |  Philo 117  :  Thinking
+  1733236354691  |  Philo 116  :  Left left fork
+  1733236354691  |  Philo 116  :  Left right fork
+  1733236354691  |  Philo 116  :  Sleeping
+  1733236354691  |  Philo 115  :  Took right fork
+  1733236354691  |  Philo 115  :  Took left fork
+  1733236354691  |  Philo 115  :  Eating
+  1733236354691  |  Philo 119  :  Thinking
+  1733236354691  |  Philo 121  :  Thinking
+  1733236354691  |  Philo 118  :  Left left fork
+  1733236354691  |  Philo 118  :  Left right fork
+  1733236354691  |  Philo 118  :  Sleeping
+  1733236354691  |  Philo 117  :  Took right fork
+  1733236354691  |  Philo 122  :  Left left fork
+  1733236354691  |  Philo 121  :  Took right fork
+  1733236354691  |  Philo 122  :  Left right fork
+  1733236354691  |  Philo 122  :  Sleeping
+  1733236354691  |  Philo 117  :  Took left fork
+  1733236354691  |  Philo 117  :  Eating
+  1733236354691  |  Philo 120  :  Left left fork
+  1733236354691  |  Philo 120  :  Left right fork
+  1733236354691  |  Philo 120  :  Sleeping
+  1733236354691  |  Philo 119  :  Took right fork
+  1733236354691  |  Philo 119  :  Took left fork
+  1733236354691  |  Philo 119  :  Eating
+  1733236354691  |  Philo 121  :  Took left fork
+  1733236354691  |  Philo 121  :  Eating
+  1733236354691  |  Philo 123  :  Thinking
+  1733236354691  |  Philo 125  :  Thinking
+  1733236354691  |  Philo 124  :  Left left fork
+  1733236354691  |  Philo 124  :  Left right fork
+  1733236354691  |  Philo 124  :  Sleeping
+  1733236354691  |  Philo 123  :  Took right fork
+  1733236354691  |  Philo 123  :  Took left fork
+  1733236354691  |  Philo 123  :  Eating
+  1733236354691  |  Philo 127  :  Thinking
+  1733236354691  |  Philo 126  :  Left left fork
+  1733236354691  |  Philo 126  :  Left right fork
+  1733236354691  |  Philo 126  :  Sleeping
+  1733236354691  |  Philo 125  :  Took right fork
+  1733236354691  |  Philo 125  :  Took left fork
+  1733236354691  |  Philo 125  :  Eating
+  1733236354691  |  Philo 129  :  Thinking
+  1733236354691  |  Philo 128  :  Left left fork
+  1733236354691  |  Philo 128  :  Left right fork
+  1733236354691  |  Philo 128  :  Sleeping
+  1733236354691  |  Philo 127  :  Took right fork
+  1733236354691  |  Philo 127  :  Took left fork
+  1733236354691  |  Philo 127  :  Eating
+  1733236354691  |  Philo 131  :  Thinking
+  1733236354691  |  Philo 133  :  Thinking
+  1733236354691  |  Philo 130  :  Left left fork
+  1733236354691  |  Philo 130  :  Left right fork
+  1733236354691  |  Philo 130  :  Sleeping
+  1733236354691  |  Philo 129  :  Took right fork
+  1733236354691  |  Philo 129  :  Took left fork
+  1733236354691  |  Philo 129  :  Eating
+  1733236354691  |  Philo 132  :  Left left fork
+  1733236354691  |  Philo 132  :  Left right fork
+  1733236354691  |  Philo 132  :  Sleeping
+  1733236354691  |  Philo 131  :  Took right fork
+  1733236354691  |  Philo 131  :  Took left fork
+  1733236354691  |  Philo 131  :  Eating
+  1733236354692  |  Philo 137  :  Thinking
+  1733236354692  |  Philo 135  :  Thinking
+  1733236354692  |  Philo 136  :  Left left fork
+  1733236354692  |  Philo 136  :  Left right fork
+  1733236354692  |  Philo 136  :  Sleeping
+  1733236354692  |  Philo 135  :  Took right fork
+  1733236354692  |  Philo 135  :  Took left fork
+  1733236354692  |  Philo 135  :  Eating
+  1733236354692  |  Philo 133  :  Took right fork
+  1733236354692  |  Philo 133  :  Took left fork
+  1733236354692  |  Philo 133  :  Eating
+  1733236354692  |  Philo 134  :  Left left fork
+  1733236354692  |  Philo 134  :  Left right fork
+  1733236354692  |  Philo 134  :  Sleeping
+  1733236354692  |  Philo 139  :  Thinking
+  1733236354692  |  Philo 138  :  Left left fork
+  1733236354692  |  Philo 138  :  Left right fork
+  1733236354692  |  Philo 138  :  Sleeping
+  1733236354692  |  Philo 137  :  Took right fork
+  1733236354692  |  Philo 137  :  Took left fork
+  1733236354692  |  Philo 137  :  Eating
+  1733236354692  |  Philo 140  :  Left left fork
+  1733236354692  |  Philo 140  :  Left right fork
+  1733236354692  |  Philo 140  :  Sleeping
+  1733236354692  |  Philo 141  :  Thinking
+  1733236354692  |  Philo 139  :  Took right fork
+  1733236354692  |  Philo 139  :  Took left fork
+  1733236354692  |  Philo 139  :  Eating
+  1733236354692  |  Philo 143  :  Thinking
+  1733236354692  |  Philo 142  :  Left left fork
+  1733236354692  |  Philo 142  :  Left right fork
+  1733236354692  |  Philo 142  :  Sleeping
+  1733236354692  |  Philo 141  :  Took right fork
+  1733236354692  |  Philo 141  :  Took left fork
+  1733236354692  |  Philo 141  :  Eating
+  1733236354692  |  Philo 145  :  Thinking
+  1733236354692  |  Philo 144  :  Left left fork
+  1733236354692  |  Philo 144  :  Left right fork
+  1733236354692  |  Philo 144  :  Sleeping
+  1733236354692  |  Philo 143  :  Took right fork
+  1733236354692  |  Philo 143  :  Took left fork
+  1733236354692  |  Philo 143  :  Eating
+  1733236354692  |  Philo 149  :  Thinking
+  1733236354692  |  Philo 147  :  Thinking
+  1733236354692  |  Philo 146  :  Left left fork
+  1733236354692  |  Philo 146  :  Left right fork
+  1733236354692  |  Philo 146  :  Sleeping
+  1733236354692  |  Philo 145  :  Took right fork
+  1733236354692  |  Philo 145  :  Took left fork
+  1733236354692  |  Philo 145  :  Eating
+  1733236354692  |  Philo 150  :  Left left fork
+  1733236354692  |  Philo 150  :  Left right fork
+  1733236354692  |  Philo 149  :  Took right fork
+  1733236354692  |  Philo 150  :  Sleeping
+  1733236354692  |  Philo 151  :  Took left fork
+  1733236354692  |  Philo 151  :  Eating
+  1733236354692  |  Philo 148  :  Left left fork
+  1733236354692  |  Philo 148  :  Left right fork
+  1733236354692  |  Philo 148  :  Sleeping
+  1733236354692  |  Philo 147  :  Took right fork
+  1733236354692  |  Philo 147  :  Took left fork
+  1733236354692  |  Philo 147  :  Eating
+  1733236354692  |  Philo 149  :  Took left fork
+  1733236354692  |  Philo 149  :  Eating
+  1733236354692  |  Philo 152  :  Thinking
+  1733236354692  |  Philo 155  :  Thinking
+  1733236354692  |  Philo 153  :  Left left fork
+  1733236354692  |  Philo 153  :  Left right fork
+  1733236354692  |  Philo 153  :  Sleeping
+  1733236354692  |  Philo 154  :  Took left fork
+  1733236354692  |  Philo 154  :  Took right fork
+  1733236354692  |  Philo 154  :  Eating
+  1733236354692  |  Philo 156  :  Left left fork
+  1733236354692  |  Philo 156  :  Left right fork
+  1733236354692  |  Philo 156  :  Sleeping
+  1733236354692  |  Philo 155  :  Took right fork
+  1733236354692  |  Philo 157  :  Thinking
+  1733236354692  |  Philo 159  :  Thinking
+  1733236354692  |  Philo 158  :  Left left fork
+  1733236354692  |  Philo 158  :  Left right fork
+  1733236354692  |  Philo 158  :  Sleeping
+  1733236354692  |  Philo 157  :  Took right fork
+  1733236354692  |  Philo 157  :  Took left fork
+  1733236354692  |  Philo 157  :  Eating
+  1733236354692  |  Philo 161  :  Thinking
+  1733236354692  |  Philo 160  :  Left left fork
+  1733236354692  |  Philo 160  :  Left right fork
+  1733236354692  |  Philo 160  :  Sleeping
+  1733236354692  |  Philo 159  :  Took right fork
+  1733236354692  |  Philo 159  :  Took left fork
+  1733236354692  |  Philo 159  :  Eating
+  1733236354692  |  Philo 163  :  Thinking
+  1733236354692  |  Philo 162  :  Left left fork
+  1733236354692  |  Philo 162  :  Left right fork
+  1733236354692  |  Philo 162  :  Sleeping
+  1733236354692  |  Philo 161  :  Took right fork
+  1733236354692  |  Philo 161  :  Took left fork
+  1733236354692  |  Philo 161  :  Eating
+  1733236354692  |  Philo 164  :  Left left fork
+  1733236354692  |  Philo 163  :  Took right fork
+  1733236354692  |  Philo 164  :  Left right fork
+  1733236354692  |  Philo 163  :  Took left fork
+  1733236354692  |  Philo 165  :  Took left fork
+  1733236354692  |  Philo 164  :  Sleeping
+  1733236354692  |  Philo 163  :  Eating
+  1733236354692  |  Philo 165  :  Eating
+  1733236354692  |  Philo 166  :  Thinking
+  1733236354692  |  Philo 167  :  Left left fork
+  1733236354692  |  Philo 167  :  Left right fork
+  1733236354692  |  Philo 167  :  Sleeping
+  1733236354692  |  Philo 168  :  Took left fork
+  1733236354692  |  Philo 168  :  Took right fork
+  1733236354692  |  Philo 168  :  Eating
+  1733236354692  |  Philo 169  :  Thinking
+  1733236354692  |  Philo 171  :  Thinking
+  1733236354692  |  Philo 170  :  Left left fork
+  1733236354692  |  Philo 170  :  Left right fork
+  1733236354692  |  Philo 172  :  Left left fork
+  1733236354692  |  Philo 169  :  Took right fork
+  1733236354692  |  Philo 171  :  Took right fork
+  1733236354692  |  Philo 172  :  Left right fork
+  1733236354692  |  Philo 172  :  Sleeping
+  1733236354692  |  Philo 171  :  Took left fork
+  1733236354692  |  Philo 171  :  Eating
+  1733236354692  |  Philo 170  :  Sleeping
+  1733236354692  |  Philo 173  :  Thinking
+  1733236354692  |  Philo 175  :  Thinking
+  1733236354692  |  Philo 174  :  Left left fork
+  1733236354692  |  Philo 174  :  Left right fork
+  1733236354692  |  Philo 174  :  Sleeping
+  1733236354692  |  Philo 173  :  Took right fork
+  1733236354692  |  Philo 173  :  Took left fork
+  1733236354692  |  Philo 173  :  Eating
+  1733236354693  |  Philo 177  :  Thinking
+  1733236354693  |  Philo 176  :  Left left fork
+  1733236354693  |  Philo 176  :  Left right fork
+  1733236354693  |  Philo 176  :  Sleeping
+  1733236354693  |  Philo 175  :  Took right fork
+  1733236354693  |  Philo 175  :  Took left fork
+  1733236354693  |  Philo 175  :  Eating
+  1733236354693  |  Philo 179  :  Thinking
+  1733236354693  |  Philo 178  :  Left left fork
+  1733236354693  |  Philo 178  :  Left right fork
+  1733236354693  |  Philo 178  :  Sleeping
+  1733236354693  |  Philo 177  :  Took right fork
+  1733236354693  |  Philo 177  :  Took left fork
+  1733236354693  |  Philo 177  :  Eating
+  1733236354693  |  Philo 180  :  Left left fork
+  1733236354693  |  Philo 180  :  Left right fork
+  1733236354693  |  Philo 180  :  Sleeping
+  1733236354693  |  Philo 179  :  Took right fork
+  1733236354693  |  Philo 179  :  Took left fork
+  1733236354693  |  Philo 181  :  Thinking
+  1733236354693  |  Philo 179  :  Eating
+  1733236354693  |  Philo 184  :  Left left fork
+  1733236354693  |  Philo 184  :  Left right fork
+  1733236354693  |  Philo 184  :  Sleeping
+  1733236354693  |  Philo 185  :  Took left fork
+  1733236354693  |  Philo 185  :  Eating
+  1733236354693  |  Philo 183  :  Thinking
+  1733236354693  |  Philo 183  :  Took right fork
+  1733236354693  |  Philo 182  :  Left left fork
+  1733236354693  |  Philo 182  :  Left right fork
+  1733236354693  |  Philo 182  :  Sleeping
+  1733236354693  |  Philo 181  :  Took right fork
+  1733236354693  |  Philo 181  :  Took left fork
+  1733236354693  |  Philo 181  :  Eating
+  1733236354693  |  Philo 183  :  Took left fork
+  1733236354693  |  Philo 183  :  Eating
+  1733236354693  |  Philo 189  :  Thinking
+  1733236354693  |  Philo 186  :  Thinking
+  1733236354693  |  Philo 187  :  Left left fork
+  1733236354693  |  Philo 187  :  Left right fork
+  1733236354693  |  Philo 187  :  Sleeping
+  1733236354693  |  Philo 188  :  Took left fork
+  1733236354693  |  Philo 188  :  Took right fork
+  1733236354693  |  Philo 188  :  Eating
+  1733236354693  |  Philo 193  :  Thinking
+  1733236354693  |  Philo 190  :  Left left fork
+  1733236354693  |  Philo 190  :  Left right fork
+  1733236354693  |  Philo 190  :  Sleeping
+  1733236354693  |  Philo 191  :  Thinking
+  1733236354693  |  Philo 189  :  Took right fork
+  1733236354693  |  Philo 192  :  Left left fork
+  1733236354693  |  Philo 192  :  Left right fork
+  1733236354693  |  Philo 192  :  Sleeping
+  1733236354693  |  Philo 191  :  Took right fork
+  1733236354693  |  Philo 191  :  Took left fork
+  1733236354693  |  Philo 191  :  Eating
+  1733236354693  |  Philo 195  :  Thinking
+  1733236354693  |  Philo 197  :  Thinking
+  1733236354693  |  Philo 196  :  Left left fork
+  1733236354693  |  Philo 196  :  Left right fork
+  1733236354693  |  Philo 196  :  Sleeping
+  1733236354693  |  Philo 195  :  Took right fork
+  1733236354693  |  Philo 194  :  Left left fork
+  1733236354693  |  Philo 193  :  Took right fork
+  1733236354693  |  Philo 194  :  Left right fork
+  1733236354693  |  Philo 195  :  Took left fork
+  1733236354693  |  Philo 194  :  Sleeping
+  1733236354693  |  Philo 195  :  Eating
+  1733236354693  |  Philo 193  :  Took left fork
+  1733236354693  |  Philo 193  :  Eating
+  1733236354711  |  Philo 166  :  DIED
+  1733236354889  |  Philo 10  :  Routine FINISHED
+  1733236354889  |  Philo 5  :  Left left fork
+  1733236354889  |  Philo 5  :  Left right fork
+  1733236354889  |  Philo 5  :  Routine FINISHED
+  1733236354889  |  Philo 6  :  Routine FINISHED
+  1733236354889  |  Philo 3  :  Took left fork
+  1733236354889  |  Philo 3  :  Eating
+  1733236354889  |  Philo 1  :  Routine FINISHED
+  1733236354889  |  Philo 2  :  Left left fork
+  1733236354889  |  Philo 2  :  Left right fork
+  1733236354889  |  Philo 2  :  Routine FINISHED
+  1733236354889  |  Philo 7  :  Left left fork
+  1733236354889  |  Philo 7  :  Left right fork
+  1733236354889  |  Philo 7  :  Routine FINISHED
+  1733236354889  |  Philo 4  :  Routine FINISHED
+  1733236354889  |  Philo 8  :  Routine FINISHED
+  1733236354889  |  Philo 0  :  Left left fork
+  1733236354889  |  Philo 0  :  Left right fork
+  1733236354889  |  Philo 0  :  Routine FINISHED
+  1733236354889  |  Philo 198  :  Left left fork
+  1733236354889  |  Philo 198  :  Left right fork
+  1733236354889  |  Philo 198  :  Routine FINISHED
+  1733236354889  |  Philo 9  :  Left left fork
+  1733236354889  |  Philo 9  :  Left right fork
+  1733236354889  |  Philo 9  :  Routine FINISHED
+  1733236354889  |  Philo 199  :  Routine FINISHED
+  1733236354889  |  Philo 197  :  Took right fork
+  1733236354889  |  Philo 197  :  Took left fork
+  1733236354889  |  Philo 197  :  Eating
+  1733236354889  |  Philo 12  :  Routine FINISHED
+  1733236354889  |  Philo 13  :  Left left fork
+  1733236354889  |  Philo 13  :  Left right fork
+  1733236354889  |  Philo 13  :  Routine FINISHED
+  1733236354889  |  Philo 11  :  Left left fork
+  1733236354889  |  Philo 11  :  Left right fork
+  1733236354889  |  Philo 11  :  Routine FINISHED
+  1733236354889  |  Philo 16  :  Routine FINISHED
+  1733236354889  |  Philo 14  :  Routine FINISHED
+  1733236354889  |  Philo 15  :  Left left fork
+  1733236354889  |  Philo 15  :  Left right fork
+  1733236354889  |  Philo 15  :  Routine FINISHED
+  1733236354889  |  Philo 18  :  Routine FINISHED
+  1733236354889  |  Philo 17  :  Left left fork
+  1733236354889  |  Philo 17  :  Left right fork
+  1733236354889  |  Philo 17  :  Routine FINISHED
+  1733236354889  |  Philo 20  :  Routine FINISHED
+  1733236354889  |  Philo 19  :  Left left fork
+  1733236354889  |  Philo 19  :  Left right fork
+  1733236354889  |  Philo 19  :  Routine FINISHED
+  1733236354889  |  Philo 22  :  Routine FINISHED
+  1733236354889  |  Philo 21  :  Left left fork
+  1733236354889  |  Philo 21  :  Left right fork
+  1733236354889  |  Philo 21  :  Routine FINISHED
+  1733236354890  |  Philo 23  :  Left left fork
+  1733236354890  |  Philo 23  :  Left right fork
+  1733236354890  |  Philo 23  :  Routine FINISHED
+  1733236354890  |  Philo 27  :  Routine FINISHED
+  1733236354890  |  Philo 29  :  Routine FINISHED
+  1733236354890  |  Philo 26  :  Left left fork
+  1733236354890  |  Philo 26  :  Left right fork
+  1733236354890  |  Philo 26  :  Routine FINISHED
+  1733236354890  |  Philo 24  :  Routine FINISHED
+  1733236354890  |  Philo 25  :  Took right fork
+  1733236354890  |  Philo 25  :  Took left fork
+  1733236354890  |  Philo 25  :  Eating
+  1733236354890  |  Philo 28  :  Left left fork
+  1733236354890  |  Philo 28  :  Left right fork
+  1733236354890  |  Philo 31  :  Took left fork
+  1733236354890  |  Philo 30  :  Left left fork
+  1733236354890  |  Philo 30  :  Left right fork
+  1733236354890  |  Philo 30  :  Routine FINISHED
+  1733236354890  |  Philo 31  :  Eating
+  1733236354890  |  Philo 28  :  Routine FINISHED
+  1733236354890  |  Philo 32  :  Routine FINISHED
+  1733236354890  |  Philo 34  :  Routine FINISHED
+  1733236354890  |  Philo 33  :  Left left fork
+  1733236354890  |  Philo 33  :  Left right fork
+  1733236354890  |  Philo 33  :  Routine FINISHED
+  1733236354890  |  Philo 36  :  Routine FINISHED
+  1733236354890  |  Philo 35  :  Left left fork
+  1733236354890  |  Philo 35  :  Left right fork
+  1733236354890  |  Philo 35  :  Routine FINISHED
+  1733236354890  |  Philo 38  :  Routine FINISHED
+  1733236354890  |  Philo 40  :  Routine FINISHED
+  1733236354890  |  Philo 37  :  Left left fork
+  1733236354890  |  Philo 37  :  Left right fork
+  1733236354890  |  Philo 37  :  Routine FINISHED
+  1733236354890  |  Philo 41  :  Left left fork
+  1733236354890  |  Philo 41  :  Left right fork
+  1733236354890  |  Philo 41  :  Routine FINISHED
+  1733236354890  |  Philo 39  :  Left left fork
+  1733236354890  |  Philo 39  :  Left right fork
+  1733236354890  |  Philo 39  :  Routine FINISHED
+  1733236354890  |  Philo 42  :  Routine FINISHED
+  1733236354890  |  Philo 44  :  Routine FINISHED
+  1733236354890  |  Philo 43  :  Left left fork
+  1733236354890  |  Philo 43  :  Left right fork
+  1733236354890  |  Philo 43  :  Routine FINISHED
+  1733236354890  |  Philo 50  :  Routine FINISHED
+  1733236354890  |  Philo 46  :  Routine FINISHED
+  1733236354890  |  Philo 45  :  Left left fork
+  1733236354890  |  Philo 45  :  Left right fork
+  1733236354890  |  Philo 45  :  Routine FINISHED
+  1733236354890  |  Philo 49  :  Left left fork
+  1733236354890  |  Philo 49  :  Left right fork
+  1733236354890  |  Philo 49  :  Routine FINISHED
+  1733236354890  |  Philo 47  :  Left left fork
+  1733236354890  |  Philo 47  :  Left right fork
+  1733236354890  |  Philo 47  :  Routine FINISHED
+  1733236354890  |  Philo 48  :  Routine FINISHED
+  1733236354890  |  Philo 52  :  Routine FINISHED
+  1733236354890  |  Philo 51  :  Left left fork
+  1733236354890  |  Philo 51  :  Left right fork
+  1733236354890  |  Philo 51  :  Routine FINISHED
+  1733236354890  |  Philo 56  :  Routine FINISHED
+  1733236354890  |  Philo 54  :  Routine FINISHED
+  1733236354890  |  Philo 53  :  Left left fork
+  1733236354890  |  Philo 53  :  Left right fork
+  1733236354890  |  Philo 53  :  Routine FINISHED
+  1733236354890  |  Philo 55  :  Left left fork
+  1733236354890  |  Philo 55  :  Left right fork
+  1733236354890  |  Philo 55  :  Routine FINISHED
+  1733236354890  |  Philo 58  :  Routine FINISHED
+  1733236354890  |  Philo 60  :  Routine FINISHED
+  1733236354890  |  Philo 57  :  Left left fork
+  1733236354890  |  Philo 57  :  Left right fork
+  1733236354890  |  Philo 57  :  Routine FINISHED
+  1733236354890  |  Philo 59  :  Left left fork
+  1733236354890  |  Philo 59  :  Left right fork
+  1733236354890  |  Philo 59  :  Routine FINISHED
+  1733236354890  |  Philo 62  :  Routine FINISHED
+  1733236354890  |  Philo 61  :  Left left fork
+  1733236354890  |  Philo 61  :  Left right fork
+  1733236354890  |  Philo 61  :  Routine FINISHED
+  1733236354890  |  Philo 66  :  Routine FINISHED
+  1733236354890  |  Philo 64  :  Routine FINISHED
+  1733236354890  |  Philo 63  :  Left left fork
+  1733236354890  |  Philo 63  :  Left right fork
+  1733236354890  |  Philo 63  :  Routine FINISHED
+  1733236354890  |  Philo 65  :  Left left fork
+  1733236354890  |  Philo 65  :  Left right fork
+  1733236354890  |  Philo 65  :  Routine FINISHED
+  1733236354890  |  Philo 70  :  Routine FINISHED
+  1733236354890  |  Philo 69  :  Left left fork
+  1733236354890  |  Philo 69  :  Left right fork
+  1733236354890  |  Philo 69  :  Routine FINISHED
+  1733236354890  |  Philo 67  :  Left left fork
+  1733236354890  |  Philo 67  :  Left right fork
+  1733236354890  |  Philo 67  :  Routine FINISHED
+  1733236354890  |  Philo 68  :  Routine FINISHED
+  1733236354890  |  Philo 74  :  Routine FINISHED
+  1733236354890  |  Philo 73  :  Left left fork
+  1733236354890  |  Philo 73  :  Left right fork
+  1733236354890  |  Philo 73  :  Routine FINISHED
+  1733236354890  |  Philo 71  :  Left left fork
+  1733236354890  |  Philo 71  :  Left right fork
+  1733236354890  |  Philo 71  :  Routine FINISHED
+  1733236354890  |  Philo 76  :  Routine FINISHED
+  1733236354890  |  Philo 72  :  Routine FINISHED
+  1733236354890  |  Philo 75  :  Left left fork
+  1733236354890  |  Philo 75  :  Left right fork
+  1733236354890  |  Philo 75  :  Routine FINISHED
+  1733236354891  |  Philo 78  :  Routine FINISHED
+  1733236354891  |  Philo 77  :  Left left fork
+  1733236354891  |  Philo 77  :  Left right fork
+  1733236354891  |  Philo 77  :  Routine FINISHED
+  1733236354891  |  Philo 80  :  Routine FINISHED
+  1733236354891  |  Philo 79  :  Left left fork
+  1733236354891  |  Philo 79  :  Left right fork
+  1733236354891  |  Philo 79  :  Routine FINISHED
+  1733236354891  |  Philo 82  :  Routine FINISHED
+  1733236354891  |  Philo 81  :  Left left fork
+  1733236354891  |  Philo 85  :  Left left fork
+  1733236354891  |  Philo 81  :  Left right fork
+  1733236354891  |  Philo 85  :  Left right fork
+  1733236354891  |  Philo 81  :  Routine FINISHED
+  1733236354891  |  Philo 85  :  Routine FINISHED
+  1733236354891  |  Philo 84  :  Routine FINISHED
+  1733236354891  |  Philo 83  :  Left left fork
+  1733236354891  |  Philo 83  :  Left right fork
+  1733236354891  |  Philo 83  :  Routine FINISHED
+  1733236354891  |  Philo 86  :  Routine FINISHED
+  1733236354891  |  Philo 88  :  Routine FINISHED
+  1733236354891  |  Philo 87  :  Left left fork
+  1733236354891  |  Philo 87  :  Left right fork
+  1733236354891  |  Philo 87  :  Routine FINISHED
+  1733236354891  |  Philo 90  :  Routine FINISHED
+  1733236354891  |  Philo 89  :  Left left fork
+  1733236354891  |  Philo 89  :  Left right fork
+  1733236354891  |  Philo 89  :  Routine FINISHED
+  1733236354891  |  Philo 94  :  Routine FINISHED
+  1733236354891  |  Philo 91  :  Left left fork
+  1733236354891  |  Philo 91  :  Left right fork
+  1733236354891  |  Philo 91  :  Routine FINISHED
+  1733236354891  |  Philo 93  :  Left left fork
+  1733236354891  |  Philo 93  :  Left right fork
+  1733236354891  |  Philo 93  :  Routine FINISHED
+  1733236354891  |  Philo 92  :  Routine FINISHED
+  1733236354891  |  Philo 96  :  Routine FINISHED
+  1733236354891  |  Philo 97  :  Left left fork
+  1733236354891  |  Philo 97  :  Left right fork
+  1733236354891  |  Philo 97  :  Routine FINISHED
+  1733236354891  |  Philo 95  :  Left left fork
+  1733236354891  |  Philo 95  :  Left right fork
+  1733236354891  |  Philo 95  :  Routine FINISHED
+  1733236354891  |  Philo 98  :  Routine FINISHED
+  1733236354891  |  Philo 100  :  Routine FINISHED
+  1733236354891  |  Philo 99  :  Left left fork
+  1733236354891  |  Philo 99  :  Left right fork
+  1733236354891  |  Philo 99  :  Routine FINISHED
+  1733236354891  |  Philo 102  :  Routine FINISHED
+  1733236354891  |  Philo 101  :  Left left fork
+  1733236354891  |  Philo 101  :  Left right fork
+  1733236354891  |  Philo 101  :  Routine FINISHED
+  1733236354891  |  Philo 105  :  Left left fork
+  1733236354891  |  Philo 105  :  Left right fork
+  1733236354891  |  Philo 105  :  Routine FINISHED
+  1733236354891  |  Philo 106  :  Routine FINISHED
+  1733236354891  |  Philo 104  :  Routine FINISHED
+  1733236354891  |  Philo 110  :  Routine FINISHED
+  1733236354891  |  Philo 103  :  Left left fork
+  1733236354891  |  Philo 103  :  Left right fork
+  1733236354891  |  Philo 103  :  Routine FINISHED
+  1733236354891  |  Philo 107  :  Left left fork
+  1733236354891  |  Philo 107  :  Left right fork
+  1733236354891  |  Philo 107  :  Routine FINISHED
+  1733236354891  |  Philo 108  :  Routine FINISHED
+  1733236354891  |  Philo 109  :  Left left fork
+  1733236354891  |  Philo 109  :  Left right fork
+  1733236354891  |  Philo 109  :  Routine FINISHED
+  1733236354891  |  Philo 112  :  Routine FINISHED
+  1733236354891  |  Philo 111  :  Left left fork
+  1733236354891  |  Philo 111  :  Left right fork
+  1733236354891  |  Philo 111  :  Routine FINISHED
+  1733236354891  |  Philo 114  :  Routine FINISHED
+  1733236354891  |  Philo 113  :  Left left fork
+  1733236354891  |  Philo 113  :  Left right fork
+  1733236354891  |  Philo 113  :  Routine FINISHED
+  1733236354891  |  Philo 116  :  Routine FINISHED
+  1733236354891  |  Philo 115  :  Left left fork
+  1733236354891  |  Philo 115  :  Left right fork
+  1733236354891  |  Philo 115  :  Routine FINISHED
+  1733236354891  |  Philo 118  :  Routine FINISHED
+  1733236354891  |  Philo 122  :  Routine FINISHED
+  1733236354891  |  Philo 120  :  Routine FINISHED
+  1733236354891  |  Philo 117  :  Left left fork
+  1733236354891  |  Philo 117  :  Left right fork
+  1733236354891  |  Philo 117  :  Routine FINISHED
+  1733236354891  |  Philo 121  :  Left left fork
+  1733236354891  |  Philo 121  :  Left right fork
+  1733236354891  |  Philo 121  :  Routine FINISHED
+  1733236354891  |  Philo 119  :  Left left fork
+  1733236354891  |  Philo 119  :  Left right fork
+  1733236354891  |  Philo 119  :  Routine FINISHED
+  1733236354891  |  Philo 124  :  Routine FINISHED
+  1733236354891  |  Philo 123  :  Left left fork
+  1733236354891  |  Philo 123  :  Left right fork
+  1733236354891  |  Philo 123  :  Routine FINISHED
+  1733236354891  |  Philo 126  :  Routine FINISHED
+  1733236354891  |  Philo 125  :  Left left fork
+  1733236354891  |  Philo 125  :  Left right fork
+  1733236354891  |  Philo 125  :  Routine FINISHED
+  1733236354891  |  Philo 128  :  Routine FINISHED
+  1733236354891  |  Philo 127  :  Left left fork
+  1733236354891  |  Philo 127  :  Left right fork
+  1733236354891  |  Philo 127  :  Routine FINISHED
+  1733236354892  |  Philo 130  :  Routine FINISHED
+  1733236354892  |  Philo 129  :  Left left fork
+  1733236354892  |  Philo 129  :  Left right fork
+  1733236354892  |  Philo 129  :  Routine FINISHED
+  1733236354892  |  Philo 132  :  Routine FINISHED
+  1733236354892  |  Philo 131  :  Left left fork
+  1733236354892  |  Philo 131  :  Left right fork
+  1733236354892  |  Philo 131  :  Routine FINISHED
+  1733236354892  |  Philo 136  :  Routine FINISHED
+  1733236354892  |  Philo 135  :  Left left fork
+  1733236354892  |  Philo 135  :  Left right fork
+  1733236354892  |  Philo 135  :  Routine FINISHED
+  1733236354892  |  Philo 133  :  Left left fork
+  1733236354892  |  Philo 133  :  Left right fork
+  1733236354892  |  Philo 133  :  Routine FINISHED
+  1733236354892  |  Philo 134  :  Routine FINISHED
+  1733236354892  |  Philo 138  :  Routine FINISHED
+  1733236354892  |  Philo 139  :  Left left fork
+  1733236354892  |  Philo 140  :  Routine FINISHED
+  1733236354892  |  Philo 139  :  Left right fork
+  1733236354892  |  Philo 139  :  Routine FINISHED
+  1733236354892  |  Philo 137  :  Left left fork
+  1733236354892  |  Philo 137  :  Left right fork
+  1733236354892  |  Philo 137  :  Routine FINISHED
+  1733236354892  |  Philo 142  :  Routine FINISHED
+  1733236354892  |  Philo 141  :  Left left fork
+  1733236354892  |  Philo 141  :  Left right fork
+  1733236354892  |  Philo 141  :  Routine FINISHED
+  1733236354892  |  Philo 144  :  Routine FINISHED
+  1733236354892  |  Philo 143  :  Left left fork
+  1733236354892  |  Philo 143  :  Left right fork
+  1733236354892  |  Philo 143  :  Routine FINISHED
+  1733236354892  |  Philo 148  :  Routine FINISHED
+  1733236354892  |  Philo 151  :  Left left fork
+  1733236354892  |  Philo 151  :  Left right fork
+  1733236354892  |  Philo 151  :  Routine FINISHED
+  1733236354892  |  Philo 152  :  Took left fork
+  1733236354892  |  Philo 152  :  Took right fork
+  1733236354892  |  Philo 152  :  Eating
+  1733236354892  |  Philo 150  :  Routine FINISHED
+  1733236354892  |  Philo 145  :  Left left fork
+  1733236354892  |  Philo 146  :  Routine FINISHED
+  1733236354892  |  Philo 145  :  Left right fork
+  1733236354892  |  Philo 145  :  Routine FINISHED
+  1733236354892  |  Philo 149  :  Left left fork
+  1733236354892  |  Philo 149  :  Left right fork
+  1733236354892  |  Philo 149  :  Routine FINISHED
+  1733236354892  |  Philo 147  :  Left left fork
+  1733236354892  |  Philo 147  :  Left right fork
+  1733236354892  |  Philo 147  :  Routine FINISHED
+  1733236354892  |  Philo 153  :  Routine FINISHED
+  1733236354892  |  Philo 154  :  Left left fork
+  1733236354892  |  Philo 154  :  Left right fork
+  1733236354892  |  Philo 154  :  Routine FINISHED
+  1733236354892  |  Philo 155  :  Took left fork
+  1733236354892  |  Philo 155  :  Eating
+  1733236354892  |  Philo 156  :  Routine FINISHED
+  1733236354892  |  Philo 158  :  Routine FINISHED
+  1733236354892  |  Philo 157  :  Left left fork
+  1733236354892  |  Philo 157  :  Left right fork
+  1733236354892  |  Philo 157  :  Routine FINISHED
+  1733236354892  |  Philo 160  :  Routine FINISHED
+  1733236354892  |  Philo 159  :  Left left fork
+  1733236354892  |  Philo 159  :  Left right fork
+  1733236354892  |  Philo 159  :  Routine FINISHED
+  1733236354892  |  Philo 162  :  Routine FINISHED
+  1733236354892  |  Philo 161  :  Left left fork
+  1733236354892  |  Philo 161  :  Left right fork
+  1733236354892  |  Philo 161  :  Routine FINISHED
+  1733236354892  |  Philo 164  :  Routine FINISHED
+  1733236354892  |  Philo 163  :  Left left fork
+  1733236354892  |  Philo 163  :  Left right fork
+  1733236354892  |  Philo 163  :  Routine FINISHED
+  1733236354892  |  Philo 165  :  Left left fork
+  1733236354892  |  Philo 165  :  Left right fork
+  1733236354892  |  Philo 165  :  Routine FINISHED
+  1733236354892  |  Philo 166  :  Took left fork
+  1733236354892  |  Philo 166  :  Took right fork
+  1733236354892  |  Philo 166  :  Eating
+  1733236354892  |  Philo 167  :  Routine FINISHED
+  1733236354892  |  Philo 168  :  Left left fork
+  1733236354892  |  Philo 168  :  Left right fork
+  1733236354892  |  Philo 168  :  Routine FINISHED
+  1733236354892  |  Philo 169  :  Took left fork
+  1733236354892  |  Philo 169  :  Eating
+  1733236354892  |  Philo 172  :  Routine FINISHED
+  1733236354892  |  Philo 170  :  Routine FINISHED
+  1733236354892  |  Philo 171  :  Left left fork
+  1733236354892  |  Philo 171  :  Left right fork
+  1733236354892  |  Philo 171  :  Routine FINISHED
+  1733236354893  |  Philo 174  :  Routine FINISHED
+  1733236354893  |  Philo 173  :  Left left fork
+  1733236354893  |  Philo 173  :  Left right fork
+  1733236354893  |  Philo 173  :  Routine FINISHED
+  1733236354893  |  Philo 176  :  Routine FINISHED
+  1733236354893  |  Philo 175  :  Left left fork
+  1733236354893  |  Philo 175  :  Left right fork
+  1733236354893  |  Philo 175  :  Routine FINISHED
+  1733236354893  |  Philo 178  :  Routine FINISHED
+  1733236354893  |  Philo 177  :  Left left fork
+  1733236354893  |  Philo 177  :  Left right fork
+  1733236354893  |  Philo 177  :  Routine FINISHED
+  1733236354893  |  Philo 184  :  Routine FINISHED
+  1733236354893  |  Philo 180  :  Routine FINISHED
+  1733236354893  |  Philo 182  :  Routine FINISHED
+  1733236354893  |  Philo 185  :  Left left fork
+  1733236354893  |  Philo 179  :  Left left fork
+  1733236354893  |  Philo 185  :  Left right fork
+  1733236354893  |  Philo 179  :  Left right fork
+  1733236354893  |  Philo 179  :  Routine FINISHED
+  1733236354893  |  Philo 185  :  Routine FINISHED
+  1733236354893  |  Philo 186  :  Took left fork
+  1733236354893  |  Philo 186  :  Took right fork
+  1733236354893  |  Philo 186  :  Eating
+  1733236354893  |  Philo 181  :  Left left fork
+  1733236354893  |  Philo 181  :  Left right fork
+  1733236354893  |  Philo 181  :  Routine FINISHED
+  1733236354893  |  Philo 183  :  Left left fork
+  1733236354893  |  Philo 183  :  Left right fork
+  1733236354893  |  Philo 183  :  Routine FINISHED
+  1733236354893  |  Philo 187  :  Routine FINISHED
+  1733236354893  |  Philo 188  :  Left left fork
+  1733236354893  |  Philo 188  :  Left right fork
+  1733236354893  |  Philo 188  :  Routine FINISHED
+  1733236354893  |  Philo 189  :  Took left fork
+  1733236354893  |  Philo 189  :  Eating
+  1733236354893  |  Philo 190  :  Routine FINISHED
+  1733236354893  |  Philo 191  :  Left left fork
+  1733236354893  |  Philo 191  :  Left right fork
+  1733236354893  |  Philo 191  :  Routine FINISHED
+  1733236354893  |  Philo 192  :  Routine FINISHED
+  1733236354893  |  Philo 195  :  Left left fork
+  1733236354893  |  Philo 193  :  Left left fork
+  1733236354893  |  Philo 196  :  Routine FINISHED
+  1733236354893  |  Philo 193  :  Left right fork
+  1733236354893  |  Philo 193  :  Routine FINISHED
+  1733236354893  |  Philo 195  :  Left right fork
+  1733236354893  |  Philo 195  :  Routine FINISHED
+  1733236354893  |  Philo 194  :  Routine FINISHED
+  1733236355089  |  Philo 3  :  Left left fork
+  1733236355089  |  Philo 3  :  Left right fork
+  1733236355089  |  Philo 3  :  Routine FINISHED
+  1733236355089  |  Philo 197  :  Left left fork
+  1733236355089  |  Philo 197  :  Left right fork
+  1733236355089  |  Philo 197  :  Routine FINISHED
+  1733236355090  |  Philo 25  :  Left left fork
+  1733236355090  |  Philo 25  :  Left right fork
+  1733236355090  |  Philo 25  :  Routine FINISHED
+  1733236355090  |  Philo 31  :  Left left fork
+  1733236355090  |  Philo 31  :  Left right fork
+  1733236355090  |  Philo 31  :  Routine FINISHED
+  1733236355092  |  Philo 152  :  Left left fork
+  1733236355092  |  Philo 152  :  Left right fork
+  1733236355092  |  Philo 152  :  Routine FINISHED
+  1733236355092  |  Philo 155  :  Left left fork
+  1733236355092  |  Philo 155  :  Left right fork
+  1733236355092  |  Philo 155  :  Routine FINISHED
+  1733236355093  |  Philo 166  :  Left left fork
+  1733236355093  |  Philo 166  :  Left right fork
+  1733236355093  |  Philo 166  :  Routine FINISHED
+  1733236355093  |  Philo 169  :  Left left fork
+  1733236355093  |  Philo 169  :  Left right fork
+  1733236355093  |  Philo 169  :  Routine FINISHED
+  1733236355093  |  Philo 186  :  Left left fork
+  1733236355093  |  Philo 186  :  Left right fork
+  1733236355093  |  Philo 186  :  Routine FINISHED
+  1733236355093  |  Philo 189  :  Left left fork
+  1733236355093  |  Philo 189  :  Left right fork
+  1733236355093  |  Philo 189  :  Routine FINISHED
+
+✓ PROGRAM FINISHED

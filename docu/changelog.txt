@@ -92,4 +92,9 @@ Domingo 24/11:
 
 	- Añadida excepcion de un solo filosofo. Comprobar funcionamiento en linux.
 
-SEGUIR CON: comprobar correcto funcionamiento.
+Martes 03/12:
+
+	- Cambiado formato de impresion.
+	- Programa probado con 200 filosofos: delay maximo 9ms.
+
+SEGUIR CON: deberia dejar de imprimir con la muerte?.

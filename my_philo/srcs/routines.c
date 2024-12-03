@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   routines.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
+/*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:55:53 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/24 20:23:14 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/12/03 15:55:26 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,17 +44,17 @@ void	*philo_routine(void *arg)
 		if (philo->death_flag != 1)
 		{
 			change_status(philo, 1);
-			send_message("Thinking", philo);
+			send_message("is thinking", philo);
 		}
 		eat(philo);
 		if (philo->death_flag != 1)
 		{
 			change_status(philo, 3);
-			send_message("Sleeping", philo);
+			send_message("is sleeping", philo);
 			usleep(philo->t_sleep * 1000);
 		}
 	}
-	send_message("Routine FINISHED", philo);
+	//send_message("Routine FINISHED", philo);
 	change_status(philo, 4);
 	return (NULL);
 }
@@ -75,16 +75,16 @@ int	eat(t_philo *philo)
 	else
 	{
 		lock_mutex(philo->right_fork);
-		send_message("Took right fork", philo);
+		send_message("took right fork", philo);
 		lock_mutex(philo->left_fork);
-		send_message("Took left fork", philo);
+		send_message("took left fork", philo);
 	}
 	change_status(philo, 2);
 	usleep(philo->t_eat * 1000);
 	unlock_mutex(philo->left_fork);
 	unlock_mutex(philo->right_fork);
-	send_message("Left left fork", philo);
-	send_message("Left right fork", philo);
+	send_message("left left fork", philo);
+	send_message("left right fork", philo);
 	return (1);
 }
 
@@ -93,10 +93,10 @@ int	one_philo_exception(t_philo *philo)
 	if (philo->n_philos == 1)
 	{
 		lock_mutex(philo->left_fork);
-		send_message("Took left fork", philo);
+		send_message("took left fork", philo);
 		usleep(philo->t_die * 1000);
 		unlock_mutex(philo->left_fork);
-		send_message("DIED", philo);
+		send_message("died", philo);
 		philo->death_flag = 1;
 		return (1);
 	}
@@ -110,7 +110,7 @@ void	change_status(t_philo *philo, int status)
 	if (status == 2)
 	{
 		philo->last_meal = millis();
-		send_message("Eating", philo);
+		send_message("is eating", philo);
 	}
 	unlock_mutex(philo->death_lock);
 }
