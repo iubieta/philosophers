@@ -6,13 +6,13 @@
 #    By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/24 12:33:18 by iubieta           #+#    #+#              #
-#    Updated: 2024/11/24 13:05:01 by iubieta          ###   ########.fr        #
+#    Updated: 2024/12/07 16:53:18 by iubieta-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = philo
 CC = cc
-CFLAGS = -Wall -Werror -Wextra 
+CFLAGS = -Wall -Werror -Wextra
 LIBS = -lpthread
 
 SRCS_DIR = ./srcs

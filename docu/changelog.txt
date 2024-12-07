@@ -101,3 +101,6 @@ Martes 03/12:
 		death_flag().
 	- Programa probado con 200 filosofos: delay maximo 9ms.
 
+Sabado 07/12:
+	
+	- Añadido start_t para ajustar timestamp.

@@ -6,7 +6,7 @@
 /*   By: iubieta- <iubieta-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/02 14:01:35 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/12/03 16:08:49 by iubieta-         ###   ########.fr       */
+/*   Updated: 2024/12/07 16:31:43 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void	fill_philo(t_philo *philo, size_t i, size_t *args,
 	philo->id = i;
 	philo->status = 1;
 	philo->death_flag = 0;
+	philo->start_t = millis();
 	philo->n_philos = args[1];
 	philo->t_die = args[2];
 	philo->t_eat = args[3];
@@ -59,6 +60,7 @@ void	fill_philo(t_philo *philo, size_t i, size_t *args,
 void	print_philo_data(t_philo philo)
 {
 	printf("\n\tStatus : %i", philo.status);
+	printf("\n\tStart time : %lu", philo.start_t);
 	printf("\n\tTime to die : %lu ms", philo.t_die);
 	printf("\n\tTime to eat : %lu ms", philo.t_eat);
 	printf("\n\tTime to sleep : %lu ms", philo.t_sleep);
@@ -75,6 +77,6 @@ void	send_message(char *str, t_philo *philo)
 	if (philo->death_flag == 1)
 		return;
 	lock_mutex(philo->write_lock);
-	printf("%ld %lu %s\n", millis(), philo->id, str);
+	printf("%ld %lu %s\n", millis() - philo->start_t, philo->id, str);
 	unlock_mutex(philo->write_lock);
 }

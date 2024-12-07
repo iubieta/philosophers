@@ -6,7 +6,7 @@
 /*   By: iubieta <iubieta@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 19:56:30 by iubieta-          #+#    #+#             */
-/*   Updated: 2024/11/24 20:12:15 by iubieta          ###   ########.fr       */
+/*   Updated: 2024/12/07 16:29:53 by iubieta-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ typedef struct s_philo
 	size_t			id;
 	int				status;
 	int				death_flag;
+	size_t			start_t;
 	size_t			n_philos;
 	size_t			t_die;
 	size_t			t_eat;
